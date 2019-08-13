@@ -29,9 +29,18 @@ a:focus {
  color: var(--mainColor);
 }
 
-/* 폰트 임포트 */
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-* { font-family: 'Nanum Gothic', sans-serif; }
+/* 폰트 임포트 테스트*/
+@font-face { 
+ font-family: 'GoyangIlsan'; /* 고양일산체 */
+ src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff'); 
+ font-weight: normal; 
+ font-style: normal; 
+}
+
+/* 폰트 패밀리로 폰트 적용 */
+* {
+ font-family: 'GoyangIlsan';
+}
 
 /* 상단 배너 */
 header:before {
