@@ -2942,7 +2942,7 @@ header {
 
 /*************** animation ***************/
 
-/* 백그라운드 별 애니메이션 사전 설정 */
+/* 백그라운드 별 애니메이션 */
 body {
  background: transparent;
  animation: snow 20s linear infinite;
@@ -2951,12 +2951,12 @@ body {
   url("https://cdn.discordapp.com/attachments/610065145858621461/610066914752069642/star2.png");
  }
  
- @keyframes snow {
- 0% {background-position: 0px 0px, 0px 0px;}
- 100% {background-position: 500px 1000px, 400px 400px;}
- }
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px;}
+}
  
- /* 하트 펌핑 애니메이션 */
+/* 스트리머 하트 펌핑 애니메이션 */
 small.favo i.fa.fa-heart {
     animation: heartbeat 1s infinite;
 }
@@ -2969,6 +2969,16 @@ small.favo i.fa.fa-heart {
     85% {transform: scale(0.95);}
     100% {transform: scale(1);}
 }
+
+/* 인기글 별 스핀 애니메이션 */
+span.a-badge i.fa.fa-star { 
+	animation: binglebingle 3s infinite;
+}
+
+@keyframes binglebingle {
+	from { transform: rotate(0deg); } to { transform: rotate(360deg); }
+}
+
 
 /*************** header ***************/
 
