@@ -3,7 +3,7 @@
 	--bgColor: #EAEFF7;   /* 배경 색 */
     --mainColor: #44577C;   /* 메인 컬러 */
 	--mainColor5: rgba(227, 231, 239, 0.39); /* 공지, 인기글 hover */
-	--mainColor3: #E3E7EF; /* 공지, 인기글 */
+	--mainColor3: #E3E7EF; /* 공지, 인기글(현재 인기글은 L값을 줄인 색상으로 표시됨) */
 	--mainColor2: #7777771f; /* 트게더 메뉴, 게시글 hover */
 	--logoURL: url(https://cdn.discordapp.com/attachments/610065145858621461/610066711047045121/N_PC.png); /* 로고 임포트 */
 	--logoWidth: 200px;	 /* 로고 너비 */
@@ -3245,9 +3245,13 @@ span.a-badge i.fa.fa-info-circle {
 	transition: 0.2s;
 }
 
-#article-list>.article-list-row.hot,
 #article-list>.article-list-row.notice {
 	background-color: var(--mainColor3);
+}
+
+/* 인기글 색상 구분용 미세 조정 */
+#article-list>.article-list-row.hot {
+	background-color: #EBEEF3;
 }
 
 #article-list>.article-list-row.hot:hover,
