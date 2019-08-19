@@ -4,7 +4,7 @@
     --mainColor: #44577C;   /* 메인 컬러 */
 	--mainColor5: rgba(227, 231, 239, 0.39); /* 공지, 인기글 hover */
 	--mainColor3: #E3E7EF; /* 공지, 인기글(현재 인기글은 L값을 줄인 색상으로 표시됨) */
-	--mainColor2: #7777771f; /* 트게더 메뉴, 게시글 hover */
+	--mainColor2: rgba(119, 119, 119, 0.122); /* 트게더 메뉴, 게시글 hover */
 	--logoURL: url(https://cdn.discordapp.com/attachments/610065145858621461/610066711047045121/N_PC.png); /* 로고 임포트 */
 	--logoWidth: 200px;	 /* 로고 너비 */
 	--before: "하늘에 늑대별 "; /* 접속자 수 앞 문구 */
