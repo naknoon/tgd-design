@@ -3333,7 +3333,9 @@ span.a-badge i.fa.fa-info-circle {
 }
 
 #article-content-wrapper>.footer {
-	border-top: 2px solid var(--mainColor);
+  border-top: 2px solid var(--mainColor);
+  border-bottom: 2px solid var(--mainColor);
+	margin-bottom: 0.5em;
 	background: white;
 }
 
@@ -3357,7 +3359,8 @@ span.a-badge i.fa.fa-info-circle {
 #article-reply-area {
 	padding: 0;
 	background: white;
-	border: 2px solid var(--mainColor);
+  border: 2px solid var(--mainColor);
+  margin-top: 0.5em;
 	margin-bottom: 1em;
 }
 
