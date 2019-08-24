@@ -3135,10 +3135,11 @@ span.a-badge i.fa.fa-info-circle {
 
 /* 프로필 이미지 사이즈 조정 */
 #board-info>img#board-info-profile-img {
-	width: 80px;
+  width: 80px;
+  height: 80px;
 	margin-right: 10px;
 	border: 2px solid var(--mainColor);
-  	border-radius: 0;
+  border-radius: 0;
 	transition: 0.2s;
 }
 
@@ -3159,7 +3160,7 @@ span.a-badge i.fa.fa-info-circle {
 
 /* 랭킹 및 접속자 수 색상 변경 */
 #board-info #viewers-area, #board-info #score-area {
-    color: rgba(68, 87, 124, 0.692);
+  color: rgba(68, 87, 124, 0.692);
 }
 
 /* 접속자 수 이미지 변경 (별 모양) */
