@@ -3136,7 +3136,6 @@ span.a-badge i.fa.fa-info-circle {
 /* 프로필 이미지 사이즈 조정 */
 #board-info>img#board-info-profile-img {
   width: 80px;
-  height: 80px;
 	margin-right: 10px;
 	border: 2px solid var(--mainColor);
   border-radius: 0;
