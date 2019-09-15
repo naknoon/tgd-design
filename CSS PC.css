@@ -2944,19 +2944,31 @@ header {
 /*************** animation ***************/
 
 /* 백그라운드 별 애니메이션 */
+
+body {
+  background: transparent;
+  animation: snow 20s linear infinite;
+  background-image: /* 백그라운드 애니메이션 소스 임포트 (냥냥 백그라운드)*/
+   url('https://media.discordapp.net/attachments/524223484713238529/622620881515970567/1.png'), 
+   url("https://media.discordapp.net/attachments/524223484713238529/622620882745163786/2.png"),
+   url("https://media.discordapp.net/attachments/524223484713238529/622620885873852436/3.png");
+  }
+
+/*
 body {
  background: transparent;
  animation: snow 20s linear infinite;
- background-image: /* 백그라운드 애니메이션 소스 임포트 */
+ background-image: /* 백그라운드 애니메이션 소스 임포트
   url('https://cdn.discordapp.com/attachments/610065145858621461/610066913372012574/Star1.png'), 
   url("https://cdn.discordapp.com/attachments/610065145858621461/610066914752069642/star2.png");
  }
+*/
  
 @keyframes snow {
 0% {background-position: 0px 0px, 0px 0px;}
 100% {background-position: 500px 1000px, 400px 400px;}
 }
- 
+
 /* 스트리머 하트 펌핑 애니메이션 */
 small.favo i.fa.fa-heart {
     animation: heartbeat 1s infinite;
