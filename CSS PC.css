@@ -9,7 +9,7 @@
 	--logoWidth: 200px;	 /* 로고 너비 */
 	--before: "하늘에 늑대별 "; /* 접속자 수 앞 문구 */
   --after: "개";  /* 접속자 수 뒤 문구 */
-  --bannerurl: url(https://cdn.discordapp.com/attachments/610065145858621461/622612787180470272/1.png); /*배너 주소 임포트*/
+  --bannerurl: url(https://cdn.discordapp.com/attachments/610065145858621461/622754132650098718/f17fa7b04e4ec944.png); /*배너 주소 임포트*/
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -2944,25 +2944,13 @@ header {
 /*************** animation ***************/
 
 /* 백그라운드 별 애니메이션 */
-
-body {
-  background: transparent;
-  animation: snow 20s linear infinite;
-  background-image: /* 백그라운드 애니메이션 소스 임포트 (냥냥 백그라운드)*/
-   url('https://media.discordapp.net/attachments/524223484713238529/622620881515970567/1.png'), 
-   url("https://media.discordapp.net/attachments/524223484713238529/622620882745163786/2.png"),
-   url("https://media.discordapp.net/attachments/524223484713238529/622620885873852436/3.png");
-  }
-
-/*
 body {
  background: transparent;
  animation: snow 20s linear infinite;
- background-image: /* 백그라운드 애니메이션 소스 임포트
+ background-image: /* 백그라운드 애니메이션 소스 임포트 */
   url('https://cdn.discordapp.com/attachments/610065145858621461/610066913372012574/Star1.png'), 
   url("https://cdn.discordapp.com/attachments/610065145858621461/610066914752069642/star2.png");
  }
-*/
  
 @keyframes snow {
 0% {background-position: 0px 0px, 0px 0px;}
@@ -3217,7 +3205,7 @@ span.a-badge i.fa.fa-info-circle {
 	background: transparent;
   color: var(--mainColor);
   position: relative;
-  padding: 10px 15.7px; /* 카테고리 선택자 사이 여백 조정 */
+  padding: 9px 15.7px; /* 카테고리 선택자 사이 여백 조정 */
 }
 
 #article-list #article-list-category>a::before {
@@ -3232,7 +3220,7 @@ span.a-badge i.fa.fa-info-circle {
 #article-list #article-list-category>a::after {
 	height: 2px;
 	width: 100%;
-	background: var(--mainColor);
+	background: currentColor;
 	content: "";
 	position: absolute;
 	left: 0px;
