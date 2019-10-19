@@ -29,6 +29,11 @@ a:focus {
 	color: var(--mainColor);
 }
 
+/* 폰트 패밀리로 폰트 적용 */
+* { 
+font-family: 'Nanum Gothic', sans-serif; 
+}
+
 /* 읽은 글 색상 변경 */
 #article-list>.article-list-row>.item>.list-title>a:visited {
     color: #acacac !important; 
