@@ -637,7 +637,8 @@ span.a-badge i.fa.fa-info-circle {
 	opacity:1;
 	background:url(https://cdn.discordapp.com/attachments/610065145858621461/610066918648578058/9fed5b52b8584c5e.png);
 	width: 80px;
-	height: 80px;background-size: contain;
+	height: 80px;
+	background-size: contain;
 }
 
 
