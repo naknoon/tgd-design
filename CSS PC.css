@@ -379,7 +379,7 @@ span.a-badge i.fa.fa-info-circle {
 	background-color: var(--mainColor3);
 }
 
-/* 인기글 색상 구분용 미세 조정 */
+/* 인기글 색상 조정 */
 #article-list>.article-list-row.hot {
 	background-color: #E7EBF1;
 }
