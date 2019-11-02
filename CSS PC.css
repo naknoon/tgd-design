@@ -34,6 +34,14 @@ a:focus {
  color: var(--mainColor);
 }
 
+/* 고양일산체 폰트 임포트 */
+@font-face { 
+	font-family: 'GoyangIlsan'; 
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff'); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
 /* 상단 배너  */
 header:before {
  display: block;
