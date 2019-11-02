@@ -116,6 +116,10 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
  background: #E7524C;
 }
 
+#board-info h1>a {
+	transition: 0.2s;
+	font-family: 'GoyangIlsan'; /* 트게더 제목 폰트 변경 (고양일산체) */
+}
 
 /*************** main ***************/
 
