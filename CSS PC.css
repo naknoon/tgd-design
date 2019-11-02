@@ -11,7 +11,7 @@
  	--logoWidth: 100px;	 /* 로고 너비 */
  	--before: "25"; /* 접속자 수 앞 문구 */
  	--after: "명";  /* 접속자 수 뒤 문구 */
- 	--bannerurl: url(https://cdn.discordapp.com/attachments/610065145858621461/622754132650098718/f17fa7b04e4ec944.png); /*배너 주소 임포트*/
+ 	--bannerurl: url(); /*배너 주소 임포트*/
 }
 
 *{ font-family: 'Nanum Gothic', sans-serif; }
