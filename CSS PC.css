@@ -172,6 +172,12 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	background: #E7524C;
 }
 
+/* board-info 버튼 호버 이펙트 */
+#board-info>#board-info-bottom>:hover {
+    transform: scale(1.05);
+    color: black;
+}
+
 
 /*************** main ***************/
 
