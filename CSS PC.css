@@ -693,7 +693,7 @@ input[type='text'] {
 
 /* 트게더 다크 모드 */
 
-@media (max-width:1400px)
+@media (min-width:320px) and (max-width:1400px)
  {
 	:root {
     --bgColor: #202020;
