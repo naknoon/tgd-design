@@ -447,6 +447,10 @@ span.a-badge i.fa.fa-info-circle {
 	color: var(--mainColor);
 }
 
+#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+    height: 18px;
+}
+
 /* 게시글 검색 창 */
 #article-list #boardSearchForm .form-control {
 	border-color: var(--mainColor);
