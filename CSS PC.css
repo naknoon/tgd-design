@@ -369,7 +369,7 @@ span.a-badge i.fa.fa-info-circle {
 }
 
 /* CSS 카테고리 분리 후 커스텀 */
-#article-list > #article-list-category > a[href="/y_yeohun?category=34271671"] {
+#article-list > #article-list-category > a[href="/y_yeohun?category=34279837"] {
 	background: url(https://cdn.discordapp.com/attachments/610065145858621461/658246766734475294/CSS_.png) no-repeat !important ;
     position: absolute;
 	left: 874.6px;
@@ -379,12 +379,12 @@ span.a-badge i.fa.fa-info-circle {
     font-size: 0px;
 }
 
-#article-list > #article-list-category > a[href="/y_yeohun?category=34271671"]:hover {
+#article-list > #article-list-category > a[href="/y_yeohun?category=34279837"]:hover {
 	background: url(https://cdn.discordapp.com/attachments/610065145858621461/658246768361865216/CSS_.png) no-repeat !important;
 }
 
-#article-list #article-list-category>a[href="/y_yeohun?category=34271671"]::before,
-#article-list #article-list-category>a[href="/y_yeohun?category=34271671"]::after {
+#article-list #article-list-category>a[href="/y_yeohun?category=34279837"]::before,
+#article-list #article-list-category>a[href="/y_yeohun?category=34279837"]::after {
 	background: none;
 }
 
@@ -862,8 +862,8 @@ header #right-search-form>#right-search-btn {
 
 
 /* 카테고리 */
-#article-list > #article-list-category > a[href="/y_yeohun?category=34271671"],
-#article-list > #article-list-category > a[href="/y_yeohun?category=34271671"]:hover {
+#article-list > #article-list-category > a[href="/y_yeohun?category=34279837"],
+#article-list > #article-list-category > a[href="/y_yeohun?category=34279837"]:hover {
     filter: grayscale(100%);
 }
 
