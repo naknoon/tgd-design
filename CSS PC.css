@@ -861,6 +861,14 @@ header #right-search-form>#right-search-btn {
 
 
 
+/* 카테고리 */
+#article-list > #article-list-category > a[href="/y_yeohun?category=34271671"],
+#article-list > #article-list-category > a[href="/y_yeohun?category=34271671"]:hover {
+    filter: grayscale(100%);
+}
+
+
+
 /* 게시글 목록 */
 .frame>.frame, #article-list {
     background: #151515;
