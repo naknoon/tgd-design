@@ -368,6 +368,27 @@ span.a-badge i.fa.fa-info-circle {
 	transform: scaleX(1);
 }
 
+/* CSS 카테고리 분리 후 커스텀 */
+#article-list > #article-list-category > a[href="/y_yeohun?category=34271671"] {
+	background: url(https://cdn.discordapp.com/attachments/610065145858621461/658240268637700096/CSS_.png) no-repeat !important ;
+    position: absolute;
+	left: 874.6px;
+    top: -2px;
+    width: 104px;
+    height: 104px;
+    font-size: 0px;
+}
+
+#article-list > #article-list-category > a[href="/y_yeohun?category=34271671"]:hover {
+	background: url(https://cdn.discordapp.com/attachments/610065145858621461/658240270139129897/CSS_.png) no-repeat !important;
+}
+
+#article-list #article-list-category>a[href="/y_yeohun?category=34271671"]::before,
+#article-list #article-list-category>a[href="/y_yeohun?category=34271671"]::after {
+	background: none;
+}
+
+
 /* 게시글 */
 #article-list>.article-list-row {
 	border: none;
