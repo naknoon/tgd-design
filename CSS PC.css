@@ -709,3 +709,15 @@ span#viewers,
 input[type='text'] {
  	cursor: url(https://cdn.discordapp.com/attachments/610065145858621461/610066843218214912/79471197b5e115b6.png) 0 0, auto !important;
 }
+
+/* 스트리머 뱃지 최신화 */
+img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
+    content: url(https://cdn.discordapp.com/attachments/610065145858621461/658326998728572931/9484242334512b5d.png);
+    width: 18px;
+}
+
+/* 진은검 뱃지 투톤 커스텀 */
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+    content: url(https://cdn.discordapp.com/attachments/610065145858621461/658939146206838814/2.png);
+    width: 18px;
+}
