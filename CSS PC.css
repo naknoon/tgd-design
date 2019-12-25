@@ -38,8 +38,7 @@ a:focus {
 	font-style: normal; 
 }
 
-/* (본문용) 나눔고딕 폰트 임포트  */
-/* 현재는 설정 페이지에 선 @import 되어 있음 */
+/* (본문용) 나눔고딕 폰트 임포트 : 트게더 설정 페이지에 임포트됨  */
 
 /* 폰트 패밀리로 사이트 전체 폰트 적용 */
 * { 
@@ -383,8 +382,8 @@ span.a-badge i.fa.fa-info-circle {
 	background: url(https://cdn.discordapp.com/attachments/610065145858621461/658246768361865216/CSS_.png) no-repeat !important;
 }
 
-#article-list #article-list-category>a[href="/y_yeohun?category=34280854"]::before,
-#article-list #article-list-category>a[href="/y_yeohun?category=34280854"]::after {
+#article-list #article-list-category > a[href="/y_yeohun?category=34280854"]::before,
+#article-list #article-list-category > a[href="/y_yeohun?category=34280854"]::after {
 	background: none;
 }
 
