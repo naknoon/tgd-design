@@ -17,17 +17,17 @@
 
 html {
 	background: var(--bgColor);
-  height: auto;
+  	height: auto;
 }
 
 body {
-  background: transparent;
+  	background: transparent;
 }
 
 a,
 a:hover,
 a:focus {
- color: var(--mainColor);
+ 	color: var(--mainColor);
 }
 
 /* (제목용) 고양일산체 폰트 임포트 */
@@ -140,7 +140,11 @@ header #right-search-form>input[type='text']:focus {
 	transition: 0.2s;
 }
 
-/* 검색 버튼 */
+/* 상단 검색 창 */
+header #right-search-form>input[type=text] {
+	background: #fff;
+}
+
 header #right-search-form>#right-search-btn {
 	color: var(--mainColor);
 	transition: 0.2s;
@@ -158,6 +162,7 @@ header #header-bar {
 }
 
 header #header-bar>.row {
+	background: #fff;
 	border: 2px solid var(--mainColor);
 }
 
@@ -213,6 +218,10 @@ span.a-badge i.fa.fa-info-circle {
 #main .menu-wrapper>a>em,
 #main .menu-wrapper>a>i.fa.fa-square {
 	color: var(--mainColor);
+}
+
+#main .menu-wrapper>a {
+	background: #fff;
 }
 
 /* 게시글 프레임 */
@@ -362,12 +371,18 @@ span.a-badge i.fa.fa-info-circle {
 	transition: 0.3s;
 }
 
+#article-list #article-list-category > a.active, 
+#article-list #article-list-category > a:hover {
+	background: #fff;
+}
+
+
 #article-list #article-list-category>a:hover::before,
 #article-list #article-list-category>a:hover::after {
 	transform: scaleX(1);
 }
 
-/* CSS 카테고리 분리 후 커스텀 */
+/* CSS 카테고리 커스텀 */
 #article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] {
 	background: url(https://cdn.discordapp.com/attachments/610065145858621461/658246766734475294/CSS_.png) no-repeat !important ;
     position: absolute;
@@ -385,6 +400,11 @@ span.a-badge i.fa.fa-info-circle {
 #article-list #article-list-category > a[href="/y_yeohun?category=34280854"]::before,
 #article-list #article-list-category > a[href="/y_yeohun?category=34280854"]::after {
 	background: none;
+}
+
+#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"],
+#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] :hover {
+    filter: none;
 }
 
 
@@ -452,6 +472,7 @@ span.a-badge i.fa.fa-info-circle {
 
 /* 게시글 검색 창 */
 #article-list #boardSearchForm .form-control {
+	background: #fff;
 	border-color: var(--mainColor);
 }
 
@@ -664,11 +685,12 @@ span.a-badge i.fa.fa-info-circle {
 
 #movetotop {
 	display: inline-block;
-	opacity:1;
-	background:url(https://cdn.discordapp.com/attachments/610065145858621461/610066918648578058/9fed5b52b8584c5e.png);
+	opacity: 1;
+	background: url(https://cdn.discordapp.com/attachments/610065145858621461/610066918648578058/9fed5b52b8584c5e.png);
 	width: 80px;
 	height: 80px;
 	background-size: contain;
+	filter: none;
 }
 
 
