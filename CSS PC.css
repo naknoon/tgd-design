@@ -133,7 +133,7 @@ header .row>div:nth-child(1) > a > img {
 	width: 225px
 }
 
-#right-search-form > #right-search-btn > i {
+#right-search-form > #right-search-btn>i {
 	position: relative;
 	z-index : 2;
 	width: 35px;
@@ -147,7 +147,7 @@ header .row>div:nth-child(1) > a > img {
 	align-items: center;
 }
 
-#right-search-form > #right-search-btn > i :hover {
+#right-search-form > #right-search-btn>i:hover {
   border-left: none;
   padding: 0 0 0 2px;
   background: #fff;
@@ -155,7 +155,7 @@ header .row>div:nth-child(1) > a > img {
   transition: background 0.3s;
 }
 
-#right-search-btn > i :hover :before {
+#right-search-btn > i:hover:before {
 	content: "\f00c";
 }
 
@@ -169,11 +169,10 @@ header .row>div:nth-child(1) > a > img {
 	border: 2px solid #485679;
 	background: #fff;
 	transition: all 0.3s;
-	
 }
 
-#right-search-form :hover > #right-search-input,
-#right-search-form > #right-search-input :focus {
+#right-search-form:hover > #right-search-input,
+#right-search-form > #right-search-input:focus {
 	width: 180px;
 	height: 35px;
 	left: 10px;
