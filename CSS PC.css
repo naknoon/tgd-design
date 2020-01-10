@@ -1,19 +1,27 @@
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ CSS 기본 설정 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 :root {
-	--bgColor: #EAEFF7;   /* 배경 색 */
-	--mainColor: #44577C;   /* 메인 컬러 */
-	--mainColor5: #F4F6F8; /* 공지, 인기글 hover */
-	--mainColor3: #D8DDE8; /* 공지 컬러 (현재 인기글은 다른 색상으로 조정됨) */
-	--mainColor2: #F7F7F7; /* 트게더 메뉴, 일반 게시글 hover */
-	--logoURL: url(https://cdn.discordapp.com/attachments/610065145858621461/610066711047045121/N_PC.png); /* 로고 임포트 */
-	--logoWidth: 200px;	 /* 로고 너비 */
-	--before: "하늘에 늑대별 "; /* 접속자 수 앞 문구 */
-	--after: "개";  /* 접속자 수 뒤 문구 */
-	--bannerurl: url(https://cdn.discordapp.com/attachments/659060204247318528/661575096711905284/b1eac53a94f1cc81.png); /*배너 주소 임포트*/
+	/* 색상 */
+		--bgColor: #EAEFF7;     /* 배경 */
+		--mainColor: #44577C;   /* 메인 */
+		--mainColor2: #F7F7F7;  /* 트게더 메뉴 · 일반글 hover */
+		--mainColor3: #D8DDE8;  /* 공지 */
+		--mainColor4: #E7EBF1;  /* 인기글 */
+		--mainColor5: #F4F6F8;  /* 고정글 hover */
+
+	/* URL */
+		--logoURL: url(https://cdn.discordapp.com/attachments/610065145858621461/610066711047045121/N_PC.png); /* 로고 */
+		--bannerurl: url(https://cdn.discordapp.com/attachments/659060204247318528/661575096711905284/b1eac53a94f1cc81.png); /* 배너 */
+	
+	/* 기타 설정 */	
+		--logoWidth: 200px; /* 로고 판정 너비 */
+		--before: "하늘에 늑대별 ";
+		--after: "개";
 }
 
-/* 모든 항목 focus시 아웃라인 제거 */
-*:focus { outline: none !important; }
+/* focus 아웃라인 제거 */
+*:focus { 
+	outline: none !important; 
+}
 
 html {
 	background: var(--bgColor);
@@ -120,32 +128,58 @@ header .row>div:nth-child(1) > a > img {
 	display: none;
 }
 
-/* 검색 창 */
-header #right-search-form>input[type='text'] {
-	border: 2px solid var(--mainColor);
-	transition: 0.2s;
-}
-
-header #right-search-form>input[type='text']:hover,
-header #right-search-form>input[type='text']:focus {
-	transform: scale(1.05);
-	transition: 0.2s;
-}
-
 /* 상단 검색 창 */
-header #right-search-form>input[type=text] {
+#right-search-form {
+	width: 225px
+}
+
+#right-search-form > #right-search-btn > i {
+	position: relative;
+	z-index : 2;
+	width: 35px;
+	height: 35px;
+	color: #fff;
+	background: #485679;
+	border: 2px solid #485679;
+	margin : 0 -6px 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#right-search-form > #right-search-btn > i :hover {
+  border-left: none;
+  padding: 0 0 0 2px;
+  background: #fff;
+  color: #485679;
+  transition: background 0.3s;
+}
+
+#right-search-btn > i :hover :before {
+	content: "\f00c";
+}
+
+#right-search-form > #right-search-input {
+	z-index: 1;
+	top: -2px;
+	left: 34px;	
+	padding: 10px;	
+	width: 0px;
+	height: 35px;
+	border: 2px solid #485679;
 	background: #fff;
+	transition: all 0.3s;
+	
 }
 
-header #right-search-form>#right-search-btn {
-	color: var(--mainColor);
-	transition: 0.2s;
-}
-
-header #right-search-form>#right-search-btn:hover,
-header #right-search-form>#right-search-btn:focus {
-	transform: scale(1.25);
-	transition: 0.2s;
+#right-search-form :hover > #right-search-input,
+#right-search-form > #right-search-input :focus {
+	width: 180px;
+	height: 35px;
+	left: 10px;
+	background: #fff;
+	border: 2px solid #485679;
+	border-right: none;
 }
 
 /* 상단바 */
@@ -430,7 +464,7 @@ span.a-badge i.fa.fa-info-circle {
 
 /* 인기글 색상 조정 */
 #article-list>.article-list-row.hot {
-	background-color: #E7EBF1;
+	background-color: var(--mainColor4);
 }
 
 #article-list>.article-list-row.hot:hover,
