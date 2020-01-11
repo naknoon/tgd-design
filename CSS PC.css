@@ -18,7 +18,7 @@
 		--after: "개";
 }
 
-/* focus 아웃라인 제거 */ rksmekfksanfqkddnf
+/* focus 아웃라인 제거 */
 *:focus { 
 	outline: none !important; 
 }
