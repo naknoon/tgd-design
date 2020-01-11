@@ -9,7 +9,7 @@
 		--mainColor5: #F4F6F8;  /* 고정글 hover */
 
 	/* URL */
-		--logoURL: url(https://cdn.discordapp.com/attachments/610065145858621461/610066711047045121/N_PC.png); /* 로고 */
+		--logoURL: url(https://cdn.discordapp.com/attachments/659060062223990812/659071395443245067/N_PC.png); /* 로고 */
 		--bannerurl: url(https://cdn.discordapp.com/attachments/659060204247318528/661575096711905284/b1eac53a94f1cc81.png); /* 배너 */
 	
 	/* 기타 설정 */	
@@ -18,7 +18,7 @@
 		--after: "개";
 }
 
-/* focus 아웃라인 제거 */
+/* focus 아웃라인 제거 */ rksmekfksanfqkddnf
 *:focus { 
 	outline: none !important; 
 }
@@ -43,7 +43,7 @@ a:focus {
 /* (제목용) 고양일산체 폰트 임포트 */
 @font-face { 
 	font-family: 'GoyangIlsan'; 
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff'); 
+	src: url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff) format('woff'); 
 	font-weight: normal; 
 	font-style: normal; 
 }
@@ -62,8 +62,8 @@ body {
  background: transparent;
  animation: snow 20s linear infinite;
  background-image: /* 백그라운드 애니메이션 소스 임포트 */
-  url('https://cdn.discordapp.com/attachments/610065145858621461/610066913372012574/Star1.png'), 
-  url("https://cdn.discordapp.com/attachments/610065145858621461/610066914752069642/star2.png");
+  url(https://cdn.discordapp.com/attachments/659060358019022868/659072152523374592/Star1.png), 
+  url(https://cdn.discordapp.com/attachments/659060358019022868/659072155031568422/star2.png);
  }
  
 @keyframes snow {
@@ -420,7 +420,7 @@ span.a-badge i.fa.fa-info-circle {
 
 /* CSS 카테고리 커스텀 */
 #article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] {
-	background: url(https://cdn.discordapp.com/attachments/610065145858621461/658246766734475294/CSS_.png) no-repeat !important ;
+	background: url(https://cdn.discordapp.com/attachments/659060387718758401/659072090716110851/CSS_.png) no-repeat !important ;
     position: absolute;
 	left: 874.6px;
     top: -2px;
@@ -430,7 +430,7 @@ span.a-badge i.fa.fa-info-circle {
 }
 
 #article-list > #article-list-category > a[href="/y_yeohun?category=34280854"]:hover {
-	background: url(https://cdn.discordapp.com/attachments/610065145858621461/658246768361865216/CSS_.png) no-repeat !important;
+	background: url(https://cdn.discordapp.com/attachments/659060387718758401/659072099696246794/CSS_.png) no-repeat !important;
 }
 
 #article-list #article-list-category > a[href="/y_yeohun?category=34280854"]::before,
@@ -726,7 +726,7 @@ span.a-badge i.fa.fa-info-circle {
 #movetotop {
 	display: inline-block;
 	opacity: 1;
-	background: url(https://cdn.discordapp.com/attachments/610065145858621461/610066918648578058/9fed5b52b8584c5e.png);
+	background: url(https://cdn.discordapp.com/attachments/659060358019022868/659072267707351042/494a2744e5d51a3e.png);
 	width: 80px;
 	height: 80px;
 	background-size: contain;
@@ -744,7 +744,7 @@ select.form-control,
 input[type=checkbox],
 input[type=radio],
 .opt {
-	cursor: url(https://cdn.discordapp.com/attachments/610065145858621461/610066844363128832/267402bab292c77b.png) 0 0, auto !important;
+	cursor: url(https://cdn.discordapp.com/attachments/659060387718758401/659071939951984650/ecd68164a5c930bc.png) 0 0, auto !important;
 }
 
 /* 마우스포인터 선택(빨강) */
@@ -761,7 +761,7 @@ input[type=radio],
 .pull-left,
 
 a {
- 	cursor: url(https://cdn.discordapp.com/attachments/610065145858621461/610066839732617216/89b42b23a200cc9d.png) 0 0, auto !important;
+ 	cursor: url(https://cdn.discordapp.com/attachments/659060387718758401/659071937632534568/1e30bf1bd2b97d17.png) 0 0, auto !important;
 }
 
 /* 마우스포인터 텍스트(초록) */
@@ -770,14 +770,14 @@ span#viewers,
 .fr-view,
 .fr-box.fr-basic.fr-element,
 input[type='text'] {
- 	cursor: url(https://cdn.discordapp.com/attachments/610065145858621461/610066843218214912/79471197b5e115b6.png) 0 0, auto !important;
+ 	cursor: url(https://cdn.discordapp.com/attachments/659060387718758401/659071938739568660/360893cb8a6fdc61.png) 0 0, auto !important;
 }
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 뱃지 커스텀 Badge badge ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 /* 스트리머 뱃지 최신화 */
 img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
-    content: url(https://cdn.discordapp.com/attachments/610065145858621461/658326998728572931/9484242334512b5d.png);
+    content: url(https://cdn.discordapp.com/attachments/659060387718758401/659072017730895872/5cac1e58f43fe514.png);
     width: 18px;
 }
 
