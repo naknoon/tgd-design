@@ -650,6 +650,24 @@ span.a-badge i.fa.fa-info-circle {
 	transition: 0.2s;
 }
 
+/* 글쓰기 창 아이콘 */
+a.custom-badge-link {
+    border: 2px solid transparent;
+    padding: 0px 4.3px 1px 4.5px;
+    margin: 0 3px;
+}
+
+a.custom-badge-link.active {
+    border-color: #485679;
+    background: #485679;
+}
+
+a.custom-badge-link:hover {
+    background: transparent;
+    border: 2px solid #485679;
+    transition: 0.4s;
+}
+
 /* 드롭다운 매뉴 */
 .dropdown.open .dropdown-menu,
 .input-group-btn.open .dropdown-menu {
