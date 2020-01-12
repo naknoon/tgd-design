@@ -139,8 +139,8 @@ header .row>div:nth-child(1) > a > img {
 	width: 35px;
 	height: 35px;
 	color: #fff;
-	background: #485679;
-	border: 2px solid #485679;
+	background: var(--mainColor);
+	border: 2px solid var(--mainColor);
 	margin : 0 -6px 0 0;
 	display: flex;
 	justify-content: center;
@@ -151,7 +151,7 @@ header .row>div:nth-child(1) > a > img {
   border-left: none;
   padding: 0 0 0 2px;
   background: #fff;
-  color: #485679;
+  color: var(--mainColor);
   transition: background 0.3s;
 }
 
@@ -166,7 +166,7 @@ header .row>div:nth-child(1) > a > img {
 	padding: 10px;	
 	width: 0px;
 	height: 35px;
-	border: 2px solid #485679;
+	border: 2px solid var(--mainColor);
 	background: #fff;
 	transition: all 0.3s;
 }
@@ -177,7 +177,7 @@ header .row>div:nth-child(1) > a > img {
 	height: 35px;
 	left: 10px;
 	background: #fff;
-	border: 2px solid #485679;
+	border: 2px solid var(--mainColor);
 	border-right: none;
 }
 
@@ -253,7 +253,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 /* 측면 광고 영역 */
 #main-menu > div:nth-child(2) {
-	border: 2px solid #485679;
+	border: 2px solid var(--mainColor);
     width: 180px; /* 어긋나는 +2px 조정 */
 }
 
@@ -381,7 +381,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #article-list>.article-list-row.notice>.item>.list-header>b:after{
 	font-family: 'fontawesome';
 	font-size: 14px;
-	color: #485679;
+	color: var(--mainColor);
 	content: '\f08d';
 }
 
@@ -414,8 +414,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
     height: 18px;
 	position: absolute;
 	left: -676px;
-	background: #485679;
-    border: 2px solid #485679;
+	background: var(--mainColor);
+    border: 2px solid var(--mainColor);
 }
 
 /* 공지글 작성시각 텍스트 추가 */
@@ -726,13 +726,13 @@ a.custom-badge-link {
 }
 
 a.custom-badge-link.active {
-    border-color: #485679;
-    background: #485679;
+    border-color: var(--mainColor);
+    background: var(--mainColor);
 }
 
 a.custom-badge-link:hover {
     background: transparent;
-    border: 2px solid #485679;
+    border: 2px solid var(--mainColor);
     transition: 0.4s;
 }
 
