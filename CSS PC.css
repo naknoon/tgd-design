@@ -352,8 +352,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 /* 공지글 댓글 수 · 작성자 · ⓘ 아이콘 삭제*/
 #article-list>.article-list-row.notice>.item>.list-title>small.comment-count,
-#article-list>.article-list-row.notice>.item>.list-title>.list-writer,
-#article-list>.article-list-row.notice>.item>.list-title>span.a-badge {
+#article-list>.article-list-row.notice>.item>.list-title>.list-writer
+/*#article-list>.article-list-row.notice>.item>.list-title>span.a-badge*/ {
     display: none;
 }
 
@@ -366,6 +366,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #article-list>.article-list-row.notice>.item>.list-time {
     border-bottom: none;
 }
+
 /* 공지글 높이 축소 */
 #article-list>.article-list-row.notice>.item>.list-title {
     padding: 5px 0;  
@@ -387,8 +388,29 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 /* 공지글 제목 여백 추가 */
 #article-list>.article-list-row.notice>.item>.list-title>a {
-	margin: 0 0 0 41px;
+	margin: 0 0 0 3px;
 }
+
+#article-list>.article-list-row.notice>div>div.list-title>span>i {
+	width: 50px;
+	margin: 0 7px;
+}
+#article-list>.article-list-row.notice>div>div.list-title>span>i:before{
+	content: "공지";
+	font-family: 'nanumgothic';
+	font-size: 13px;
+	line-height: 18px;
+	color: #fff;
+	position: relative;
+	background: var(--mainColor);
+	border: 2px solid var(--mainColor);
+	padding: 0 3px;
+}
+
+#article-list>.article-list-row.notice>div>div.list-title>span.a-badge {
+	width: 50px;
+}
+
 
 /* 공지글 작성 시각 커스텀 */
 #article-list>.article-list-row.notice>.item>.list-time {
@@ -406,7 +428,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 
 /* 공지글 제목 텍스트 추가 */
-#article-list>.article-list-row.notice>.item>.list-time:before {
+/* #article-list>.article-list-row.notice>.item>.list-time:before {
 	content: "공지";
 	font-size: 13px;
 	line-height: 15px;
@@ -416,7 +438,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	left: -676px;
 	background: var(--mainColor);
     border: 2px solid var(--mainColor);
-}
+} */
 
 /* 공지글 작성시각 텍스트 추가 */
 #article-list>.article-list-row.notice>.item>.list-time:after {
