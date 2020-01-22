@@ -10,7 +10,8 @@
 
 	/* URL */
 		--logoURL: url(https://cdn.discordapp.com/attachments/659060062223990812/659071395443245067/N_PC.png); /* 로고 */
-		--bannerurl: url(https://cdn.discordapp.com/attachments/659060204247318528/661575096711905284/b1eac53a94f1cc81.png); /* 배너 */
+		--bannerurl: url(https://cdn.discordapp.com/attachments/659060204247318528/661575096711905284/b1eac53a94f1cc81.png); /* 상단 배너 */
+		--bannerurl2: url(https://cdn.discordapp.com/attachments/659060204247318528/669545388113395712/2.png) /* 보드 배너 */
 	
 	/* 기타 설정 */	
 		--logoWidth: 200px; /* 로고 판정 너비 */
@@ -340,6 +341,94 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 /* 접속자 수 이미지 변경 (별 모양) */
 .fa-user:before {
   content: "\f005";
+}
+
+/* ㅡㅡㅡㅡㅡ 보드 영역 커스텀 테스트 (코드 통합 전) ㅡㅡㅡㅡㅡ */
+
+#board-info {
+    width: 470px;
+    padding: 0.7em;
+}
+
+#board-info #board-info-bottom a {
+    font-size: 0px;
+}
+
+#addFavoriteBtn > i,
+#goClipBtn > i,
+#board-info-bottom > a:nth-child(2) > i,
+#board-info-bottom > a:nth-child(3) > i,
+#board-info-bottom > a:nth-child(4) > i {
+	font-size: 17px;
+}
+
+#board-info-bottom {
+	transform: translateX(3px) translateY(0px);
+}
+
+#addFavoriteBtn > i:hover:after,
+#goClipBtn > i:hover:after,
+#board-info-bottom > a:nth-child(2) > i:hover:after,
+#board-info-bottom > a:nth-child(3) > i:hover:after,
+#board-info-bottom > a:nth-child(4) > i:hover:after {
+	width: 150px;
+	height: 20px;
+	font-size: 15px;
+	font-family: 'GoyangIlsan';
+	position: absolute;
+	top: 2px;
+	color: #000;
+	text-align: center;
+}
+
+/*
+#addFavoriteBtn > i:hover:after {
+	content: "즐겨찾기";
+}
+
+#goClipBtn > i:hover:after {
+	content: "클립";
+}
+
+#board-info-bottom > a:nth-child(2) > i:hover:after{
+	content: "소개";
+}
+
+#board-info-bottom > a:nth-child(3) > i:hover:after{
+	content: "트위치";
+}
+
+#board-info-bottom > a:nth-child(4) > i:hover:after {
+	content: "스케줄";
+
+} */
+
+#board-info:after {
+	content:"";
+	width: 400px;
+	height: 93.59px;
+	background: var(--bannerurl2) no-repeat;
+	border: 2px solid #485679;
+	position: absolute;
+	background-position: center center;
+	transform: translateX(21px) translateY(-12px);
+}
+
+#board-info>img#board-info-profile-img {
+    width: 70px;
+}
+
+#board-info h1 {
+    margin-top: 4px;
+}
+
+#board-info>img#board-info-profile-img:hover {
+    border-radius: 50px;
+	transform: scale(1.07)
+}
+
+#board-info h1 {
+    width: calc(100% - 85px);
 }
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 아티클 Article article ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
