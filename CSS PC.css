@@ -419,7 +419,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	width: 400px;
 	height: 93.59px;
 	background: var(--bannerurl2) no-repeat;
-	border: 2px solid #485679;
+	border: 2px solid var(--mainColor);
 	position: absolute;
 	background-position: center center;
 	transform: translateX(21px) translateY(-12px);
