@@ -343,6 +343,17 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
   content: "\f005";
 }
 
+/* 라이브 표시 커스텀 */
+#board-info h1>a.badge.badge-live {
+	font-size: 0px;
+}
+
+#board-info h1>a.badge.badge-live:after {
+	content: "● 방송 중";
+	font-size: 13px;
+    color: #fff;
+}
+
 /* ㅡㅡㅡㅡㅡ 프로필바 배너 테스트 (코드 통합 및 정리 전) ㅡㅡㅡㅡㅡ */
 
 #board-info {
