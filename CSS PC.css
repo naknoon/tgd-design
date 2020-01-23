@@ -11,7 +11,7 @@
 	/* URL */
 		--logoURL: url(https://cdn.discordapp.com/attachments/659060062223990812/659071395443245067/N_PC.png); /* 로고 */
 		--bannerurl: url(https://cdn.discordapp.com/attachments/659060204247318528/661575096711905284/b1eac53a94f1cc81.png); /* 상단 배너 */
-		--bannerurl2: url(https://cdn.discordapp.com/attachments/659060204247318528/669545388113395712/2.png); /* 보드 배너 */
+		--bannerurl2: url(https://cdn.discordapp.com/attachments/659060204247318528/669545388113395712/2.png); /* 프로필바 배너 */
 	
 	/* 기타 설정 */	
 		--logoWidth: 200px; /* 로고 판정 너비 */
@@ -343,7 +343,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
   content: "\f005";
 }
 
-/* ㅡㅡㅡㅡㅡ 보드 영역 커스텀 테스트 (코드 통합 전) ㅡㅡㅡㅡㅡ */
+/* ㅡㅡㅡㅡㅡ 프로필바 배너 테스트 (코드 통합 및 정리 전) ㅡㅡㅡㅡㅡ */
 
 #board-info {
     width: 470px;
@@ -461,9 +461,11 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
     padding: 5px 0;  
 }
 
-/* 공지글 '공지' 텍스트 대체 */
-#article-list>.article-list-row.notice>.item>.list-header>strong, 
-#article-list>.article-list-row.notice>.item>.list-header>b {
+/* 공지 · 인기글 텍스트 대체 */
+#article-list>.article-list-row.notice>.item>.list-header>strong,
+#article-list>.article-list-row.hot>.item>.list-header>strong,
+#article-list>.article-list-row.notice>.item>.list-header>b,
+#article-list>.article-list-row.hot>.item>.list-header>b {
     font-size: 0px;
 }
 
@@ -475,6 +477,13 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	content: '\f08d';
 }
 
+#article-list>.article-list-row>.item>.list-header>b:after {
+	font-family: 'fontawesome';
+	font-size: 13px;
+	color: var(--mainColor);
+	content: '\f005';
+}
+
 /* 공지글 제목 여백 추가 */
 #article-list>.article-list-row.notice>.item>.list-title>a {
 	margin: 0 0 0 3px;
@@ -484,6 +493,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	width: 50px;
 	margin: 0 7px;
 }
+
+/* 공지글 '공지' 말머리 */
 #article-list>.article-list-row.notice>div>div.list-title>span>i:before{
 	content: "공지";
 	font-family: 'nanumgothic';
@@ -500,7 +511,6 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	width: 50px;
 }
 
-
 /* 공지글 작성 시각 커스텀 */
 #article-list>.article-list-row.notice>.item>.list-time {
 	float: right;
@@ -516,20 +526,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
     line-height: 20px;
 }
 
-/* 공지글 제목 텍스트 추가 */
-/* #article-list>.article-list-row.notice>.item>.list-time:before {
-	content: "공지";
-	font-size: 13px;
-	line-height: 15px;
-    width: 35px;
-    height: 18px;
-	position: absolute;
-	left: -676px;
-	background: var(--mainColor);
-    border: 2px solid var(--mainColor);
-} */
-
-/* 공지글 작성시각 텍스트 추가 */
+/* 공지글 작성 시각 텍스트 */
 #article-list>.article-list-row.notice>.item>.list-time:after {
     content: "게시됨";
 }
@@ -681,13 +678,20 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	color: var(--mainColor);
 }
 
-/* 로그인한 게시글 작성자 */
-#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-	color: var(--mainColor);
+/* 반응형 작성자 영역 */
+#article-list>.article-list-row>.item>.list-title>.list-writer {
+    padding: 0 16px;
+    border-left: none;
 }
 
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
+	width: fit-content !important; /* 길이 반응형 */
 	height: 18px;
+}
+
+/* 로그인한 게시글 작성자 */
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+	color: var(--mainColor);
 }
 
 /* 닉네임 옆 뱃지 잘리는 현상 수정 */
@@ -700,6 +704,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	background: #fff;
 	border-color: var(--mainColor);
 }
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 아티클 본문 ArticleContent articlecontent ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 /* 게시글 본문 */
 #article-info {
@@ -852,7 +858,7 @@ a.custom-badge-link:hover {
     transition: 0.4s;
 }
 
-/* 드롭다운 매뉴 */
+/* 드롭다운 메뉴 */
 .dropdown.open .dropdown-menu,
 .input-group-btn.open .dropdown-menu {
 	opacity: unset;
