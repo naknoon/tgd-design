@@ -267,19 +267,20 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 보드 Board board ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 #board-info {
-	margin: 0;
+	width: 470px;
 	height: auto;
+    padding: 0.7em;
+	margin: 0;
+	margin-bottom: 0.5em;
 	background: white;
 	border: 2px solid var(--mainColor);
-	margin-bottom: 0.5em;
-	padding: 0.7em
 }
 
 #board-info h1 {
-	margin-top: 12px;
 	font-size: 28px;
 	border-bottom: 2px solid var(--mainColor);
-	width: calc(100% - 100px); /* 스트리머 게시판 적용시 */
+	margin-top: 4px;
+	width: calc(100% - 85px);
 }
 
 #board-info h1>a {
@@ -295,11 +296,24 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 #board-info #board-info-bottom a {
 	color: var(--mainColor);
-	font-size: 14px;
+	font-size: 0px;
 }
 
 #board-info > #board-info-bottom {
 	margin-top: 5.5px;
+}
+
+/* 프로필바 버튼 커스텀 */
+#addFavoriteBtn > i,
+#goClipBtn > i,
+#board-info-bottom > a:nth-child(2) > i,
+#board-info-bottom > a:nth-child(3) > i,
+#board-info-bottom > a:nth-child(4) > i {
+	font-size: 17px;
+}
+
+#board-info-bottom {
+	transform: translateX(3px) translateY(0px);
 }
 
 /* 프로필 이미지 좌측으로 정렬 */
@@ -311,15 +325,16 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 /* 프로필 이미지 사이즈 조정 */
 #board-info>img#board-info-profile-img {
-  width: 80px;
+	width: 70px;
 	margin-right: 10px;
 	border: 2px solid var(--mainColor);
-  border-radius: 0;
+  	border-radius: 0;
 	transition: 0.2s;
 }
 
 #board-info>img#board-info-profile-img:hover {
-	transform: scale(1.1);
+	border-radius: 50px;
+	transform: scale(1.07);
 }
 
 /* 접속자 수 사이드 문구 */
@@ -354,66 +369,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
     color: #fff;
 }
 
-/* ㅡㅡㅡㅡㅡ 프로필바 배너 테스트 (코드 통합 및 정리 전) ㅡㅡㅡㅡㅡ */
-
-#board-info {
-    width: 470px;
-    padding: 0.7em;
-}
-
-#board-info #board-info-bottom a {
-    font-size: 0px;
-}
-
-#addFavoriteBtn > i,
-#goClipBtn > i,
-#board-info-bottom > a:nth-child(2) > i,
-#board-info-bottom > a:nth-child(3) > i,
-#board-info-bottom > a:nth-child(4) > i {
-	font-size: 17px;
-}
-
-#board-info-bottom {
-	transform: translateX(3px) translateY(0px);
-}
-
-#addFavoriteBtn > i:hover:after,
-#goClipBtn > i:hover:after,
-#board-info-bottom > a:nth-child(2) > i:hover:after,
-#board-info-bottom > a:nth-child(3) > i:hover:after,
-#board-info-bottom > a:nth-child(4) > i:hover:after {
-	width: 150px;
-	height: 20px;
-	font-size: 15px;
-	font-family: 'GoyangIlsan';
-	position: absolute;
-	top: 2px;
-	color: #000;
-	text-align: center;
-}
-
-/*
-#addFavoriteBtn > i:hover:after {
-	content: "즐겨찾기";
-}
-
-#goClipBtn > i:hover:after {
-	content: "클립";
-}
-
-#board-info-bottom > a:nth-child(2) > i:hover:after{
-	content: "소개";
-}
-
-#board-info-bottom > a:nth-child(3) > i:hover:after{
-	content: "트위치";
-}
-
-#board-info-bottom > a:nth-child(4) > i:hover:after {
-	content: "스케줄";
-
-} */
-
+/* 프로필바 광고 */
 #board-info:after {
 	content:"";
 	width: 400px;
@@ -423,23 +379,6 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	position: absolute;
 	background-position: center center;
 	transform: translateX(21px) translateY(-12px);
-}
-
-#board-info>img#board-info-profile-img {
-    width: 70px;
-}
-
-#board-info h1 {
-    margin-top: 4px;
-}
-
-#board-info>img#board-info-profile-img:hover {
-    border-radius: 50px;
-	transform: scale(1.07)
-}
-
-#board-info h1 {
-    width: calc(100% - 85px);
 }
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 아티클 Article article ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
@@ -452,8 +391,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 /* 공지글 댓글 수 · 작성자 · ⓘ 아이콘 삭제*/
 #article-list>.article-list-row.notice>.item>.list-title>small.comment-count,
-#article-list>.article-list-row.notice>.item>.list-title>.list-writer
-/*#article-list>.article-list-row.notice>.item>.list-title>span.a-badge*/ {
+#article-list>.article-list-row.notice>.item>.list-title>.list-writer {
     display: none;
 }
 
@@ -852,7 +790,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	transition: 0.2s;
 }
 
-/* 글쓰기 창 아이콘 */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 글쓰기 영역 Writeform writeform ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* 글쓰기 창 뱃지 선택 영역 */
 a.custom-badge-link {
     border: 2px solid transparent;
     padding: 0px 4.3px 1px 4.5px;
@@ -870,6 +809,55 @@ a.custom-badge-link:hover {
     transition: 0.4s;
 }
 
+/* 이미지 업로드 영역 */
+#image-upload-btn {
+	border: 1px solid transparent !important;
+}
+
+#image-upload-btn:hover {
+	border-right: 1px solid #485679 !important;
+}
+
+#dropZone {
+    padding: 0 0;
+    margin-top: 7px;
+    border: 1px solid #485679;
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+#image-upload-loading {
+    margin: 7px 0px 0;
+    border: 1px solid #31708f;
+}
+
+#dropZone > span {
+	margin-left: -7px;
+	line-height: 28px;
+}
+
+/* 글쓰기 영역 하단 여백 조정 */
+#articleWriteForm > div.mt-2.clearfix {
+	margin-top: 135px !important;
+}
+
+/* 글 제목 컬러 코드 영역 조정 */
+#title_color > input {
+	width: 75px
+}
+
+#articleWriteForm > div:nth-child(5) > label:nth-child(3) {
+	margin-left: 15px;
+}
+
+/* 작성취소 아이콘 추가 */
+#articleWriteForm > div.mt-2.clearfix > a:before {
+	font-family: "FontAwesome";
+	content: "\f1f8  ";
+	font-size: 14px;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 버튼 및 드롭다운 Button&Dropdown button&dropdown ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 /* 드롭다운 메뉴 */
 .dropdown.open .dropdown-menu,
 .input-group-btn.open .dropdown-menu {
@@ -1006,4 +994,3 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     content: url(https://cdn.discordapp.com/attachments/659060387718758401/666644717219348480/1.5.png);
     width: 18px;
 }
-
