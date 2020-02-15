@@ -369,10 +369,10 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
     color: #fff;
 }
 
-/* 프로필바 광고 */
+/* 프로필바 배너 */
 #board-info:after {
 	content:"";
-	width: 400px;
+	width: 402px;
 	height: 93.59px;
 	background: var(--bannerurl2) no-repeat;
 	border: 2px solid var(--mainColor);
