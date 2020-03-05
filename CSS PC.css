@@ -818,13 +818,13 @@ a.custom-badge-link:hover {
 }
 
 #image-upload-btn:hover {
-	border-right: 1px solid #485679 !important;
+	border-right: 1px solid var(--mainColor) !important;
 }
 
 #dropZone {
     padding: 0 0;
     margin-top: 7px;
-    border: 1px solid #485679;
+    border: 1px solid var(--mainColor);
     background: #fff;
     margin-bottom: 40px;
 }
@@ -997,3 +997,5 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     content: url(https://cdn.discordapp.com/attachments/659060387718758401/666644717219348480/1.5.png);
     width: 18px;
 }
+
+(여기에 붙여넣기)
