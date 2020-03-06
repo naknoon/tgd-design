@@ -27,6 +27,7 @@
 	outline: none !important; 
 }
 
+/* 배경색 */
 html {
 	background: var(--bgColor);
   	height: auto;
@@ -794,6 +795,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 글쓰기 영역 Writeform writeform ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
 /* 글쓰기 창 뱃지 선택 영역 */
 a.custom-badge-link {
     border: 2px solid transparent;
@@ -861,6 +863,7 @@ a.custom-badge-link:hover {
 }
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 버튼 및 드롭다운 Button&Dropdown button&dropdown ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
 /* 드롭다운 메뉴 */
 .dropdown.open .dropdown-menu,
 .input-group-btn.open .dropdown-menu {
