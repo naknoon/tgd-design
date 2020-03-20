@@ -387,6 +387,41 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	transform: translateX(21px) translateY(-12px);
 }
 
+/* 프로필바 배너용 링크 (Beta) */
+#article-list-row-38102692 > div > div.list-time,
+#article-list-row-38102692>div>div.list-title>span>i:before,
+#article-list-row-38102692 > div > div.list-header.v0,
+#article-list-row-38102692 > div > div.list-checkbox {
+	display: none !important;
+}
+
+#article-list-row-38102692 > div > div.list-title>a {
+	font-size: 0px;
+	height: 0px !important;
+}
+
+#article-list-row-38102692 > div > div.list-title>a:after {
+	content: "";
+	background: transparent;
+	width: 402px;
+	height: 93.6px;
+    transform: translateX(456px) translateY(-137px);
+    position: absolute;
+}
+
+#article-list-row-38102692,
+#article-list-row-38102692 {
+	transform: none !important;
+}
+
+#article-list-row-38102692 > div > div.list-title > span {
+	height: 0px !important;
+}
+
+#article-list-row-38102692 > div > div.list-title {
+	padding: 0px !important;
+}
+
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 아티클 Article article ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 .frame>.frame,
