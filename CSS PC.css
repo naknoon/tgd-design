@@ -1,5 +1,5 @@
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 주석 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-/* 업데이트 : 2020.02.27 완료 */
+/* 업데이트 : 2020.03.21 완료 */
 /* 노트패드 : 최적화 예정 */
 
 
@@ -916,7 +916,7 @@ a.custom-badge-link:hover {
 	opacity: 0;
 	transform: scale(0);
 	transform-origin: top;
-	transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
+	transition: transform 0.4s cubic-bezier(0.18, 1.5, 0, 1);
 	padding: 8px 0 3px 0px;
 }
 
