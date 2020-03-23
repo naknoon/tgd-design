@@ -405,8 +405,9 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	background: transparent;
 	width: 402px;
 	height: 93.6px;
-    transform: translateX(456px) translateY(-137px);
-    position: absolute;
+	position: absolute;
+	top: -102.5px;
+	left: 472px;
 }
 
 #article-list-row-38102692,
