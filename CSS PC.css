@@ -155,9 +155,9 @@ header #header-bar>.row {
 	border: 2px solid var(--mainColor);
 }
 
-/* 전광판 광고 텍스트박스 색상 */ 
+/* 전광판 광고 텍스트박스 제거 */ 
 header #header-bar #header-top-notice strong.notice-badge {
-	background: var(--mainColor);
+	display: none;
 }
 
 /* 트게더 알림 색상 */
@@ -280,25 +280,16 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	transform: translateX(3px) translateY(0px);
 }
 
-/* 프로필 이미지 좌측으로 정렬 */
+/* 프로필 좌측 정렬 */
 #board-info>img,
 #board-info>h1,
 #board-info>#board-info-bottom {
 	float: left !important;
 }
 
-/* 프로필 이미지 사이즈 조정 */
+/* 프로필 이미지 제거 */
 #board-info>img#board-info-profile-img {
-	width: 70px;
-	margin-right: 10px;
-	border: 2px solid var(--mainColor);
-  	border-radius: 0;
-	transition: 0.2s;
-}
-
-#board-info>img#board-info-profile-img:hover {
-	border-radius: 50px;
-	transform: scale(1.07);
+    display: none;
 }
 
 /* 접속자 수 사이드 문구 */
