@@ -1,0 +1,161 @@
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ CSS 기본 설정 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* focus 아웃라인 제거 */
+*:focus { 
+	outline: none !important; 
+}
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 애니메이션 Animation animation ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 부드러운 스크롤링 */
+html {
+	scroll-behavior: smooth;
+}
+
+/* 스트리머 하트 펌핑 애니메이션 */
+small.favo i.fa.fa-heart {
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0% {transform: scale(1);}
+    30% {transform: scale(1.25);}
+    42% {transform: scale(0.9);}
+    60% {transform: scale(1.15);}
+    85% {transform: scale(0.95);}
+    100% {transform: scale(1);}
+}
+
+/* 인기글 별 스핀 애니메이션 */
+span.a-badge i.fa.fa-star { 
+	animation: binglebingle 3s infinite;
+}
+
+@keyframes binglebingle {
+	from { transform: rotate(0deg); } to { transform: rotate(360deg); }
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 버튼 및 드롭다운 Button&Dropdown button&dropdown ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 드롭다운 메뉴 */
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+	opacity: unset;
+	transform: unset;
+	border: 2px solid var(--mainColor);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.275);
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+	display: block !important;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: top;
+	transition: transform 0.4s cubic-bezier(0.18, 1.5, 0, 1);
+	padding: 8px 0 3px 0px;
+}
+
+.dropdown-menu>li>a {
+	transition: 0.1s;
+}
+
+.dropdown-menu>li>a:hover {
+	background: transparent;
+	transform: scaleX(1.04);
+	transition: 0.1s;
+}
+
+#latestDropdownMenu>li>a>span.delrow,
+#favoriteDropdownMenu>li>a>span.delrow {
+	color: var(--mainColor);
+}
+
+#latestDropdownMenu>li>a>span.delrow:hover,
+#favoriteDropdownMenu>li>a>span.delrow:hover {
+	background: transparent;
+}
+
+#favoriteDropdownMenu>li>a>span.label.label-default {
+	background-color: var(--mainColor);
+}
+
+.dropdown-menu .divider {
+	background-color: var(--mainColor);
+	height: 2px;
+	margin: 3px 0;
+}
+
+/* 버튼 */
+.btn {
+	color: #fff !important;
+	background-color: var(--mainColor) !important;
+	border-color: var(--mainColor) !important;
+  border-radius: 0;
+	transition: 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+	color: var(--mainColor) !important;
+	background-color: #fff !important;
+}
+
+.btn.square {
+	margin-right: -2px;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 마우스포인터 Pointer pointer ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 마우스포인터 기본(블루) */
+html,
+body,
+.fr-popup.emoticons,
+.fr-top,
+select.form-control,
+input[type=checkbox],
+input[type=radio],
+.opt {
+	cursor: url() 0 0, auto !important;
+}
+
+/* 마우스포인터 선택(빨강) */
+#right-search-form > #right-search-btn,
+#board-info #board-info-bottom #addFavoriteBtn,
+#article-list #article-option-area > #article-option-area-toggle-btn,
+#article-list > .article-list-row > .item > .list-title > .list-writer > span,
+.reply > .reply-header > .reply-writer.logged,
+.reply-menu,
+.btn,
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn,
+.fr-view img,
+.pull-left,
+
+a {
+ 	cursor: url() 0 0, auto !important;
+}
+
+/* 마우스포인터 텍스트(초록) */
+span#viewers,
+#article-list #boardSearchForm .form-control,
+.fr-view,
+.fr-box.fr-basic.fr-element,
+input[type='text'] {
+ 	cursor: url() 0 0, auto !important;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 뱃지 커스텀 Badge badge ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 스트리머 뱃지 최신화 */
+img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
+    content: url();
+    width: 18px;
+}
+
+/* 진은검 뱃지 커스텀 */
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+    content: url();
+    width: 18px;
+}
