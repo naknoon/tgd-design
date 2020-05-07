@@ -69,6 +69,11 @@ body {
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 헤더 Header header ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
+/* 헤더 여백 */
+header {
+    padding: 1.2em 0 0 0;
+}
+
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a {
 	display: block;
@@ -856,4 +861,3 @@ a.custom-badge-link:hover {
 	background-size: contain;
 	filter: none;
 }
-
