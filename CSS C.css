@@ -10,6 +10,10 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+#board-info #score-area {
+    display: none;
+}
+
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 애니메이션 Animation animation ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 /* 부드러운 스크롤링 */
