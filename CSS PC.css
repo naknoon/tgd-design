@@ -15,13 +15,12 @@
 
 	/* URL */
 		--logoURL: url(https://cdn.discordapp.com/attachments/659060062223990812/659071395443245067/N_PC.png); /* 로고 */
-		--bannerurl: url(https://cdn.discordapp.com/attachments/659060204247318528/707246308590878770/600.png); /* 상단 배너 */
 		--bannerurl2: url(https://cdn.discordapp.com/attachments/659060204247318528/692785036264734760/9d6118319b0e2a19.png); /* 프로필바 배너 */
 	
 	/* 기타 설정 */	
 		--logoWidth: 200px; /* 로고 판정 너비 */
-		--before: "하늘에 늑대별 ";
-		--after: "개";
+		--before: "";
+		--after: "명이 여기 왜 있음?";
 }
 
 /* 배경색 */
@@ -78,24 +77,6 @@ body {
 
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 헤더 Header header ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-
-/* 상단 배너 */
-header:before {
-    display: block;
-    width: auto;
-    height: 78px;
-    background: var(--bannerurl) no-repeat;
-    background-position: center center;
-    position: relative;
-    top: 0;
-    padding: 0;
-    content: "";
-    margin-bottom: 15px;
-}
-
-header {
-	padding: 0.5em 0 0.5em 0;
-}
 
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a {
