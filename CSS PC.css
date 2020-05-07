@@ -104,7 +104,7 @@ header .row>div:nth-child(1) > a > img {
 
 /* 상단 검색 창 */
 #right-search-form {
-	width: 270px
+	width: 260px
 }
 
 #right-search-form > #right-search-btn>i {
