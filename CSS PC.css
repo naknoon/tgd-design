@@ -6,8 +6,8 @@
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ CSS 기본 설정 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 :root {
 	/* 색상 */
-		--bgColor: #EAEFF7;     /* 배경 */
-		--mainColor: #44577C;   /* 메인 */
+		--bgColor: #cbd1dc;     /* 배경 */
+		--mainColor: #313F5A;   /* 메인 */
 		--mainColor2: #F7F7F7;  /* 트게더 메뉴 · 일반글 hover */
 		--mainColor3: #D8DDE8;  /* 공지 */
 		--mainColor4: #E7EBF1;  /* 인기글 */
@@ -49,23 +49,16 @@ a:focus {
 	font-style: normal; 
 }
 
-/* (본문용) 나눔고딕 폰트 임포트 : 트게더 설정 페이지에 임포트됨  */
-
-/* 폰트 패밀리로 사이트 전체 폰트 적용 */
-
-
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 애니메이션 Animation animation ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
-
-
-/* 백그라운드 별 애니메이션 */
+/* 백그라운드 애니메이션 */
 body {
  background: transparent;
  animation: snow 20s linear infinite;
  background-image: /* 백그라운드 애니메이션 소스 임포트 */
-  url(https://cdn.discordapp.com/attachments/659060358019022868/659072152523374592/Star1.png), 
-  url(https://cdn.discordapp.com/attachments/659060358019022868/659072155031568422/star2.png);
- }
+  url(), 
+  url();
+}
  
 @keyframes snow {
 0% {background-position: 0px 0px, 0px 0px;}
