@@ -49,17 +49,18 @@ a:focus {
 	font-style: normal; 
 }
 
+/* TEST S-coreDream import */
 @font-face { 
     font-family: 'S-CoreDream-4Regular'; 
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff'); 
-    font-weight: normal; 
+    font-weight: 400; 
     font-style: normal; 
 }
 
 @font-face { 
     font-family: 'S-CoreDream-6Bold'; 
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); 
-    font-weight: normal; 
+    font-weight: 700; 
     font-style: normal; 
 }
 
@@ -78,8 +79,6 @@ body {
 0% {background-position: 0px 0px, 0px 0px;}
 100% {background-position: 500px 1000px, 400px 400px;}
 }
-
-
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 헤더 Header header ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
@@ -347,19 +346,19 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 
 /* 프로필바 배너용 링크 (Beta) 
-#article-list-row-38102692 > div > div.list-time,
-#article-list-row-38102692>div>div.list-title>span>i:before,
-#article-list-row-38102692 > div > div.list-header.v0,
-#article-list-row-38102692 > div > div.list-checkbox {
+#article-list-row-Page no. > div > div.list-time,
+#article-list-row-Page no.>div>div.list-title>span>i:before,
+#article-list-row-Page no. > div > div.list-header.v0,
+#article-list-row-Page no. > div > div.list-checkbox {
 	display: none !important;
 }
 
-#article-list-row-38102692 > div > div.list-title>a {
+#article-list-row-Page no. > div > div.list-title>a {
 	font-size: 0px;
 	height: 0px !important;
 }
 
-#article-list-row-38102692 > div > div.list-title>a:after {
+#article-list-row-Page no. > div > div.list-title>a:after {
 	content: "";
 	background: transparent;
 	width: 402px;
@@ -369,16 +368,16 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	left: 473px;
 }
 
-#article-list-row-38102692,
-#article-list-row-38102692 {
+#article-list-row-Page no.,
+#article-list-row-Page no. {
 	transform: none !important;
 }
 
-#article-list-row-38102692 > div > div.list-title > span {
+#article-list-row-Page no. > div > div.list-title > span {
 	height: 0px !important;
 }
 
-#article-list-row-38102692 > div > div.list-title {
+#article-list-row-Page no. > div > div.list-title {
 	padding: 0px !important;
 }
 
@@ -548,7 +547,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 
 /* CSS 카테고리 커스텀 */
-#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] {
+#article-list > #article-list-category > a[href="Category code."] {
 	background: url(https://cdn.discordapp.com/attachments/659060387718758401/659072090716110851/CSS_.png) no-repeat !important ;
     position: absolute;
 	left: 874.6px;
@@ -558,17 +557,17 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
     font-size: 0px;
 }
 
-#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"]:hover {
+#article-list > #article-list-category > a[href="Category code."]:hover {
 	background: url(https://cdn.discordapp.com/attachments/659060387718758401/659072099696246794/CSS_.png) no-repeat !important;
 }
 
-#article-list #article-list-category > a[href="/y_yeohun?category=34280854"]::before,
-#article-list #article-list-category > a[href="/y_yeohun?category=34280854"]::after {
+#article-list #article-list-category > a[href="Category code."]::before,
+#article-list #article-list-category > a[href="Category code."]::after {
 	background: none;
 }
 
-#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"],
-#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] :hover {
+#article-list > #article-list-category > a[href="Category code."],
+#article-list > #article-list-category > a[href="Category code."] :hover {
     filter: none;
 }
 
