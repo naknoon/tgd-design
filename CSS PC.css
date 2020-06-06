@@ -648,7 +648,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 /* 닉네임 옆 뱃지 잘리는 현상 수정 */
 #article-list>.article-list-row>.item img {
-    margin-top: -1px;
+    margin-top: -2px;
 }
 
 /* 게시글 검색 창 */
