@@ -10,6 +10,21 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* 세리프 글꼴 */
+#article-content-wrapper #article-content em {
+	font-style: normal;
+    font-weight: normal;
+    font-family: 'Noto Serif KR';
+}
+
+/* 코딩 글꼴 */
+#article-content-wrapper #article-content strong em,
+#article-content-wrapper #article-content em strong {
+    font-weight: normal;
+    font-family: 'Nanum Gothic Coding';
+}
+
+/* 게시판 점수 제거 */
 #board-info #score-area {
     display: none;
 }
@@ -157,13 +172,13 @@ input[type='text'] {
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 뱃지 커스텀 Badge badge ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 /* 스트리머 뱃지 최신화 */
-img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
+/*img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
     content: url();
     width: 18px;
 }
 
 /* 진은검 뱃지 커스텀 */
-img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+/*img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     content: url();
     width: 18px;
-}
+} */
