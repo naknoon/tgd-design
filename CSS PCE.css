@@ -1,0 +1,56 @@
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 주석 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* 업데이트 : 2020.04.01 예정 */
+/* 노트패드 : 이벤트 */
+
+/* ㅡㅡㅡㅡㅡ 4월 벚꽃 이벤트 ㅡㅡㅡㅡㅡ */
+:root {
+    /* 색상 */
+        --mainColor: #ff2f76;   /* 메인 */
+		--mainColor2: #F7F7F7;  /* 트게더 메뉴 · 일반글 hover */
+		--mainColor3: #ffd0e9;  /* 공지 */
+		--mainColor4: #fff1f6 ;  /* 인기글 */
+		--mainColor5: #eabed5;  /* 고정글 hover */
+
+    /* URL */
+        --logoURL: url(https://cdn.discordapp.com/attachments/692773470441963540/692773526775529513/5806cb7ed6c7914b.png); /* 로고 */
+		--Ebannerurl: url(https://cdn.discordapp.com/attachments/692773470441963540/692777825572487238/322e83f5a8e3010d.png); /* 상단 배너 */
+}
+
+header:before {
+    background: var(--Ebannerurl) no-repeat;
+}
+
+/* 배경 이미지 */
+html {
+    background-color: #fff;
+    background-image: url(https://cdn.discordapp.com/attachments/692773470441963540/692773565732487178/4b2a6cec1e12ab4c.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+
+#article-list>.article-list-row.notice>.item>.list-time {
+    background: #a97092;
+    border: 1px solid #a97092;
+}
+
+#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"]:hover {
+    background: url(https://cdn.discordapp.com/attachments/692773470441963540/692782100314849420/CSS_.png) no-repeat !important;
+}
+
+#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] {
+    background: url(https://cdn.discordapp.com/attachments/692773470441963540/692782099186450452/CSS_.png) no-repeat !important;
+}
+
+#movetotop {
+    filter: hue-rotate(90deg);
+}
+
+body {
+    background: transparent;
+    animation: snow 15s linear infinite;
+    background-image: /* 벚꽃 파티클 */
+     url(https://cdn.discordapp.com/attachments/692773470441963540/694350190517420143/Cherryblossom.png);
+}
