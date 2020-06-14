@@ -1,0 +1,620 @@
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 주석 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* 업데이트 : 2020.02.27 완료 */
+/* 노트패드 : 컬러코드 통합 예정 (4월~) */
+
+@media (min-aspect-ratio:1500/1000) and (max-aspect-ratio:1550/1000), (prefers-color-scheme: dark) /* 기존값 (min-width:320px) and (max-width:1400px) */ 
+ {
+    :root {
+	    /* 색상 */
+            --Dblackcolor: #151515;
+            --Dlinecolor: #5d5d5d;
+            --bgColor: #202020;
+
+	    /* URL */
+            --logoURL: url(https://cdn.discordapp.com/attachments/659060062223990812/659071409368203275/N_PC_nt.png); 
+            --bannerurl: url(https://cdn.discordapp.com/attachments/659060204247318528/659368951247142953/caba19c4cebc98ed.png);
+            --bannerurl2: url(https://cdn.discordapp.com/attachments/659060204247318528/693016787322667069/38988bf79b02937f.png);
+        
+        /* 기타 설정 */	
+            --logoWidth: 320px;
+            --before: "밤하늘에 늑대별 ";
+            --after: "개";
+}
+
+/* 배경색 강제 다크화 */
+body {
+    background-color: var(--bgColor) !important;
+    background-image: none;
+}
+
+/* 백그라운드 별 애니메이션 (다크모드용) */
+body {
+    background-image: /* 백그라운드 애니메이션 소스 임포트 */
+     url(https://cdn.discordapp.com/attachments/659060358019022868/687699973088870569/WStar1.png), 
+     url(https://cdn.discordapp.com/attachments/659060358019022868/687699973810290703/WStar2.png) !important;
+}
+
+/* 상단바 */
+header #header-bar>.row {
+    border: 2px solid #5d5d5d;
+    background: #151515;
+}
+
+header #header-bar a.dropdown-toggle {
+    color: #fff;
+}
+	
+header #header-bar #header-menu-right {
+    border-left: 1px solid #5d5d5d;
+} 
+	 
+header #header-bar #header-menu-left {
+    border-right: 1px solid #5d5d5d;
+}
+
+header #header-bar #header-top-notice a {
+    color: #fff !important;
+}
+
+header #header-bar #header-top-notice strong.notice-badge {
+    background: #000;
+}
+
+
+
+/* 상단바 드롭다운 메뉴 */
+.dropdown.open .dropdown-menu, 
+.input-group-btn.open .dropdown-menu {
+    border: 2px solid #5d5d5d;
+    background: #151515;
+}
+
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover {
+    color: #fff;
+}
+
+.dropdown-menu>li>a,
+#playgroundDropdownMenu>li>a,
+#latestDropdownMenu>li>a,
+#favoriteDropdownMenu>li>a {
+    color: #fff;
+}
+
+.dropdown-menu .divider {
+    background-color: #5d5d5d;
+}
+
+#favoriteDropdownMenu>li>a>span.label.label-default {
+    background-color: #000;
+}
+
+#latestDropdownMenu>li>a>span.delrow,
+#favoriteDropdownMenu>li>a>span.delrow {
+    color: #fff;
+}
+
+/* 상단 검색창 */
+#right-search-form > #right-search-btn>i {
+	color: #fff;
+	background: #5d5d5d;
+	border: 2px solid #5d5d5d;
+}
+
+#right-search-form > #right-search-btn>i:hover {
+  background: #000;
+  color: #5d5d5d;
+}
+
+#right-search-form > #right-search-input {
+	border: 2px solid #5d5d5d;
+	background: #000;
+}
+
+#right-search-form:hover > #right-search-input,
+#right-search-form > #right-search-input:focus {
+	background: #000;
+	border: 2px solid #5d5d5d;
+	border-right: none;
+}
+
+
+/* 좌측 메뉴바 */
+#main .menu-wrapper>a {
+    background: #151515;
+    color: #fff;
+    border-bottom: 1px solid #5d5d5d;
+}
+
+#main .menu-wrapper > a:hover {
+    background-color: #000;
+}
+
+#main .menu-wrapper {
+    border: 2px solid #5d5d5d;
+}
+
+#main .menu-wrapper>a>em, 
+#main .menu-wrapper>a>i.fa.fa-square {
+    color: #fff;
+}
+
+#main .menu-wrapper>.header {
+    background: #5d5d5d;
+}
+
+#main .menu-wrapper .spacer {
+    background: #5d5d5d;
+}
+
+
+
+/* 상단 프로필바 */
+#board-info {
+    background: #151515;
+    border: 2px solid #5d5d5d;
+}
+
+#board-info>img#board-info-profile-img {
+    border: 2px solid #5d5d5d;
+}
+
+#board-info h1 {
+    border-bottom: 2px solid #5d5d5d;
+}
+
+#board-info h1>a {
+    color: #fff;
+}
+
+#board-info h1> a:hover,
+#board-info h1> a:focus {
+	color : #5d5d5d;
+}
+
+#board-info #board-info-bottom a {
+    color: #c7c7c7;
+}
+
+#board-info>#board-info-bottom>:hover {
+    color: #5d5d5d;
+}
+
+#board-info #viewers-area,
+#board-info #score-area {
+    color: #c7c7c7;
+}
+
+/* 프로필바 배너 */
+#board-info:after {
+    background: var(--bannerurl2) no-repeat;
+    border: 2px solid #5d5d5d;
+}
+
+
+
+
+
+/* CSS 카테고리 */
+#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"],
+#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] :hover {
+    filter: grayscale(100%);
+}
+
+/* 공지글 커스텀 부분 */
+#article-list>.article-list-row.notice>div>div.list-title>span>i:before {
+    color: #fff;
+    background: #5d5d5d;
+    border: 2px solid #5d5d5d;
+}
+
+#article-list>.article-list-row.notice>.item>.list-header>strong:after, 
+#article-list>.article-list-row.notice>.item>.list-header>b:after {
+    color: #5d5d5d;
+}
+
+#article-list>.article-list-row.notice>.item>.list-time {
+    background: #5d5d5d !important;
+    color: #fff !important;
+    border: 1px solid #5d5d5d !important;
+}
+
+/* 게시글 목록 */
+.frame>.frame, #article-list {
+    background: #151515;
+    border: 2px solid #5d5d5d;
+}
+
+#article-list>.article-list-row>.item>.list-title> a {
+    color: #fff !important;
+}
+
+#article-list>.article-list-row>.item>.list-title > a:visited {
+    color: #676767 !important;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+    color: #fff;
+}
+
+#article-list #article-list-category > a.active,
+#article-list #article-list-category > a:hover {
+    background: #151515;
+}
+
+#article-list #article-list-category > a {
+    color: #ffffff;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+    color: #c7c7c7;
+}
+
+#article-list>.article-list-row>.item>.list-time {
+    color: #aaaaaa;
+}
+
+#article-list #article-option-area> #article-option-area-toggle-btn {
+    background: #000000;
+	
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+    background: #000000;
+}
+
+#article-list > .article-list-row>.item > .list-checkbox, 
+#article-list > .article-list-row>.item > .list-header, 
+#article-list > .article-list-row>.item > .list-category, 
+#article-list > .article-list-row>.item > .list-title, 
+#article-list > .article-list-row>.item > .list-blocked, 
+#article-list > .article-list-row>.item > .list-time {
+    border-bottom: 1px solid #5d5d5d;
+}
+
+
+#article-list>.article-list-row:hover,
+#article-list>.article-list-row:focus {
+	background-color: #3e3e3e;
+}
+
+#article-list>.article-list-row>.item>.list-header>strong, #article-list>.article-list-row>.item>.list-header>b {
+    color: #fff;
+}
+
+span.a-badge i.fa.fa-info-circle {
+    color: #fff;
+}
+
+#article-list>.article-list-row.notice {
+	background-color: #000;
+}
+
+
+#article-list>.article-list-row.hot {
+	background-color: #0b0b0b;
+}
+
+
+#article-list>.article-list-row.hot:hover,
+#article-list>.article-list-row.hot:focus {
+  background-color: #3e3e3e;
+}
+
+#article-list>.article-list-row.notice:hover,
+#article-list>.article-list-row.notice:focus {
+	background-color: #3e3e3e;
+}
+
+#writerContextMenu {
+    background: #000;
+}
+
+
+
+
+
+/* 게시글 리스트 하단 */
+
+.pagination>li>a, .pagination>li>a:focus, .pagination>li>span .pagination>li>span:focus {
+    color: #fff;
+    background: #303030;
+}
+
+.pagination>li>a, .pagination>li>span {
+    border: 1px solid #5d5d5d;
+}
+
+#article-list>.article-list-row.active {
+    background-color: #3e3e3e;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>span,
+.pagination>.active>span:focus {
+    background-color: #000;
+    border-color: #000;
+    border: 1px solid #5d5d5d;
+ }
+ 
+#article-list #boardSearchForm .form-control {
+    border-color: #5d5d5d;
+    background: #303030;
+}
+
+/* 버튼 */
+.btn {
+	background-color: #000 !important;
+    border-color: #5d5d5d !important;
+}
+
+.btn:hover,
+.btn:focus {
+	color: #000 !important;
+	background-color: #fff !important;
+}
+
+.input-group-btn:last-child>.btn,
+.input-group-btn:last-child>.btn-group {
+    margin-left: -2px;
+}
+ 
+
+
+/* 하단 텍스트 */
+body {
+    color: #fff;
+}
+
+a, a:hover, a:focus {
+    color: #fff;
+}
+
+element.style {
+    color: #FFF;
+}
+
+
+
+/* 게시글 본문 */
+#article-info {
+    background: #151515;
+    border: 2px solid #5D5D5D;
+    border-bottom: 1px;
+}
+
+#article-content-wrapper {
+    background: #151515;
+    border: 2px solid #5D5D5D;
+	border-bottom: 1px;
+}
+
+#article-content-wrapper>.header {
+    border-bottom: 2px solid #5D5D5D;
+}
+
+#article-content-wrapper>.footer {
+    border-top: 2px solid #5D5D5D;
+    border-bottom: 2px solid #5D5D5D;
+    background: #151515;
+}
+
+#article-content-wrapper>.vote-area {
+    border-left: 1px solid #151515;
+    border-right: 1px solid #151515;
+}
+
+/* 투표 창 */
+.panel-success {
+    border-color: #5d5d5d;
+}
+
+.panel-success>.panel-heading {
+    color: #fff;
+    background-color: #000;
+    border-color: #5d5d5d;
+}
+
+.panel-body {
+    background: #151515;
+}
+
+#choiceList {
+	background: #151515;
+}
+
+.list-group-item {
+    background-color: #151515;
+    border: 1px solid #5d5d5d;
+}
+
+.panel-footer {
+    background-color: #2f2f2f;
+    border-top: 1px solid #5d5d5d;
+}
+
+.alertify .alert>*, 
+.alertify .dialog>* {
+    background: #000;
+}
+
+.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button), 
+.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button) {
+    color: #fff;
+    border: 1px solid #5d5d5d;
+}
+
+
+
+/* 댓글 부분 */
+
+#article-reply-area {
+    background: #151515;
+    border: 2px solid #5D5D5D;
+}
+
+#article-reply-area #reply-real-area .reply,
+#article-reply-area #reply-best-area .reply {
+    border: 1px solid #5D5D5D;
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header,
+#article-reply-area #reply-best-area .reply > .reply-header {
+    background: #000000;
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header,
+#article-reply-area #reply-best-area .reply > .reply-header {
+    border-bottom: 1px solid #5D5D5D;
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
+    color: #fff;
+}
+
+#article-reply-area > .header h5 {
+    color: #fff;
+}
+
+
+
+/* 하단 이전글 다음글 */
+#article-neighbor-list {
+    border: 2px solid #5d5d5d;
+    background: #151515;
+}
+
+#article-neighbor-list>div>a, 
+#article-neighbor-list>div>span.indicator, 
+#article-neighbor-list>div>span.author {
+    color: #fff;
+}
+
+#article-neighbor-list>div:hover {
+	background:#000;
+}
+
+/* 글 작성 폼 */
+
+/* 이미지 업로드 영역 */
+#image-upload-btn:hover {
+	border-right: 1px solid #5d5d5d !important;
+}
+
+#dropZone {
+    padding: 0 0;
+    margin-top: 7px;
+    border: 1px solid #5d5d5d;
+    background: #151515 !important;
+    margin-bottom: 40px;
+}
+
+/* 글쓰기 영역 input 색상*/
+.form-control {
+    color: #ccc;
+    background-color: #151515;
+    border: 1px solid #5d5d5d;
+}
+
+/* 제목 색상 영역 */
+.input-group-addon:last-child {
+    background: #5d5d5d;
+    border: 1px solid #5d5d5d;
+}
+
+/* 이모티콘 영역 배경 */
+#articleWriteForm > div:nth-child(4) > div > div.fr-toolbar.fr-ltr.fr-desktop.fr-top.fr-basic.fr-sticky-off > div.fr-popup.fr-desktop.fr-ltr.emoticons {
+	background: #000;
+}
+
+/* 댓글 작성 폼 */
+.fr-toolbar {
+    background: #000;
+}
+
+.fr-element {
+    background: #151515;
+    border: solid 1px #5d5d5d;
+}
+
+.fr-popup,
+.fr-toolbar.fr-top {
+    border: 1px solid #5d5d5d;
+    border-top: 3px solid #5d5d5d;
+}
+
+.fr-toolbar .fr-command.fr-btn, 
+.fr-popup .fr-command.fr-btn {
+    color: #fff;
+}
+
+.fr-box.fr-basic .fr-element {
+    color: #fff;
+}
+
+.fr-desktop .fr-command:hover, 
+.fr-desktop .fr-command:focus, 
+.fr-desktop .fr-command.fr-btn-hover, 
+.fr-desktop .fr-command.fr-expanded {
+    background: #5d5d5d;
+}
+
+.fr-separator {
+    background: #5d5d5d
+}
+
+.fr-command.fr-btn.fr-options.fr-btn-hover, 
+.fr-command.fr-btn.fr-options:hover, 
+.fr-command.fr-btn.fr-options:focus {
+    border-left: solid 1px #000;
+}
+
+.fr-toolbar .fr-command.fr-btn.fr-dropdown::after, 
+.fr-popup .fr-command.fr-btn.fr-dropdown::after {
+    border-top: 4px solid #fff;
+}
+
+#article-reply-area #reply-real-area .reply.active, 
+#article-reply-area #reply-best-area .reply.active {
+    background-color: #000;
+}
+
+.fr-command.fr-btn+.fr-dropdown-menu .fr-dropdown-wrapper {
+    background: #000;
+    color: #fff;
+}
+
+.fr-wrapper .fr-placeholder {
+    z-index: 3;
+}
+
+#comment-write-form > 
+div.fr-box.fr-ltr.fr-basic.fr-top > 
+div.fr-toolbar.fr-ltr.fr-desktop.fr-top.fr-basic.fr-sticky-off > 
+div.fr-popup.fr-desktop.fr-ltr.emoticons {
+	background: #000;
+}
+
+
+
+/* 점프버튼 */
+#movetotop {
+    filter: grayscale(1) !important;
+}
+
+
+/* 측면 광고 영역 */
+#main-menu > div:nth-child(2) {
+    background: #151515 !important;
+	border: 2px solid #5d5d5d;
+    width: 180px;
+}
+
+/* 상단 광고 영역 */
+#article-list > div:nth-child(3) {
+	background: #000000 !important ;
+}
+
+ }
