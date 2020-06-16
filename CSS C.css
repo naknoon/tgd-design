@@ -174,9 +174,9 @@ input[type='text'] {
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 뱃지 커스텀 Badge badge ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
-/* 스트리머 뱃지 최신화 */
-/*img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
-    content: url();
+/* 스트리머 뱃지 커스텀 */
+img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
+    content: url(https://cdn.discordapp.com/attachments/706102557638131722/722420937131032656/5K_bits.png);
     width: 18px;
 }
 
