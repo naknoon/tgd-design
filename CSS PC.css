@@ -342,44 +342,6 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	transform: translateX(18px) translateY(-12px);
 }
 
-/* 프로필바 배너용 링크 (Beta) 
-#article-list-row-Page no. > div > div.list-time,
-#article-list-row-Page no.>div>div.list-title>span>i:before,
-#article-list-row-Page no. > div > div.list-header.v0,
-#article-list-row-Page no. > div > div.list-checkbox {
-	display: none !important;
-}
-
-#article-list-row-Page no. > div > div.list-title>a {
-	font-size: 0px;
-	height: 0px !important;
-}
-
-#article-list-row-Page no. > div > div.list-title>a:after {
-	content: "";
-	background: transparent;
-	width: 402px;
-	height: 93px;
-	position: absolute;
-	top: -102.5px;
-	left: 473px;
-}
-
-#article-list-row-Page no.,
-#article-list-row-Page no. {
-	transform: none !important;
-}
-
-#article-list-row-Page no. > div > div.list-title > span {
-	height: 0px !important;
-}
-
-#article-list-row-Page no. > div > div.list-title {
-	padding: 0px !important;
-}
-
-*/
-
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 아티클 Article article ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 .frame>.frame,
@@ -544,8 +506,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 
 /* CSS 카테고리 커스텀 */
-#article-list > #article-list-category > a[href="Category code."] {
-	background: url(https://cdn.discordapp.com/attachments/659060387718758401/659072090716110851/CSS_.png) no-repeat !important ;
+/* #article-list > #article-list-category > a[href="Category code."] {
+	background: url() no-repeat !important ;
     position: absolute;
 	left: 874.6px;
     top: -2px;
@@ -555,7 +517,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 
 #article-list > #article-list-category > a[href="Category code."]:hover {
-	background: url(https://cdn.discordapp.com/attachments/659060387718758401/659072099696246794/CSS_.png) no-repeat !important;
+	background: url() no-repeat !important;
 }
 
 #article-list #article-list-category > a[href="Category code."]::before,
@@ -566,7 +528,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #article-list > #article-list-category > a[href="Category code."],
 #article-list > #article-list-category > a[href="Category code."] :hover {
     filter: none;
-}
+} */
 
 
 /* 게시글 */
