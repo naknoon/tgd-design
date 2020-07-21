@@ -278,7 +278,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #board-info-bottom > a:nth-child(2) > i,
 #board-info-bottom > a:nth-child(3) > i,
 #board-info-bottom > a:nth-child(4) > i,
-#board-info-bottom > a:nth-child(5) > i {
+#board-info-bottom > a:nth-child(5) > i,
+#board-info-bottom > a:nth-child(6) > i {
 	font-size: 17px;
 }
 
