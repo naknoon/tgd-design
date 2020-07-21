@@ -55,11 +55,11 @@ a:focus {
 	font-style: normal; 
 }
 
-/* (본문용) 나눔고딕 폰트 임포트 : 트게더 설정 페이지에 임포트됨  */
+/* (본문용) Noto Sans KR 폰트 임포트 (트게더 설정 페이지) */
 
-/* 폰트 패밀리로 사이트 전체 폰트 적용 */
+/* 전체 폰트 적용 */
 * { 
-font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 애니메이션 Animation animation ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
@@ -173,7 +173,6 @@ header .row>div:nth-child(1) > a > img {
 
 #right-search-form > #right-search-input {
 	z-index: 1;
-	top: -2px;
 	left: 34px;	
 	padding: 10px;	
 	width: 0px;
