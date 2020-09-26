@@ -1,25 +1,52 @@
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 여름 바다 이벤트 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 가을 (단풍) 이벤트용 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
 :root {
     /* 색상 */
-        --mainColor: #2e96ff;   /* 메인 */
+        --mainColor: #ff2e2e;   /* 메인 */
 		--mainColor2: #f7f7f7;  /* 트게더 메뉴 · 일반글 hover */
-		--mainColor3: #d1e8ff;  /* 공지 */
-		--mainColor4: #f0f7ff ; /* 인기글 */
-		--mainColor5: #bed4ea;  /* 고정글 hover */
+		--mainColor3: #ffd1d1;  /* 공지 */
+		--mainColor4: #fff0f0; /* 인기글 */
+		--mainColor5: #eabebe;  /* 고정글 hover */
+        --timecolor: #a97070;   /* 고정글 작성시각 */
 
     /* URL */
-        --logoURL: url(https://cdn.discordapp.com/attachments/692773470441963540/721692441874399283/a078801f28c47024.png); /* 로고 */
-		--Ebannerurl: url(https://cdn.discordapp.com/attachments/692773470441963540/721316364832473127/8f78153b454f5a8e.png); /* 상단 배너 */
+        --logoURL: url(https://cdn.discordapp.com/attachments/692773470441963540/759079094381183016/N_PC_.png); /* 로고 */
+		--Ebannerurl: url(https://cdn.discordapp.com/attachments/692773470441963540/759079095916691476/64b0ade158333b72.png); /* 상단 배너 */
+
+        --Backgroundimg: url(https://cdn.discordapp.com/attachments/692773470441963540/759079098378223637/maple-leaf-2933340.jpg);  /* 배경 이미지 */
+        --Particle: url(https://cdn.discordapp.com/attachments/692773470441963540/759079096323014736/246950504ed0904b.png);  /* 파티클 이미지 */
+        
+        --CSSC: url(https://cdn.discordapp.com/attachments/692773470441963540/759079154678759517/CSS_.png); /* CSS 카테고리 */
+        --CSSChover: url(https://cdn.discordapp.com/attachments/692773470441963540/759079157732343828/CSS_.png);  /* CSS 카테고리 호버 */
+
+        --TopButton: url(https://cdn.discordapp.com/attachments/692773470441963540/759079099028209694/428268ab582336b0.png);  /* 점프버튼 */
+}
+
+#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] {
+    background: var(--CSSC) no-repeat !important;
+}
+
+#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"]:hover {
+    background: var(--CSSChover) no-repeat !important;
+}
+
+#movetotop{
+    background: var(--TopButton);
+}
+
+body {
+    background: transparent;
+    animation: snow 60s linear infinite;
+    background-image: var(--Particle);
 }
 
 header:before {
     background: var(--Ebannerurl) no-repeat;
 }
 
-/* 배경 이미지 */
 html {
+    background-image: var(--Backgroundimg);
     background-color: #fff;
-    background-image: url(https://cdn.discordapp.com/attachments/692773470441963540/721315684625154130/beach-1449008.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -28,25 +55,6 @@ html {
 }
 
 #article-list>.article-list-row.notice>.item>.list-time {
-    background: #708ca9;
-    border: 1px solid #708ca9;
-}
-
-#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"]:hover {
-	filter: saturate(3) brightness(140%);
-}
-
-#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] {
-    filter: saturate(3) brightness(140%);
-}
-
-#movetotop {
-    filter: saturate(3) brightness(140%);
-
-}
-
-body {
-    background: transparent;
-    animation: snow 50s cubic-bezier(0.3, 1.7, 0.7, -0.7) infinite;
-    background-image: url(https://cdn.discordapp.com/attachments/692773470441963540/721690949272600576/1.png);
+    background: var(--timecolor);
+    border: 1px solid var(--timecolor);
 }
