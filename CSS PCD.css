@@ -11,7 +11,7 @@
             --bgColor: #202020;
 
 	    /* URL */
-            --logoURL: url(https://cdn.discordapp.com/attachments/659060062223990812/659071409368203275/N_PC_nt.png); 
+            --logoURL: url(https://cdn.discordapp.com/attachments/659060062223990812/659071409368203275/N_PC_nt.png) !important; 
             --bannerurl: url(https://cdn.discordapp.com/attachments/659060204247318528/659368951247142953/caba19c4cebc98ed.png);
             --bannerurl2: url(https://cdn.discordapp.com/attachments/659060204247318528/693016787322667069/38988bf79b02937f.png);
         
@@ -198,7 +198,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 /* CSS 카테고리 */
 #article-list > #article-list-category > a[href="/y_yeohun?category=34280854"],
 #article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] :hover {
-    filter: grayscale(100%);
+    filter: grayscale(100%) !important;
 }
 
 /* 공지글 커스텀 부분 */
@@ -536,7 +536,6 @@ element.style {
 
 .fr-element {
     background: #151515;
-    border: solid 1px #5d5d5d;
 }
 
 .fr-popup,
@@ -597,6 +596,10 @@ div.fr-popup.fr-desktop.fr-ltr.emoticons {
 	background: #000;
 }
 
+.fr-box.fr-basic .fr-wrapper {
+    background: #151515;
+    border: 1px solid #5d5d5d;
+}
 
 
 /* 점프버튼 */
