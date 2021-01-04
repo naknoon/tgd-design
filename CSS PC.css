@@ -11,11 +11,11 @@
 		--mainColor5: #F4F6F8;  /* 고정글 hover */
 
 	/* URL */
-		--logoURL: url(https://cdn.discordapp.com/attachments/706102361659015168/707235553501904987/TGDLB_N.png); /* 로고 */
+		--logoURL: url(https://cdn.discordapp.com/attachments/706102361659015168/795666365394059314/Normal.png); /* 로고 */
 		--bannerurl2: url(https://cdn.discordapp.com/attachments/706102361659015168/708080936100823040/62404356b0263768.png); /* 프로필바 배너 */
 	
 	/* 기타 설정 */	
-		--logoWidth: 75px; /* 로고 판정 너비 */
+		--logoWidth: 95px; /* 로고 판정 너비 */
 		--before: "";
 		--after: "명이 여기 왜 있음?";
 }
