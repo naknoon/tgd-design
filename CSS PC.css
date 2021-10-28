@@ -1034,14 +1034,8 @@ input[type='text'] {
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 뱃지 커스텀 Badge badge ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
-/* 스트리머 뱃지 최신화 */
-img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
-    content: url(https://cdn.discordapp.com/attachments/659060387718758401/659072017730895872/5cac1e58f43fe514.png);
-    width: 18px;
-}
-
-/* 진은검 뱃지 커스텀 */
-img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+/* 관리자 뱃지 전환 */
+img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41db1d0/1"] {
     content: url(https://cdn.discordapp.com/attachments/659060387718758401/666644717219348480/1.5.png);
     width: 18px;
 }
