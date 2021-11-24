@@ -31,6 +31,8 @@ footer {
     background: var(--bgColor);
 }
 
+
+
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 폰트 Font font ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 /* 부드러운 스크롤링 */
@@ -62,6 +64,12 @@ html {
 
 /* 전체 폰트 적용 */
 * { font-family: 'NanumBarunGothic', sans-serif; }
+
+/* 본문 삽입 하이퍼링크 색상 초기화 */
+#article-content > p > a,
+.reply-content > p > a {
+    color: #337ab7 !important;
+}
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 애니메이션 Animation animation ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
