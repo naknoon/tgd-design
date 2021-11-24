@@ -361,7 +361,7 @@ span.a-badge i.fa.fa-info-circle {
  
 
 
-/* 하단 텍스트 */
+/* 텍스트 색상 강제 변경 */
 body {
     color: #fff;
 }
@@ -373,8 +373,6 @@ a, a:hover, a:focus {
 element.style {
     color: #FFF;
 }
-
-
 
 /* 게시글 본문 */
 #article-info {
@@ -618,5 +616,7 @@ div.fr-popup.fr-desktop.fr-ltr.emoticons {
 #article-list > div:nth-child(3) {
 	background: #000000 !important ;
 }
+
+
 
  }
