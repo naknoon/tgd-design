@@ -1045,3 +1045,8 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
     content: url(https://cdn.discordapp.com/attachments/659060387718758401/666644717219348480/1.5.png);
     width: 18px;
 }
+
+/* New 즐겨찾기 사이드바 */
+#main .menu-wrapper #fav-shortcut-area>a:hover {
+	background: var(--mainColor2);
+}
