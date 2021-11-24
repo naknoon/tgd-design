@@ -617,6 +617,15 @@ div.fr-popup.fr-desktop.fr-ltr.emoticons {
 	background: #000000 !important ;
 }
 
+/* New 즐겨찾기 사이드바 */
+#main .menu-wrapper #fav-shortcut-area>a {
+    background: var(--Dblackcolor);
+    color: #fff;
+    border-bottom: 1px solid var(--Dlinecolor);
+}
 
+#main .menu-wrapper #fav-shortcut-area>a:hover {
+	background: #000;
+}
 
  }
