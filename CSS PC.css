@@ -600,7 +600,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	transform: scaleX(1);
 }
 
-/* CSS 카테고리 커스텀 */
+/* CSS 카테고리 커스텀 
 #article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] {
 	background: url(https://cdn.discordapp.com/attachments/659060387718758401/659072090716110851/CSS_.png) no-repeat !important ;
     position: absolute;
@@ -624,7 +624,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] :hover {
     filter: none;
 }
-
+*/
 
 /* 게시글 */
 #article-list>.article-list-row {
