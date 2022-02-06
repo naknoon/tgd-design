@@ -2006,7 +2006,7 @@ footer {
 
 /* CSS 정보 */
 footer:before {
-    content: 'Custom CSS for Yeohun  I  Designed by Naknoon';
+    content: 'Custom CSS for Yeohun : Modified  I  Designed by Naknoon';
 
     grid-row: 1 / 2;
     grid-column: 2 / 4;
@@ -2026,7 +2026,7 @@ footer:before {
 
 /* CSS 제작 정보 */
 footer:after {
-    content: 'Special Thanks to CSS 디자인 커뮤니티';
+    content: 'CSS Copyright 2022. Naknoon All rights reserved.';
 
     grid-row: 2 / 3;
     grid-column: 2 / 4;
@@ -2104,7 +2104,7 @@ footer .container:before {
 
 /* 라이트/다크 모드 전환 버튼 설명 */
 footer .container:after {
-    content: '달 버튼을 클릭하세요. 다크 모드는 지원 준비 중입니다.';
+    content: '달 버튼을 클릭하세요. 이곳은 각 모드가 동일합니다';
 
     grid-row: 2 / 3;
     grid-column: 2 / 3;
