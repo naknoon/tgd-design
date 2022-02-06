@@ -2107,7 +2107,7 @@ footer .container:before {
 
 /* 라이트/다크 모드 전환 버튼 설명 */
 footer .container:after {
-    content: '달 버튼을 클릭하세요. 이곳은 각 모드가 동일합니다';
+    content: '본 게시판에서는 라이트/다크 모드가 통합되어 있습니다.';
 
     grid-row: 2 / 3;
     grid-column: 2 / 3;
