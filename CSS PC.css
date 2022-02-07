@@ -2629,3 +2629,9 @@ html.darkmode #articleWriteForm div.fr-wrapper {
     box-shadow: inset 0 0 0 2px var(--color_noti);
     border: 0;
 }
+
+/* 댓글 기능 */
+html.darkmode #article-reply-area #reply-real-area .reply>.reply-header>.reply-menu a, 
+html.darkmode #article-reply-area #reply-best-area .reply>.reply-header>.reply-menu a {
+	color: var(--color_sig);
+}
