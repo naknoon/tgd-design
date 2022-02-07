@@ -26,10 +26,6 @@ html {
 
     --color_sig: #455168; 
     --color_sigr: #684545; 
-    --color_sigy: #B59653;
-
-    --color_spc: #7D8696;
-    --color_spcr: #E7524C;
 }
 
 html.darkmode {
@@ -40,8 +36,11 @@ html.darkmode {
     --color_hot: #313131;
     --color_hov: #262626;
     
-    --color_sig: #52617a;
+    --color_sig: #B59653;
     --color_sigr: #4A3333;
+}
+
+:root {
     --color_sigy: #B59653; 
 
     --color_spc: #7D8696;
