@@ -2040,7 +2040,7 @@ footer:before {
 
 /* CSS 제작 정보 */
 footer:after {
-    content: 'CSS Copyright 2022. Naknoon All rights reserved';
+    content: 'CSS Copyright 2022. Naknoon All Rights Reserved';
 
     grid-row: 2 / 3;
     grid-column: 2 / 4;
