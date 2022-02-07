@@ -141,10 +141,9 @@ span.a-badge i.fa.fa-star {
 
 /* ////////// ////////// ////////// ////////// 잡다한 기능 & 실험실 ////////// ////////// ////////// ////////// */
 
-/* 특수 뱃지 전환 */
-img[src="https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1"],
-img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
-    display: none;
+/* 뱃지 제거 */
+.list-writer img {
+	display: none;
 }
 
 
