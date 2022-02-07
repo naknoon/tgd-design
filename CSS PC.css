@@ -725,7 +725,7 @@ body > header {
 /* 작성자 */
 #article-list > .article-list-row > .item > .list-title > .list-writer {
     padding: 0 16px;
-    border-left: none;
+    border-left: none !important;
 }
 
 #article-list > .article-list-row > .item > .list-title > .list-writer > span {
