@@ -1788,28 +1788,31 @@ body > header {
 /* 에디터 설명 */
 .frame > h3 {
     height: 30px;
-    padding: 0 10px;
-    background: var(--color_sig);
+
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .frame > h3:nth-child(1) {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 30px;
+    text-align: center;
 
     height: 100%;
 
-    color: #fff;
+    color: var(--color_sig);
 }
 
-.frame > h3:nth-child(1):before {
-    content: '\f044';
-
-    font-family: 'fontawesome';
+.frame > h3:nth-child(1):before,
+.frame > h3:nth-child(1):after {
+	margin: 0 10px;
+    content: '━━━━━━━━━━━━━━━━━━━━━━';
     font-size: 20px;
-    font-weight: 500;
-
-    margin-right: 3px;
+    letter-spacing: -0.05em;
 }
 
 
@@ -1831,7 +1834,7 @@ body > header {
 /* 글 기본 설정 폼 */
 #articleWriteForm div.row.mt-2 {
     margin: 0;
-    margin-top: 1.5em;
+    margin-top: .5em;
     margin-bottom: 0em;
 }
 
@@ -2115,7 +2118,7 @@ footer .container:before {
 
 /* 라이트/다크 모드 전환 버튼 설명 */
 footer .container:after {
-    content: '본 게시판에서는 라이트/다크 모드가 통합되어 있습니다.';
+    content: '달 버튼을 클릭하면 라이트/다크 모드를 전환할 수 있습니다.';
 
     grid-row: 2 / 3;
     grid-column: 2 / 3;
