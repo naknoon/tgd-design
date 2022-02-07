@@ -20,16 +20,16 @@
 
 /* 컬러칩 */
 html {
-    --color_bc: #cbd1dc;
-    --color_fr: #FFFFFF;
+    --color_bc: #121212;
+    --color_fr: #1D1D1D;
 
-    --color_noti: #D8DDE8; 
-    --color_hot: #E5E9F0; 
-    --color_hov: #F2F4F7; 
-
-    --color_sig: #313F5A; 
-    --color_sigr: #684545; 
-    --color_sigy: #B59653;
+    --color_noti: #3A3A3A;
+    --color_hot: #313131;
+    --color_hov: #262626;
+    
+    --color_sig: #6E7380;
+    --color_sigr: #4A3333;
+    --color_sigy: #B59653; 
 
     --color_spc: #7D8696;
     --color_spcr: #E7524C;
@@ -43,7 +43,7 @@ html.darkmode {
     --color_hot: #313131;
     --color_hov: #262626;
     
-    --color_sig: #52617a;
+    --color_sig: #6E7380;
     --color_sigr: #4A3333;
     --color_sigy: #B59653; 
 
