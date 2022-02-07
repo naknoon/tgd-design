@@ -224,7 +224,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
 
 
-/* 다크 : 풀사이즈형 공지 */
+/* 다크 : 풀사이즈형 공지 
 html.darkmode body:before {
 	content: '';
 
@@ -235,7 +235,7 @@ html.darkmode body:before {
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-
+*/
 
 /* 사이즈 오류 제거 Beta */
 footer,
