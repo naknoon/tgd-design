@@ -53,8 +53,12 @@ html.darkmode {
 
 
 /* 아웃라인 제거 */
-*:focus {
+/* *:focus {
     outline: none !important;
+} */
+
+:focus:not(:focus-visible) {
+    outline: 0 !important;
 }
 
 * {
