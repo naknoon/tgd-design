@@ -27,7 +27,7 @@ html {
     --color_sig: #455168; 
     --color_sigr: #684545; 
 
-    --color_spc: #7D8696;
+    --color_pla: #949FB3;
 }
 
 html.darkmode {
@@ -41,7 +41,7 @@ html.darkmode {
     --color_sig: #B59653;
     --color_sigr: #4A3333;
 
-    --color_spc: #968E7D;
+    --color_pla: #B3A994;
 }
 
 :root {
@@ -232,7 +232,7 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
 }
 
 
-/* 다크 : 풀사이즈형 공지 */
+/* 다크 : 풀사이즈형 공지 
 html.darkmode body:before {
 	content: '';
 
@@ -243,7 +243,7 @@ html.darkmode body:before {
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-
+*/
 
 /* 사이즈 오류 제거 Beta */
 footer,
@@ -608,7 +608,7 @@ body > header {
 
 /* 고정 즐겨찾기 */
 #main .menu-wrapper #fav-shortcut-area > a {
-    background: var(--color_spc);
+    background: var(--color_pla);
     padding: 0.35em 0.5em 0.35em 0.5em;
     color: #fff;
     border: 0;
@@ -852,8 +852,8 @@ body > header {
     height: 19px;
     margin: 5px 0px;
 
-    background: var(--color_spc);
-    border: 1px solid var(--color_spc) !important;
+    background: var(--color_pla);
+    border: 1px solid var(--color_pla) !important;
     color: #fff;
 }
 
@@ -1766,7 +1766,7 @@ body > header {
 
 .fr-popup .fr-input-line input[type=text]::placeholder,
 .fr-popup .fr-input-line textarea::placeholder {
-    color: hsl(219 20% 68% / 1) !important;
+    color: var(--color_pla) !important;
 }
 
 .fr-popup .fr-action-buttons button.fr-command {
@@ -1786,7 +1786,7 @@ body > header {
 
 /* 표 기능 샘플 테두리 */
 .fr-popup .fr-table-size .fr-select-table-size > span > span {
-    border-color: hsl(219 20% 68% / 1);
+    border-color: var(--color_pla);
 }
 
 
@@ -1845,7 +1845,7 @@ body > header {
 }
 
 .form-control::placeholder {
-    color: hsl(219 20% 68% / 1) !important;
+    color: var(--color_pla) !important;
 }
 
 
@@ -2387,7 +2387,7 @@ html.darkmode #article-list > div:nth-child(3):not(#article-list>.article-list-r
 
 /* 다크 : 고정 즐겨찾기 */
 html.darkmode #main .menu-wrapper #fav-shortcut-area > a {
-    background: var(--color_spc);
+    background: var(--color_pla);
     border: 0;
 }
 
@@ -2483,7 +2483,7 @@ html.darkmode .pagination > .active > span:focus {
     html.darkmode #article-list #article-list-category.can-float > a[id=board-home-link-btn] {
         background: var(--color_sig);
         color: #fff !important;
-        border-right: 4px solid hsl(219 20% 65% / 1) !important;
+        border-right: 4px solid var(--color_pla) !important;
     }
 
     html.darkmode #article-list #article-list-category.can-float > a.active,
@@ -2515,7 +2515,7 @@ html.darkmode #article-list #boardSearchForm .form-control {
     background: var(--color_fr) !important;
     border: 1px solid var(--color_sig);
     border-left: none;
-    color: var(--color_noti);
+    color: var(--color_sig);
 }
 
 
@@ -2524,7 +2524,7 @@ html.darkmode .input-group-btn i.fa-search {
 }
 
 html.darkmode #boardSearchForm > input.form-control::placeholder {
-    color: hsl(219 20% 68% / 1) !important;
+    color: var(--color_pla) !important;
 }
 
 
@@ -2640,7 +2640,7 @@ html.darkmode .fr-popup .fr-arrow {
 
 /* 표 기능 샘플 테두리 */
 html.darkmode .fr-popup .fr-table-size .fr-select-table-size > span > span {
-    border-color: rgb(157 169 190);
+    border-color: var(--color_pla);
 }
 
 
