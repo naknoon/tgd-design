@@ -28,6 +28,7 @@ html {
     --color_sigr: #684545; 
 
     --color_pla: #949FB3;
+    --color_eda: #1e88e5;
 }
 
 html.darkmode {
@@ -42,6 +43,7 @@ html.darkmode {
     --color_sigr: #4A3333;
 
     --color_pla: #B3A994;
+    --color_eda: #1e88e5;
 }
 
 :root {
@@ -1709,38 +1711,106 @@ body > header {
     background: var(--color_noti);
 }
 
-/* 기능 버튼 */
-.fr-toolbar .fr-command.fr-btn,
+/* 토글 버튼 - 비활성 */
+.fr-toolbar .fr-command.fr-btn, 
 .fr-popup .fr-command.fr-btn {
-    color: var(--color_sig);
+	color: var(--color_sig);
 }
 
-/* 기능 버튼 - 선택/활성화 시 */
+
+/* 토글 버튼 - 비활성 접촉 */
 .fr-desktop .fr-command:hover, 
-.fr-desktop .fr-command:focus,
+.fr-desktop .fr-command:focus, 
 .fr-desktop .fr-command.fr-btn-hover, 
-.fr-desktop .fr-command.fr-expanded,
+.fr-desktop .fr-command.fr-expanded {
+	background: transparent;
+	color: var(--color_eda);
+}
+
+
+/* 토글 버튼 - 활성 접촉 */
 .fr-desktop .fr-command.fr-active:hover, 
-.fr-desktop .fr-command.fr-active:focus,
+.fr-desktop .fr-command.fr-active:focus, 
 .fr-desktop .fr-command.fr-active.fr-btn-hover, 
-.fr-desktop .fr-command.fr-active.fr-expanded,
+.fr-desktop .fr-command.fr-active.fr-expanded {
+	background: transparent;
+}
+
+
+/* 드롭다운 버튼 - 비활성 */
+.fr-toolbar .fr-command.fr-btn.fr-dropdown::after, 
+.fr-popup .fr-command.fr-btn.fr-dropdown::after {
+	border-top-color: var(--color_sig) !important;
+}
+
+
+/* 드롭다운 버튼 - 비활성 접촉 */
+.fr-toolbar .fr-command.fr-btn.fr-dropdown:hover, 
+.fr-popup .fr-command.fr-btn.fr-dropdown:hover, 
+.fr-toolbar .fr-command.fr-btn.fr-dropdown:focus, 
+.fr-popup .fr-command.fr-btn.fr-dropdown:focus {
+	color: var(--color_eda) !important;
+}
+
+.fr-toolbar .fr-command.fr-btn.fr-dropdown:hover::after, 
+.fr-popup .fr-command.fr-btn.fr-dropdown:hover::after, 
+.fr-toolbar .fr-command.fr-btn.fr-dropdown:focus::after, 
+.fr-popup .fr-command.fr-btn.fr-dropdown:focus::after {
+	border-top-color: var(--color_eda) !important;
+}
+
+
+/* 드롭다운 버튼 - 접촉 (분리형) */
+.fr-command.fr-btn.fr-options.fr-btn-hover,
+.fr-command.fr-btn.fr-options:hover,
+.fr-command.fr-btn.fr-options:focus {
+    border-left: none;
+}
+
+.fr-command.fr-btn.fr-options.fr-btn-hover::after,
+.fr-command.fr-btn.fr-options:hover::after,
+.fr-command.fr-btn.fr-options:focus::after {
+    border-top-color: var(--color_eda) !important;
+}
+
+
+/* 드롭다운 버튼 - 활성 */
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active, 
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active {
+	color: var(--color_eda);
+	background: transparent;
+}
+
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active::after, 
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active::after, 
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active::after, 
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active::after {
+	border-top-color: var(--color_eda) !important;
+}
+
+
+/* 드롭다운 버튼 - 활성 접촉 */
 .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover, 
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover, 
 .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus, 
-.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus,
-.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active, 
-.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active,
-.fr-toolbar .fr-command.fr-btn.fr-active, 
-.fr-popup .fr-command.fr-btn.fr-active{
-    background: none !important;
-    color: #1e88e5 !important;
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus {
+	color: var(--color_eda) !important;
+	background: transparent !important;
 }
 
 .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover::after, 
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover::after, 
 .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus::after, 
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus::after {
-    border-top-color: #1E88E5 !important;
+	border-top-color: var(--color_eda) !important;
+}
+
+
+/* 드롭다운 내부 - 활성 */
+.fr-command.fr-btn+.fr-dropdown-menu .fr-dropdown-wrapper 
+.fr-dropdown-content ul.fr-dropdown-list li a.fr-active {
+	color: var(--color_eda);
+	background: transparent;
 }
 
 
@@ -1749,13 +1819,6 @@ body > header {
     background: #44577c;
 }
 
-
-/* 드롭다운형 기능 버튼 테두리 제거 */
-.fr-command.fr-btn.fr-options.fr-btn-hover,
-.fr-command.fr-btn.fr-options:hover,
-.fr-command.fr-btn.fr-options:focus {
-    border-left: none;
-}
 
 /* 기능 팝업 창 */
 .fr-popup .fr-buttons {
@@ -1785,6 +1848,17 @@ body > header {
 
 .fr-popup .fr-arrow {
     border-bottom-color: var(--color_sig);
+}
+
+/* 이모티콘 */
+.fr-popup .fr-emoticon {
+	height: 20px;
+	line-height: 0px;
+	padding: 3px;
+}
+
+.fr-popup .fr-emoticon:hover {
+	background: var(--color_pla);
 }
 
 
@@ -2640,13 +2714,6 @@ html.darkmode .fr-popup .fr-input-line textarea + label {
 html.darkmode .fr-popup .fr-arrow {
     border-bottom-color: var(--color_sig);
 }
-
-
-/* 표 기능 샘플 테두리 */
-html.darkmode .fr-popup .fr-table-size .fr-select-table-size > span > span {
-    border-color: var(--color_pla);
-}
-
 
 /* 작성 폼 */
 html.darkmode .fr-box.fr-basic.fr-top .fr-wrapper,
