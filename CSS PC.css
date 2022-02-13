@@ -1,6 +1,6 @@
 /* ////////// ////////// ////////// ////////// 전역 설정 ////////// ////////// ////////// ////////// */
 
-/* 빠른 수정 */
+/* 빠른 수정 🟢⚪⚫ */
 :root {
 	/* 배너 */
     --url_banner: url(https://cdn.discordapp.com/attachments/901132816996249601/936782818804129842/banner_basic.png);
@@ -67,16 +67,13 @@ input:focus {
 }
 
 
-/* 기본 폰트 적용 */
-/* @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
-
+/* 폰트 🟢⚪ */
 * {
     font-family: 'Pretendard Variable', 'Noto Sans KR', sans-serif;
 }
 
 
-/* 배경 */
+/* 배경 🟢⚪⚫ */
 html,
 html.darkmode {
     background: var(--color_bc);
@@ -88,13 +85,10 @@ body {
 }
 
 
-/* 텍스트형 버튼 */
+/* 하이퍼링크 텍스트형 버튼 🟢⚪⚫ */
 a,
 a:hover,
-a:focus {
-    color: var(--color_sig);
-}
-
+a:focus,
 html.darkmode a,
 html.darkmode a:hover,
 html.darkmode a:focus {
@@ -103,10 +97,9 @@ html.darkmode a:focus {
 
 
 
-
 /* ////////// ////////// ////////// ////////// 특수 효과 ////////// ////////// ////////// ////////// */
 
-/* 부드러운 스크롤링 */
+/* 부드러운 스크롤링 🟢⚪ */
 :root {
     scroll-behavior: smooth;
 }
@@ -119,14 +112,14 @@ html.darkmode a:focus {
 }
 
 
-/* 프로필바 배너 */
+/* 프로필바 배너 🟢⚪ */
 @keyframes Banner {
     from { background-position: center 0px; }
     to { background-position: center -200px; } /* -(이미지 총 길이) */ /* $1 */
 }
 
 
-/* 스트리머 추천글 */
+/* 스트리머 추천글 🟢⚪ */
 small.favo i.fa.fa-heart {
     animation: heartbeat 1s infinite;
 }
@@ -141,7 +134,7 @@ small.favo i.fa.fa-heart {
 }
 
 
-/* 인기글 별 */
+/* 인기글 별 🟢⚪ */
 span.a-badge i.fa.fa-star { 
 	animation: rotation 3s infinite;
 }
@@ -156,14 +149,14 @@ span.a-badge i.fa.fa-star {
 
 /* ////////// ////////// ////////// ////////// 잡다한 기능 & 실험실 ////////// ////////// ////////// ////////// */
 
-/* 관리자 뱃지 전환 */
+/* 관리자 뱃지 전환 🟢⚪ */
 img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41db1d0/1"] {
     content: url(https://cdn.discordapp.com/attachments/659060387718758401/666644717219348480/1.5.png);
     width: 18px;
 }
 
 
-/* 상단 점프버튼 Beta */
+/* 상단 점프버튼 Beta 🟢⚪ */
 #movetotop {
     top: 0;
     margin: 0;
@@ -180,7 +173,7 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
 }
 
 
-/* 버튼 일괄 옵션 */
+/* 버튼 일괄 옵션 🟢⚪ */
 .btn {
     color: #fff !important;
     background-color: var(--color_sig) !important;
@@ -207,14 +200,14 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
 }
 
 
-/* 하이퍼링크 텍스트 색상 기본값 */
+/* 하이퍼링크 텍스트 색상 기본값 🟢⚪ */
 #article-content > p > a,
 .reply-content > p > a {
     color: #337ab7 !important;
 }
 
 
-/* 고정된 에디터 툴바 끄기 */
+/* 고정된 에디터 툴바 끄기 🟢⚪ */
 .fr-sticky-off,
 .fr-sticky-on {
     z-index: 2 !important;
@@ -252,7 +245,7 @@ html.darkmode body:before {
 }
 */
 
-/* 사이즈 오류 제거 Beta */
+/* 사이즈 오류 제거 Beta 🟢⚪ */
 footer,
 body > header,
 #content-area:before {
