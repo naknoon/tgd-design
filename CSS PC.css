@@ -25,7 +25,6 @@ html {
     --color_hov: #F2F4F7; 
 
     --color_sig: #455168; 
-    --color_sigr: #684545; 
 
     --color_pla: #7F8899; /* #949FB3 */
 }
@@ -39,14 +38,15 @@ html.darkmode {
     --color_hov: #262626;
     
     --color_sig: #B59653;
-    --color_sigr: #4A3333;
 
     --color_pla: #99917F; /* #B3A994 */ 
 }
 
 :root {
-    --color_sigk: #1C1E21;
+    --color_sigr: #684545; 
     --color_sigy: #B59653;
+    --color_sigk: #1C1E21;
+
 
     --color_ntb: #E7524C;
     --color_eda: #1e88e5;
@@ -156,7 +156,7 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
 }
 
 
-/* 상단 점프버튼 Beta 🟢⚪ */
+/* 상단 점프버튼 🟢⚪ */
 #movetotop {
     top: 0;
     margin: 0;
@@ -220,16 +220,25 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
 }
 
 
-/* 본문 비디오 크기 최대화 Beta */
-#article-content .fr-video {
-    width: 100%;
-    height: 468px !important;
+/* 본문 비디오 크기 최적화 Beta 🟢⚪ */
+/* https://thinkforthink.tistory.com/177 */
+.fr-view .fr-video.fr-dvb {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; /* 16:9 */
 }
 
-#article-content .fr-video iframe {
-    width: 100%;
-    height: 100% !important;
+#article-content-wrapper #article-content iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
 }
+
 
 
 /* 다크 : 풀사이즈형 공지 
@@ -244,6 +253,7 @@ html.darkmode body:before {
 	background-repeat: no-repeat;
 }
 */
+
 
 /* 사이즈 오류 제거 Beta 🟢⚪ */
 footer,
@@ -678,8 +688,9 @@ html.darkmode #main-menu > div:nth-child(2)[align="center"] {
 
 
 
-/* ////////// ////////// ////////// ////////// 특수 컨테이너 ////////// ////////// ////////// ////////// */
+/* ////////// ////////// ////////// ////////// 특수 영역 ////////// ////////// ////////// ////////// */
 
+/* 트게더 알림 팝업 배너 */
 #content-area > .container:not(#main) {
 	position: fixed;
 	z-index: 3;
@@ -693,11 +704,13 @@ html.darkmode #main-menu > div:nth-child(2)[align="center"] {
 	border-radius: 0px 0px 20px 20px;
 }
 
-/* 프레임 */
+
+/* 메인 프레임 */
 #main-content > div.frame{
     border: none !important;
     background: var(--color_fr) !important;
 }
+
 
 /* ////////// ////////// ////////// ////////// 게시글 목록 ////////// ////////// ////////// ////////// */
 
@@ -726,7 +739,7 @@ html.darkmode #article-list > .article-list-row > .item > .list-header > span {
 
 /* 추천 수 0 🟢⚪ */
 #article-list > .article-list-row > .item > .list-header.v0 > span {
-	color: transparent !important;
+    visibility: hidden;
 }
 
 
@@ -2004,8 +2017,9 @@ html.darkmode .fr-popup .fr-arrow {
 }
 
 
-/* 이모티콘 🟢⚪⚫ */
+/* 이모티콘 선택 GUI 🟢⚪⚫ */
 .fr-popup .fr-emoticon {
+    width: fit-content;
 	height: 20px;
 	line-height: 0px;
 	padding: 3px;
@@ -2257,7 +2271,7 @@ a.custom-badge-link:hover {
 
 /* ////////// ////////// 댓글 에디터 전용 ////////// ////////// */
 
-/* 비밀 댓글 박스 */
+/* 비밀 댓글 박스 🟢⚪ */
 #comment-write-button-area > label {
     display: flex;
     align-content: center;
