@@ -15,7 +15,7 @@
     --url_hgdlogo: url(https://cdn.discordapp.com/attachments/901132800793649233/936304999925964820/hgd_logo.png); 
 }
 
-/* 컬러칩 */
+/* 둘러보기 */
 html {
     --color_bc: #EAEFF7;
     --color_fr: #FFFFFF;
@@ -47,9 +47,10 @@ html.darkmode {
     --color_sigy: #B59653;
     --color_sigk: #1C1E21;
 
-
     --color_ntb: #E7524C;
     --color_eda: #1e88e5;
+
+    --profont: 'Pretendard Variable', 'Fontawesome';
 }
 
 
