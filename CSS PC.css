@@ -150,6 +150,97 @@ span.a-badge i.fa.fa-star {
 
 /* ////////// ////////// ////////// ////////// 잡다한 기능 & 실험실 ////////// ////////// ////////// ////////// */
 
+
+/* 메인 페이지 프로필바 링크형 배너 Beta */
+#article-list > #article-list-row-61849436:not(#article-info ~ #article-list) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	transform: translate(calc(-1070px * 0.1666666667 - 15px + 180px), -110px);
+
+	width: calc(1070px - 180px * 2);
+	height: 100px;
+
+	background: transparent !important;
+}
+
+#article-list > #article-list-row-61849436 > .item > *,
+#article-list > #article-list-row-61849436 > .item > .list-title > .a-badge {
+	display: none;
+}
+
+#article-list > #article-list-row-61849436 > .item > .list-title {
+	display: block;
+	height: 100%;
+	padding: 0;
+}
+
+#article-list > #article-list-row-61849436 > .item > .list-title > a {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	margin: 0;
+	
+	font-size: 0;
+	line-height: 0;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+	
+	background-image: url(https://cdn.discordapp.com/attachments/904201886515732500/942618375606120508/test.png); /* pfadv_url */
+	background-color: var(--color_sig);
+	filter: brightness(.9);
+}
+
+/* 텍스트형 배너 하단 */
+#article-list > #article-list-row-61849436 > .item > .list-title > a:before {
+	content: '링크형 흔게더 광고 배너 테스트입니다'; /* pfadv_top */
+	font-family: var(--profont);
+	color: var(--color_sig);
+	
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: 900;
+	
+	letter-spacing: -0.04em;
+}
+
+/* 텍스트형 배너 상단 */
+#article-list > #article-list-row-61849436 > .item > .list-title > a:after {
+	content: '클릭 시 테스트 게시물로 이동합니다. 트위치 및 트게더에서 제공하는 광고가 아닙니다.'; /* pfadv_btm */
+	font-family: var(--profont);
+	color: var(--color_sig);
+	
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 400;
+	
+	letter-spacing: -0.04em;
+}
+
+/* 배너 동작 설명 */
+#article-list > #article-list-row-61849436 > .item > .list-title:after {
+	content: '\f14c  클릭 시 이동';
+	
+	font-family: var(--profont);
+	font-size: 12px;
+	line-height: 12px;
+	letter-spacing: -0.04em;
+
+	color: #fff;
+	opacity: .5;
+	
+	position: absolute;
+	right: 8px;
+	bottom: calc(8px + 0px);
+}
+
+
+
 /* 관리자 뱃지 전환 🟢⚪ */
 img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41db1d0/1"] {
     content: url(https://cdn.discordapp.com/attachments/659060387718758401/666644717219348480/1.5.png);
