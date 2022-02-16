@@ -2287,6 +2287,7 @@ a.custom-badge-link:hover {
 
     padding: 5px 10px;
     margin: 0;
+    margin-right: 3px;
 
     font-weight: 400;
     font-size: 12px;
