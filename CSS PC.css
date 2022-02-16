@@ -2078,8 +2078,10 @@ html.darkmode .fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
 /* 작성 폼 🟢⚪⚫ */
 .fr-box.fr-basic.fr-top .fr-wrapper,
 #articleWriteForm div.fr-wrapper,
+.fr-box.fr-code-view textarea.fr-code,
 html.darkmode .fr-box.fr-basic.fr-top .fr-wrapper,
-html.darkmode #articleWriteForm div.fr-wrapper {
+html.darkmode #articleWriteForm div.fr-wrapper,
+html.darkmode .fr-box.fr-code-view textarea.fr-code {
     box-shadow: inset 0 0 0 2px var(--color_noti);
     border-radius: 0;
 	border: 0;
