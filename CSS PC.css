@@ -1426,7 +1426,7 @@ html.darkmode #article-content-wrapper > div.footer {
 
 /* 헤더 댓글 아이콘 */
 #article-reply-area > .header h5 > .fa-commenting:before {
-    content: '\f086';
+    content: '\f0e6';
     font-size: 20px;
 }
 
@@ -1440,7 +1440,7 @@ html.darkmode #article-content-wrapper > div.footer {
 
 /* 헤더 수평선 */
 #totalCommentCount:after {
-	margin-left: 10px;
+	margin-left: calc(10px + 1.5px);
     content: '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━';
     font-size: 20px;
     letter-spacing: -0.04em;
