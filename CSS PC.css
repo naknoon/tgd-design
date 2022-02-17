@@ -75,10 +75,17 @@ html.darkmode {
 }
 
 
-/* 모든 뱃지 제거 */
+/* 뱃지 제거 */
 .list-writer img {
 	display: none;
 }
+
+/* 스트리머 뱃지 커스텀 */
+img[title="Broadcaster"] {
+	content: url(https://cdn.discordapp.com/attachments/936953394415935568/943852567337783326/badge.png);
+	filter: grayscale(1);
+}
+
 
 /* 로고 */
 header #header-bar > .row:before {
