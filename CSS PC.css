@@ -14,7 +14,6 @@ p:last-child {
 	margin: 0px;
 }
 
-
 /* 특수 글꼴 */
 #article-content-wrapper #article-content em {
 	font-style: normal;
@@ -27,7 +26,7 @@ p:last-child {
     font-style: normal;
     font-family: 'D2Coding';
 
-	background: #ffde0333;
+	background: var(--color_hig);
     font-weight: 600;
 }
 
@@ -53,6 +52,8 @@ html {
     --color_sig: #585C66; 
 
     --color_pla: #7F8899; /* #949FB3 */
+
+    --color_hig: #FFF9D1;
 }
 
 html.darkmode {
@@ -65,7 +66,9 @@ html.darkmode {
     
     --color_sig: #6E7380;
 
-    --color_pla: #7F8899; /* #B3A994 */ 
+    --color_pla: #7F8899; /* #B3A994 */
+
+    --color_hig: #464018;
 }
 
 :root {
