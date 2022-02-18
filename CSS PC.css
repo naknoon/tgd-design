@@ -7,7 +7,7 @@
 
 /* 본문 줄 간격 조정 Beta */
 p {
-	margin: 0 0 5px
+	margin: 0 0 3px
 }
 
 p:last-child {
@@ -24,8 +24,11 @@ p:last-child {
 
 #article-content-wrapper #article-content strong em,
 #article-content-wrapper #article-content em strong {
-    font-weight: normal;
+    font-style: normal;
     font-family: 'D2Coding';
+
+	background: #ffde0333;
+    font-weight: 600;
 }
 
 /* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
