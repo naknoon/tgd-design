@@ -25,7 +25,6 @@ html {
     --color_hov: #F2F4F7; 
 
     --color_sig: #455168; 
-
     --color_pla: #7F8899; /* #949FB3 */
 }
 
@@ -38,7 +37,6 @@ html.darkmode {
     --color_hov: #262626;
     
     --color_sig: #B59653;
-
     --color_pla: #99917F; /* #B3A994 */ 
 }
 
