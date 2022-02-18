@@ -125,3 +125,8 @@ footer:before {
 footer:after {
     content: 'CSS Copyright 2022. Naknoon All Rights Reserved';
 }
+
+#article-list #article-list-category > a,
+html.darkmode #article-list #article-list-category > a {
+    white-space: pre;
+}
