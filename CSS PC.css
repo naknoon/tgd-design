@@ -50,7 +50,6 @@ html {
     --color_hov: #F2F4F7; 
 
     --color_sig: #585C66; 
-
     --color_pla: #7F8899; /* #949FB3 */
 
     --color_hig: #FFF9D1;
@@ -65,7 +64,6 @@ html.darkmode {
     --color_hov: #262626;
     
     --color_sig: #6E7380;
-
     --color_pla: #7F8899; /* #B3A994 */
 
     --color_hig: #464018;
