@@ -1280,8 +1280,8 @@ html.darkmode #article-content-wrapper #article-content {
 }
 
 /* 글 정보 영역 🟢⚪*/
-#article-content-wrapper > div.header,
-html.darkmode #article-content-wrapper > div.header {
+#article-content-wrapper > .header,
+html.darkmode #article-content-wrapper > .header {
     padding: .5em 0;
     margin: 0 2em 1em;
 
@@ -1289,13 +1289,32 @@ html.darkmode #article-content-wrapper > div.header {
     border-bottom: 2px solid var(--color_sig);
 
     background: transparent;
+
+    display: flex;
+	justify-content: flex-end;
+	gap: 3px;
 }
 
 /* 글 정보 값 🟢⚫ */
-html.darkmode #article-comment a {
-    color: #fff;
+#article-content-wrapper > .header > span {
+	padding: 0 7px !important;
+	height: 18px;
+	line-height: 18px;
+	
+	border-radius: 10px;
+	letter-spacing: -0.02em;
+	
+    background: var(--color_pla);
+	color: #fff;
 }
 
+#article-content-wrapper > .header > #article-time {
+	margin-right: auto;
+}
+
+#article-content-wrapper > .header > #article-comment a {
+    color: #fff;
+}
 
 
 /* ////////// ////////// 글 내부 - 본문 ////////// ////////// */
