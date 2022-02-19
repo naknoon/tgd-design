@@ -2,17 +2,10 @@
 
 /* 빠른 수정 🟢⚪⚫ */
 :root {
-	/* 배너 */
-    --url_banner: url(https://cdn.discordapp.com/attachments/901132816996249601/936782818804129842/banner_basic.png);
-
-	/* 프로필바 배너 : 1 2 */
-    --url_pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png);
-
-	/* 풀사이즈형 공지 */
-    --url_fulnoti: url(https://cdn.discordapp.com/attachments/901132816996249601/936675189096337499/darknoti.png);
-
-	/* 흔게더 로고 */
-    --url_hgdlogo: url(https://cdn.discordapp.com/attachments/901132800793649233/936304999925964820/hgd_logo.png); 
+    --url_banner: url(https://cdn.discordapp.com/attachments/901132816996249601/936782818804129842/banner_basic.png); /* 배너 */
+    --url_pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png); /* 프로필바 배너 : 1 2 */
+    --url_fulnoti: url(https://cdn.discordapp.com/attachments/901132816996249601/936675189096337499/darknoti.png); /* 풀사이즈형 공지 */
+    --url_hgdlogo: url(https://cdn.discordapp.com/attachments/901132800793649233/936304999925964820/hgd_logo.png); /* 흔게더 로고 */
 }
 
 /* 둘러보기 */
