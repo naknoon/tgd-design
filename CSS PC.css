@@ -173,6 +173,7 @@ html.darkmode #article-info > h2 > span[style="color:#9E9E9E"] {
 
 #article-info > h2 > span:before {
 	font-size: 20px;
+    margin-right: 3px;
 }
 
 #article-list > .article-list-row > .item > .list-title > .list-category > .category:before {
