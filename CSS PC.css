@@ -968,6 +968,7 @@ html.darkmode #article-list #article-list-category {
 #article-list #article-list-category > a,
 html.darkmode #article-list #article-list-category > a {
     background: var(--color_fr);
+    border: none !important;
 }
 
 /* 세로형 카테고리 선택바 */
@@ -1035,14 +1036,14 @@ html.darkmode #article-list #article-list-category > a {
         transition: all .2s ease-in-out;
 
         background: var(--color_fr);
-        border-right: 4px solid;
+        border-right: 4px solid !important;
     }
 
 
     /* 홈 카테고리 */
     #article-list #article-list-category.can-float > a[id=board-home-link-btn],
     html.darkmode #article-list #article-list-category.can-float > a[id=board-home-link-btn] {
-        background: var(--color_sig);
+        background: var(--color_sig) !important;
         color: #fff !important;
         border-color: var(--color_sig);
         width: 100%;
