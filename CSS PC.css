@@ -1038,8 +1038,7 @@ html.darkmode #article-list #article-list-category > a {
     html.darkmode #article-list #article-list-category.can-float > a[id=board-home-link-btn] {
         background: var(--color_sig) !important;
         color: #fff !important;
-        border-right: 4px solid !important;
-        border-color: var(--color_sig) !important;
+        border-right: 4px solid var(--color_sig) !important;
         width: 100%;
     }
 
