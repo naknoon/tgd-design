@@ -101,7 +101,7 @@ html.darkmode {
 #article-list > .article-list-row > .item > .list-title > .list-category > .category[style="color:#9e9e9e"]:before,
 #article-info > h2 > span[style="color:#9e9e9e"]:before,
 #article-list-category > a:nth-child(7):after {
-	content: '\f0c7' !important;
+	content: '\f0c2' !important;
 }
 
 #article-list #article-list-category.can-float > a {
