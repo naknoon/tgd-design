@@ -148,6 +148,19 @@ span.a-badge i.fa.fa-star {
 
 /* ////////// ////////// ////////// ////////// 잡다한 기능 & 실험실 ////////// ////////// ////////// ////////// */
 
+/* 다크 : 풀사이즈형 공지 
+html.darkmode body:before {
+	content: '';
+
+	display: block;
+	height: 100vh;
+
+	background-image: var(--url_fulnoti);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+*/
+
 /* 관리자 뱃지 전환 🟢⚪ */
 img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41db1d0/1"] {
     content: url(https://cdn.discordapp.com/attachments/659060387718758401/666644717219348480/1.5.png);
@@ -239,21 +252,6 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
 }
 
 
-
-/* 다크 : 풀사이즈형 공지 
-html.darkmode body:before {
-	content: '';
-
-	display: block;
-	height: 100vh;
-
-	background-image: var(--url_fulnoti);
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-*/
-
-
 /* 사이즈 오류 제거 Beta 🟢⚪ */
 footer,
 body > header,
@@ -262,7 +260,10 @@ body > header,
 }
 
 
-
+/* 광고 선택자 오류 제거 Beta 🟢⚫ */
+html.darkmode #article-list > div:nth-child(3) {
+	background: initial !important;
+}
 
 
 
@@ -395,7 +396,7 @@ header #header-bar #header-top-notice a:after {
 
 /* ////////// ////////// 2단 상단바 ////////// ////////// */
 
-/* 공통 */
+/* 공통 🟢⚪ */
 header #header-bar {
     margin: 0 auto;
     width: 100%;
@@ -419,7 +420,7 @@ header #header-bar > .row {
 }
 
 
-/* 로고 */
+/* 로고 🟢⚪ */
 header #header-bar > .row:before {
     content: '';
     background: var(--url_hgdlogo) no-repeat;
@@ -429,7 +430,7 @@ header #header-bar > .row:before {
 }
 
 
-/* 버튼 영역 */
+/* 버튼 영역 🟢⚪ */
 #header-menu-left,
 #header-menu-right {
     display: inline-flex;
@@ -447,7 +448,7 @@ header #header-bar > .row:before {
 }
 
 
-/* 버튼 */
+/* 버튼 🟢⚪ */
 #latestDropdown,
 #favoriteDropdown,
 #playgroundDropdown,
@@ -465,7 +466,7 @@ header #header-bar > .row:before {
 }
 
 
-/* 기존 개체 제거 */
+/* 기존 개체 제거 🟢⚪ */
 #latestDropdown > i,
 #favoriteDropdown > i,
 #playgroundDropdown > i,
@@ -480,7 +481,7 @@ header #header-bar > .row:before {
 }
 
 
-/* 버튼 텍스트 */
+/* 버튼 텍스트 🟢⚪ */
 #latestDropdown:before,
 #favoriteDropdown:before,
 #playgroundDropdown:before,
@@ -513,7 +514,7 @@ header #header-bar > .row:before {
 }
 
 
-/* 알림 뱃지 */
+/* 알림 뱃지 🟢⚪ */
 #note-notification-badge,
 #notification-badge {
     height: 45px;
@@ -547,7 +548,7 @@ header #header-bar > .row:before {
 }
 
 
-/* 미로그인 뱃지 */
+/* 미로그인 뱃지 🟢⚪ */
 #userDropdown > i:after {
     content: ' \f235';
 
@@ -562,7 +563,7 @@ header #header-bar > .row:before {
 
 /* ////////// ////////// 배너 이미지 ////////// ////////// */
 
-body > header {
+body > header 🟢⚪ {
     height: 290px;
     background-image: var(--url_banner);
     background-repeat: no-repeat;
@@ -576,7 +577,7 @@ body > header {
 
 /* ////////// ////////// ////////// ////////// 트게더 좌측 메뉴 ////////// ////////// ////////// ////////// */
 
-/* 공통 🟢⚪⚫ */
+/* 공통 🟢⚪ */
 #main .menu-wrapper {
 	background: var(--color_fr) !important;
     border: 1px solid var(--color_sig) !important;
