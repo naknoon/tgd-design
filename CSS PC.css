@@ -769,7 +769,7 @@ html.darkmode #article-list > .article-list-row > .item > .list-title > .list-wr
 /* 글 목록 🟢⚪⚫ */
 #article-list > .article-list-row,
 html.darkmode #article-list > .article-list-row {
-    border: none;
+    border: none !important;
     transition: 0.2s;
 }
 
