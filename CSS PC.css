@@ -563,7 +563,8 @@ header #header-bar > .row:before {
 
 /* ////////// ////////// 배너 이미지 ////////// ////////// */
 
-body > header 🟢⚪ {
+/* 배너 🟢⚪ */
+body > header {
     height: 290px;
     background-image: var(--url_banner);
     background-repeat: no-repeat;
