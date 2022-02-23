@@ -718,7 +718,7 @@ html.darkmode #main-menu > div:nth-child(2)[align="center"] {
 /* :::::::::: :::::::::: 게시글 목록 - 공통 :::::::::: :::::::::: */
 
 #article-list {
-    background: var(--color_fr);
+    /* background: var(--color_fr); */
 
     margin: 0;
     padding: 15px;
@@ -1317,7 +1317,7 @@ html.darkmode #article-content-wrapper > .header {
 
 #article-content-wrapper {
     padding: 0;
-    background: var(--color_fr);
+    /* background: var(--color_fr); */
     border: 0;
 }
 
