@@ -35,6 +35,13 @@ p:last-child {
     font-family: var(--profont), 'Noto Sans KR', sans-serif;
 }
 
+/* Pretendard - OpenType Beta */
+/* https://cactus.tistory.com/306 */
+/* https://helpx.adobe.com/kr/fonts/using/open-type-syntax.html */
+:root {
+    font-feature-settings: "calt", "salt", "ss01", "ss02", "ss03", "ss08";
+}
+
 /* 하이퍼링크 아이콘 */
 p a[href]:before {
 	content: '\f14c';
