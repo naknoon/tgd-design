@@ -30,9 +30,17 @@ p:last-child {
     font-weight: 600;
 }
 
-/* 폰트 🟢⚪ */
+/* 폰트 */
 * {
     font-family: var(--profont), 'Noto Sans KR', sans-serif;
+}
+
+/* 하이퍼링크 아이콘 */
+p a[href]:before {
+	content: '\f14c';
+
+	display: inline-block;
+	margin-right: 2px;
 }
 
 /* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
@@ -201,7 +209,7 @@ html.darkmode #article-info > h2 > span[style="color:#9E9E9E"] {
 
 /* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
 
-/* 빠른 수정 🟢⚪⚫ */
+/* 빠른 수정 */
 :root {
     --url_banner: url(https://cdn.discordapp.com/attachments/936953394415935568/939931780046286959/banner_basic.png); /* 배너 */
     --url_pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png); /* 프로필바 배너 : 1 2 */
@@ -289,11 +297,7 @@ footer:before {
     content: 'Custom CSS for Yeohun : Modified  I  Designed by Naknoon';
 }
 
-/* CSS 제작 정보 🟢⚪ */
+/* CSS 제작 정보 */
 footer:after {
     content: 'CSS Copyright 2022. Naknoon All Rights Reserved';
-}
-
-#article-list #article-list-category > a {
-    white-space: pre;
 }
