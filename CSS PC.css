@@ -218,7 +218,7 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
 
 /* 하이퍼링크 텍스트 색상 초기화 🟢⚪ */
 p a[href] {
-	color: var(--color_li) !important;
+	color: var(--color_lin) !important;
 }
 
 
