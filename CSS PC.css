@@ -301,7 +301,7 @@ header #header-bar > .row:before {
 
 /* CSS 정보 */
 footer:before {
-    content: 'Custom CSS for Yeohun : Modified  I  Designed by Naknoon';
+    content: 'Custom CSS for Yeohun : Modified  ·  Designed by Naknoon';
 }
 
 /* CSS 제작 정보 */
