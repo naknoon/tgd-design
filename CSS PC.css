@@ -182,6 +182,8 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
 
     width: calc(41.5px + 20px);
     height: 45px;
+
+    z-index: 104;
 }
 
 #movetotop img {
