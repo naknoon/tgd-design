@@ -406,7 +406,7 @@ header #header-bar {
     background: var(--color_sig);
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 102;
 }
 
 header #header-bar > .row {
@@ -575,7 +575,7 @@ body > header {
     background-position: top center;
     position: sticky;
     top: -245px;
-    z-index: 3;
+    z-index: 103;
 }
 
 
