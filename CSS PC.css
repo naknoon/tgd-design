@@ -684,11 +684,8 @@ html.darkmode #article-list > div:nth-child(3):not(#article-list>.article-list-r
 
 
 /* 측면 광고 🟢⚪⚫ */
-#main-menu > div:nth-child(2)[align="center"],
-html.darkmode #main-menu > div:nth-child(2)[align="center"] {
-    width: 100%;
-    background: var(--color_noti) !important;
-    border: 0 !important;
+#main-menu div[align="center"][style="background:#fff;padding:10px 0;"] {
+	background: var(--color_noti) !important;
 }
 
 
