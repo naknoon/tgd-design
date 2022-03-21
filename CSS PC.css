@@ -15,14 +15,17 @@ p:last-child {
 }
 
 /* 특수 글꼴 Beta */
-p em {
+p em,
+td em {
 	font-style: normal;
     font-weight: normal;
     font-family: 'Noto Serif KR';
 }
 
 p strong em,
-p em strong {
+p em strong,
+td strong em,
+td em strong {
     font-style: normal;
     font-family: 'D2Coding';
 
