@@ -1,7 +1,7 @@
 /* Naknoon_TGD */
 
-/* Yeohun_TGD를 기반으로 변경이 필요한 부분만 담으세요 */
-/* 우선 순위가 높습니다 */
+/* Yeohun_TGD를 기반으로 합니다 */
+/* 우선 순위 높음 */
 
 /* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
 
@@ -14,15 +14,15 @@ p:last-child {
 	margin: 0px;
 }
 
-/* 특수 글꼴 */
-#article-content-wrapper #article-content em {
+/* 특수 글꼴 Beta */
+p em {
 	font-style: normal;
     font-weight: normal;
     font-family: 'Noto Serif KR';
 }
 
-#article-content-wrapper #article-content strong em,
-#article-content-wrapper #article-content em strong {
+p strong em,
+p em strong {
     font-style: normal;
     font-family: 'D2Coding';
 
@@ -49,6 +49,106 @@ p a[href]:before {
 	display: inline-block;
 	margin-right: 2px;
 }
+
+
+
+/* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
+
+/* 빠른 수정 */
+:root {
+    --url_banner: url(https://cdn.discordapp.com/attachments/936953394415935568/939931780046286959/banner_basic.png); /* 배너 */
+    --url_pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png); /* 프로필바 배너 : 1 2 */
+    --url_fulnoti: url(https://cdn.discordapp.com/attachments/901132816996249601/936675189096337499/darknoti.png); /* 풀사이즈형 공지 */
+    --url_hgdlogo: url(https://cdn.discordapp.com/attachments/936953394415935568/939919966617088050/Gray.png); /* 흔게더 로고 */
+}
+
+/* 둘러보기 */
+html {
+    --color_bc: #cbd1dc;
+    --color_fr: #FFFFFF;
+
+    --color_noti: #D8DDE8; 
+    --color_hot: #E5E9F0; 
+    --color_hov: #F2F4F7; 
+
+    --color_sig: #585C66; 
+    --color_pla: #7F8899; /* #949FB3 */
+
+    --color_hig: #FFF6BA; /* Blended #FFDE03 */
+}
+
+html.darkmode {
+    --color_bc: #121212;
+    --color_fr: #1D1D1D;
+
+    --color_noti: #3A3A3A;
+    --color_hot: #313131;
+    --color_hov: #262626;
+    
+    --color_sig: #6E7380;
+    --color_pla: #7F8899; /* #B3A994 */
+
+    --color_hig: #5B5216; /* Blended #FFDE03 */
+}
+
+:root {
+    --color_sigr: #684545; 
+    --color_sigy: #B59653;
+    --color_sigk: #1C1E21;
+
+    --color_ntb: #E7524C;
+    --color_eda: #1e88e5;
+}
+
+
+/* 뱃지 제거 */
+.list-writer img {
+	display: none;
+}
+
+/* 스트리머 뱃지 커스텀 */
+img[title="Broadcaster"] {
+	content: url(https://cdn.discordapp.com/attachments/936953394415935568/943852567337783326/badge.png);
+	filter: grayscale(1);
+}
+
+/* 배너 */
+body > header {
+    background-color: #1E2433;
+}
+
+/* 로고 */
+header #header-bar > .row:before {
+	filter: brightness(100);
+}
+
+/* 흔게더 메인 페이지 버튼 */
+#board-info h1 > a:hover:after {
+    content: ' 메인으로';
+}
+
+/* 접속자 수 사이드 문구 */
+#board-info #viewers-area #viewers:before {
+    content: '';
+}
+
+#board-info #viewers-area #viewers:after {
+    content: '명이 노는 중';
+}
+
+
+/* CSS 정보 */
+footer:before {
+    content: 'Custom CSS for Yeohun : Modified  ·  Designed by Naknoon';
+}
+
+/* CSS 제작 정보 */
+footer:after {
+    content: 'CSS Copyright 2022. Naknoon All Rights Reserved';
+}
+
+
+
 
 /* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
 
@@ -211,100 +311,4 @@ html.darkmode #article-info > h2 > span[style="color:#757575"] {
 html.darkmode #article-list .article-list-row .category[style="color:#9E9E9E"],
 html.darkmode #article-info > h2 > span[style="color:#9E9E9E"] {
 	color: var(--cg_col_7) !important;
-}
-
-
-/* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
-
-/* 빠른 수정 */
-:root {
-    --url_banner: url(https://cdn.discordapp.com/attachments/936953394415935568/939931780046286959/banner_basic.png); /* 배너 */
-    --url_pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png); /* 프로필바 배너 : 1 2 */
-    --url_fulnoti: url(https://cdn.discordapp.com/attachments/901132816996249601/936675189096337499/darknoti.png); /* 풀사이즈형 공지 */
-    --url_hgdlogo: url(https://cdn.discordapp.com/attachments/936953394415935568/939919966617088050/Gray.png); /* 흔게더 로고 */
-}
-
-/* 둘러보기 */
-html {
-    --color_bc: #cbd1dc;
-    --color_fr: #FFFFFF;
-
-    --color_noti: #D8DDE8; 
-    --color_hot: #E5E9F0; 
-    --color_hov: #F2F4F7; 
-
-    --color_sig: #585C66; 
-    --color_pla: #7F8899; /* #949FB3 */
-
-    --color_hig: #FFF6BA; /* Blended #FFDE03 */
-}
-
-html.darkmode {
-    --color_bc: #121212;
-    --color_fr: #1D1D1D;
-
-    --color_noti: #3A3A3A;
-    --color_hot: #313131;
-    --color_hov: #262626;
-    
-    --color_sig: #6E7380;
-    --color_pla: #7F8899; /* #B3A994 */
-
-    --color_hig: #5B5216; /* Blended #FFDE03 */
-}
-
-:root {
-    --color_sigr: #684545; 
-    --color_sigy: #B59653;
-    --color_sigk: #1C1E21;
-
-    --color_ntb: #E7524C;
-    --color_eda: #1e88e5;
-}
-
-
-/* 뱃지 제거 */
-.list-writer img {
-	display: none;
-}
-
-/* 스트리머 뱃지 커스텀 */
-img[title="Broadcaster"] {
-	content: url(https://cdn.discordapp.com/attachments/936953394415935568/943852567337783326/badge.png);
-	filter: grayscale(1);
-}
-
-/* 배너 */
-body > header {
-    background-color: #1E2433;
-}
-
-/* 로고 */
-header #header-bar > .row:before {
-	filter: brightness(100);
-}
-
-/* 흔게더 메인 페이지 버튼 */
-#board-info h1 > a:hover:after {
-    content: ' 메인으로';
-}
-
-/* 접속자 수 사이드 문구 */
-#board-info #viewers-area #viewers:before {
-    content: '';
-}
-
-#board-info #viewers-area #viewers:after {
-    content: '명이 노는 중';
-}
-
-
-/* CSS 정보 */
-footer:before {
-    content: 'Custom CSS for Yeohun : Modified  ·  Designed by Naknoon';
-}
-
-/* CSS 제작 정보 */
-footer:after {
-    content: 'CSS Copyright 2022. Naknoon All Rights Reserved';
 }
