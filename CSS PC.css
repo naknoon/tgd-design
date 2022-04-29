@@ -329,21 +329,23 @@ header #header-bar #header-top-notice a {
 }
 
 header #header-bar #header-top-notice strong.notice-badge {
-    display: none;
+    font-size: 0;
+	padding: 0;
 }
 
-header #header-bar #header-top-notice a:after {
+header #header-bar #header-top-notice strong.notice-badge:after {
     content: 'AD';
     font-weight: 700;
     font-size: 13px;
+	color: #b3b3b3;
     background: #ffffff30;
     padding: 1px 5px;
-    margin-left: 5px;
+    margin-right: 2px;
 }
 
 
 /* 상단 검색 창 */
-#right-search-form {
+header #right-search-form {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -354,21 +356,21 @@ header #header-bar #header-top-notice a:after {
     padding: 0 !important;
 }
 
-#right-search-btn {
+header #right-search-btn {
     width: 20px;
-    height: 22px;
+    height: 20px;
 
     padding: 0px;
 }
 
-#right-search-btn > i {
+header #right-search-btn > i {
     display: block;
 
     font-size: 18px !important;
     color: #fff
 }
 
-#right-search-form > #right-search-input {
+header #right-search-form > #right-search-input {
     width: 0px;
     height: 20px;
 
@@ -387,13 +389,13 @@ header #header-bar #header-top-notice a:after {
     transition: width .3s .05s ease-out, opacity .4s ease-in-out;
 }
 
-#right-search-form > #right-search-input::placeholder {
+header #right-search-form > #right-search-input::placeholder {
 	color: #b3b3b3 !important;
 }
 
 
-#right-search-form:hover > #right-search-input,
-#right-search-form > #right-search-input:focus {
+header #right-search-form:hover > #right-search-input,
+header #right-search-form > #right-search-input:focus {
 	width: 150px;
 	opacity: 1;
 }
