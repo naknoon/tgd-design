@@ -9,19 +9,23 @@ document.body.prepend(newDiv)
 
 */
 
+let tag = 'div';
+let content = 'hello world!';
 
-let content = 'hello world!'
+const insElement = addElement(tag, content);
 
-
-function addElement (tag, content) {
-    const addTag = document.createElement( tag );
-    const addContent = document.createTextNode( content );
+function addElement(tag, content) {
+    const addTag = document.createElement(tag);
+    const addContent = document.createTextNode(content);
     addTag.appendChild(addContent);
+
     return addTag
 }
 
-content = '앞입니다'
-document.body.prepend(addElement("p", content))
+tag = 'div';
+content = '앞입니다';
+document.body.prepend(insElement);
 
-content = '뒤입니다'
-document.body.appendChild(addElement("div", content))
+tag = 'div';
+content = '뒤입니다';
+document.body.appendChild(insElement);
