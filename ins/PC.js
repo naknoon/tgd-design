@@ -1,4 +1,4 @@
 //TEST
 
-const Test = document.createElement('div')
-document.body.appendChild(Test)
+const Test = document.createElement('div');
+document.body.appendChild(Test);
