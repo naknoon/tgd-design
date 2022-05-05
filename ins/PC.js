@@ -1,15 +1,7 @@
 //TEST
 
-/* create a new div element
-const newDiv = document.createElement( 'div' );
-const newContent = document.createTextNode( "환영합니다!" );
-newDiv.appendChild(newContent);
 
-document.body.prepend(newDiv)
-
-*/
-
-
+//요소 추가
 let tag = 'div';
 let content = 'hello world!';
 let insElement
@@ -22,17 +14,20 @@ function addElement(tag, content) {
     return addTag
 }
 
+//요소 1
 tag = 'div';
 content = '요소 추가 테스트 중으로 레이아웃이 일부 깨질 수 있습니다';
 insElement = addElement(tag, content)
 insElement.id = 'topElement'
 document.body.prepend(insElement);
 
+//요소 2
 tag = 'p';
 content = '뒤입니다';
 insElement = addElement(tag, content);
 document.body.appendChild(insElement);
 
+//요소 3
 tag = 'p';
 content = '푸터 앞에 넣을 겁니다';
 insElement = addElement(tag, content);
