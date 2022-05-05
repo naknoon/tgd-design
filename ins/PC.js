@@ -19,3 +19,5 @@ function addElement () {
 
   document.body.insertBefore(newDiv, currentDiv);
 }
+
+addElement
