@@ -9,21 +9,19 @@ document.body.prepend(newDiv)
 
 */
 
-let tag = 'div'
+
 let content = 'hello world!'
 
-function addElement () {
+
+function addElement (tag, content) {
     const addTag = document.createElement( tag );
     const addContent = document.createTextNode( content );
     addTag.appendChild(addContent);
+    return addTag
 }
 
-tag = 'p';
-content = '앞입니다.';
-addElement();
-document.body.prepend(addTag);
+content = '앞입니다'
+document.body.prepend(addElement("p", content))
 
-tag = 'div';
-content = '뒤입니다.';
-addElement();
-document.body.appendChild(addTag);
+content = '뒤입니다'
+document.body.appendChild(addElement("div", content))
