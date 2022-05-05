@@ -29,5 +29,8 @@ document.body.prepend(insElement);
 
 tag = 'p';
 content = '뒤입니다';
-insElement = addElement(tag, content)
-document.body.appendChild(insElement);
+insElement = addElement(tag, content);
+const target = document.querySelector('header');
+document.body.insertBefore(insElement, target);
+
+
