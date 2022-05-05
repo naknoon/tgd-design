@@ -1,6 +1,5 @@
 //TEST
 
-document.body.onload = addElement;
 
 function addElement () {
 
@@ -17,6 +16,6 @@ function addElement () {
 
   // add the newly created element and its content into the DOM
   var currentDiv = document.getElementById("div1");
-  
+
   document.body.insertBefore(newDiv, currentDiv);
 }
