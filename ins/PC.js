@@ -25,6 +25,7 @@ function addElement(tag, content) {
 tag = 'div';
 content = '앞입니다';
 insElement = addElement(tag, content)
+addTag.id = 'topElement'
 document.body.prepend(insElement);
 
 tag = 'p';
