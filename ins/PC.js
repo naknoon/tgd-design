@@ -37,5 +37,10 @@ newDiv.appendChild(newContent);
 
 
 // add the newly created element and its content into the DOM
-const currentDiv = document.querySelector('header')
-document.body.insertBefore(newDiv, currentDiv);
+document.body.prepend(newDiv)
+
+//const currentDiv = document.querySelector('header')
+//document.body.insertBefore(newDiv, currentDiv);
+
+
+
