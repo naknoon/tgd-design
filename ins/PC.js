@@ -30,7 +30,11 @@ document.body.prepend(insElement);
 tag = 'p';
 content = '뒤입니다';
 insElement = addElement(tag, content);
-const target = document.querySelector('header');
+target = document.querySelector('header');
 document.body.insertBefore(insElement, target);
 
-
+tag = 'p';
+content = '푸터 앞에 넣을 겁니다';
+insElement = addElement(tag, content);
+target = document.querySelector('footer');
+document.body.insertBefore(insElement, target);
