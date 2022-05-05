@@ -9,10 +9,10 @@ document.body.prepend(newDiv)
 
 */
 
+
 let tag = 'div';
 let content = 'hello world!';
-
-let insElement = addElement(tag, content);
+let insElement
 
 function addElement(tag, content) {
     const addTag = document.createElement(tag);
@@ -24,8 +24,10 @@ function addElement(tag, content) {
 
 tag = 'div';
 content = '앞입니다';
+insElement = addElement(tag, content)
 document.body.prepend(insElement);
 
-tag = 'div';
+tag = 'p';
 content = '뒤입니다';
+insElement = addElement(tag, content)
 document.body.appendChild(insElement);
