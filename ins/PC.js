@@ -23,7 +23,7 @@ function addElement(tag, content) {
 }
 
 tag = 'div';
-content = '앞입니다';
+content = '요소 추가 테스트 중으로 레이아웃이 일부 깨질 수 있습니다';
 insElement = addElement(tag, content)
 insElement.id = 'topElement'
 document.body.prepend(insElement);
@@ -31,8 +31,7 @@ document.body.prepend(insElement);
 tag = 'p';
 content = '뒤입니다';
 insElement = addElement(tag, content);
-target = document.querySelector('header');
-document.body.insertBefore(insElement, target);
+document.body.appendChild(insElement);
 
 tag = 'p';
 content = '푸터 앞에 넣을 겁니다';
