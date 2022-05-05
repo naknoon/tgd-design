@@ -12,7 +12,7 @@ document.body.prepend(newDiv)
 let tag = 'div';
 let content = 'hello world!';
 
-const insElement = addElement(tag, content);
+let insElement = addElement(tag, content);
 
 function addElement(tag, content) {
     const addTag = document.createElement(tag);
