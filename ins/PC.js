@@ -18,12 +18,12 @@ function addElement () {
     addTag.appendChild(addContent);
 }
 
-tag = 'p'
-content = '환영합니다! 앞입니다.'
-addElement()
-document.body.prepend(addTag)
+tag = 'p';
+content = '앞입니다.';
+addElement();
+document.body.prepend(addTag);
 
-tag = 'div'
-content = '환영합니다! 뒤입니다.'
-addElement()
-document.body.appendChild(addTag)
+tag = 'div';
+content = '뒤입니다.';
+addElement();
+document.body.appendChild(addTag);
