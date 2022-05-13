@@ -16,7 +16,9 @@ target.appendChild(newContent); //타겟에 삽입
 
 function ins(selector) {
 
+    alert("Hello world!");
     let Templeate = document.querySelector(selector);
+    alert("Hello world! 2222");
     let NewContent = document.importNode(Templeate.content, true);
 
     return NewContent
