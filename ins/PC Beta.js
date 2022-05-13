@@ -14,12 +14,21 @@ target.appendChild(newContent); //타겟에 삽입
 
 
 
-function ins(selector) {
+/* function ins(selector) {
 
     let Templeate = document.querySelector(selector);
     let NewContent = document.importNode(Templeate.content, true);
 
     return NewContent
+}
+*/
+
+function ins(selector) {
+
+    let templeate = document.querySelector(selector);
+    let newContent = templeate.cloneNode(true);
+
+    return newContent
 }
 
 function sel(selector) {
@@ -30,6 +39,7 @@ function sel(selector) {
 }
 
 sel('body').appendChild(ins('#test2'));
+
 //target = document.querySelector('footer');
 //target.before(ins('#test2'));
 
