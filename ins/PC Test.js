@@ -1,4 +1,4 @@
-setTimeout(() => {
+/* setTimeout(() => {
     function ins(selector) {
         let template = document.querySelector(selector);
         let newContent = document.importNode(template, true);
@@ -13,4 +13,24 @@ setTimeout(() => {
     }
     
     sel('body').appendChild(ins('#test2'));
-}, 6000);
+}, 6000); */
+
+
+
+
+window.onload = function() { 
+    function ins(selector) {
+        let template = document.querySelector(selector);
+        let newContent = document.importNode(template, true);
+    
+        return newContent
+    }
+    
+    function sel(selector) {
+        let target = document.querySelector(selector);
+        
+        return target
+    }
+    
+    sel('body').appendChild(ins('#test2'));
+}
