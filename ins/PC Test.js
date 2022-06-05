@@ -13,6 +13,6 @@ setTimeout(() => {
     }
     
     sel('body').appendChild(ins('#test2'));
-}, 200);
+}, 500);
 
 
