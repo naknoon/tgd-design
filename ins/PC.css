@@ -1,4 +1,4 @@
-/* 테스트 */
+/* 상단 공지바 */
 #topElement {
     font-size: 20px;
     font-weight: 700;
@@ -10,69 +10,55 @@
 }
 
 
-
-#browserNoti {
-	color: #b3b3b3;
-	margin-top: 30px;
-	
-	grid-row: 4 / 5;
-    grid-column: 2 / 4;
-}
-
-#browserNoti a {
-	color: #fff;
-}
-
-
-
 /* 디스코드 버튼 */
 #disBtn {
 	position: fixed;
-
-	width: 300px;
-	height: 100px;
-	bottom: 15px;
-	right: 15px;
-
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	justify-content: flex-end;
+	bottom: 20px;
+	right: 20px;
 }
 
+#disBtn a {
+	display: flex;
+	align-items: center;
+	
+	padding: 15px;
+	border-radius: 20px 20px 0px 20px;
+	
+	background: #5865F2;
+	color: #fff;
+
+	flex-direction: row;
+}
+
+#disBtn a:link {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+#disBtn a:hover,
+#disBtn a:focus {
+	background: #EB459E;
+}
 
 #disBtnImg {
-	display: none;
+	height: 23px;
+	margin-right: 6px;
 }
-
-#disBtnText {
-	text-align: right;
-	
-	background: #fff;
-	padding: 8px 15px;
-	border-radius: 15px 15px 0px 15px;
-}
-
 
 #disBtnNoti {
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: 800;
+	line-height: 20px;
 }
 
-#disBtnInfo {
-	font-size: 12px;
-	font-weight: 600;
-
-	background: var(--color_noti);
-	width: fit-content;
-	padding: 0 8px;
-	border-radius: 50px;
-
-	margin-left: auto;
+@media (max-width: 1400px) {
+	
+	#disBtnNoti {
+		display: none;
 }
 
-
-
-.textSig {
-	color: #5865F2;
+	#disBtnImg {
+		margin: 0;
+	}
+	
 }
