@@ -18,7 +18,7 @@ setTimeout(() => {
     //외부 : before[앞] after[뒤]
 
     //테스트 요소
-    sel('body').append(ins('#test2'));
+    //sel('body').append(ins('#test2'));
 
     //디스코드 버튼
     sel('footer').after(ins('#disBtn'));
@@ -31,6 +31,6 @@ setTimeout(() => {
 
 
 
-}, 800);
+}, 600);
 
 
