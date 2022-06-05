@@ -25,24 +25,54 @@
 
 
 
-
+/* 디스코드 버튼 */
 #disBtn {
 	position: fixed;
 
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 100px;
 	bottom: 15px;
 	right: 15px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-end;
 }
 
 
 #disBtnImg {
+	display: none;
+}
 
-    bottom: 20px;
-    right: 20px;
+#disBtnText {
+	text-align: right;
+	
+	background: #fff;
+	padding: 8px 15px;
+	border-radius: 15px 15px 0px 15px;
+}
 
-    width: 60px;
-    height: 60px;
 
-	border-radius: 50px 50px 0px 50px;
+#disBtnNoti {
+	font-size: 16px;
+	font-weight: 800;
+}
+
+#disBtnInfo {
+	font-size: 12px;
+	font-weight: 600;
+
+	background: var(--color_noti);
+	width: fit-content;
+	padding: 0 8px;
+	border-radius: 50px;
+
+	margin-left: auto;
+}
+
+
+
+.textSig {
+	color: #5865F2;
 }
