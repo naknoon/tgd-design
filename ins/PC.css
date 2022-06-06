@@ -12,6 +12,8 @@
 
 /* 디스코드 버튼 */
 #disBtn {
+	display: none;
+
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
