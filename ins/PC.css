@@ -69,12 +69,19 @@
 /* 유용한 링크 */
 #usefulLink {
 	display: none;
+
+	position: absolute;
+	height: 1000px;
+	top: 440px;
 }
 
 #ufLinkBtnFr {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+
+	position: sticky;
+	top: 70px
 }
 
 .ufLinkBtn {
