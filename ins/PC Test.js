@@ -26,8 +26,8 @@ setTimeout(() => {
     //상단 공지바
     sel('header').before(ins('#topNoti'));
 
-
-
+    //유용한 링크
+    sel('#content-area').prepend(ins('#usefulLink'))
 
 
 

@@ -3,7 +3,7 @@
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    padding: 5px 0px;
+    padding: 5px 0;
 
     background: #F46160;
     color: #fff;
@@ -58,10 +58,40 @@
 	
 	#disBtnNoti {
 		display: none;
-}
+	}
 
 	#disBtnImg {
 		margin: 0;
 	}
 	
+}
+
+/* 유용한 링크 */
+#usefulLink {
+	display: none;
+}
+
+#ufLinkBtnFr {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.ufLinkBtn {
+	border: 2px solid #000;
+	border-radius: 50px;
+	width: fit-content;
+	height: fit-content;
+}
+
+.ufLinkBtnImg {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+#ufLinkBtnNoti {
+	font-weight: 800;
+	letter-spacing: -0.05em;
+	text-align: center;
 }
