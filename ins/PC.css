@@ -15,7 +15,7 @@
 /* 디스코드 버튼 */
 @keyframes shake {
 	0% { transform: translate(0, 0); }
-	100% { transform: translate(0, -3px); }
+	100% { transform: translate(0, -4px); }
 }
 
 #disBtn {
