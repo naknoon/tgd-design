@@ -385,6 +385,7 @@ header #right-search-form > #right-search-input {
     font-weight: 600;
     letter-spacing: -0.02em;
     text-align: right;
+    line-height: initial;
 
     transition: width .3s .05s ease-out, opacity .4s ease-in-out;
 }
