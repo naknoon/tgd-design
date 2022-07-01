@@ -59,7 +59,7 @@ p a[href]:before {
 
 /* 빠른 수정 */
 :root {
-    --url_banner: url(https://cdn.discordapp.com/attachments/936953394415935568/939931780046286959/banner_basic.png); /* 배너 */
+    --url_banner: url(https://cdn.discordapp.com/attachments/936953394415935568/992465070565113906/banner_basic_modified.png); /* 배너 */
     --url_pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png); /* 프로필바 배너 : 1 2 */
     --url_fulnoti: url(https://cdn.discordapp.com/attachments/901132816996249601/936675189096337499/darknoti.png); /* 풀사이즈형 공지 */
     --url_hgdlogo: url(https://cdn.discordapp.com/attachments/936953394415935568/983031726773239818/logo_line.svg); /* 흔게더 로고 */
