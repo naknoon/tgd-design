@@ -59,7 +59,7 @@
 	font-weight: 800;
 	line-height: 20px;
 
-	width: max-content;
+	white-space: nowrap;
 }
 
 @media (max-width: 1400px) {
