@@ -54,7 +54,7 @@
 	margin-right: 6px;
 }
 
-#disBtnNoti {
+#disBtnText {
 	font-size: 17px;
 	font-weight: 800;
 	line-height: 20px;
@@ -70,6 +70,10 @@
 
 	#disBtnImg {
 		margin: 0;
+	}
+
+	#disBtn a {
+		padding: 15px 12px;
 	}
 	
 }
