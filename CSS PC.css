@@ -51,6 +51,17 @@ p a[href]:before {
 	margin-right: 2px;
 }
 
+tr a[href] {
+	color: var(--color_lin) !important;
+}
+
+tr a[href]:before {
+	content: '\f14c';
+
+	display: inline-block;
+	margin-right: 2px;
+}
+
 
 
 /* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
