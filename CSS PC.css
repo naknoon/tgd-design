@@ -80,12 +80,14 @@ input:focus {
 /* 배경 🟢⚪⚫ */
 html,
 html.darkmode {
-    background: var(--color_bc);
+    background: #1C1E21;
     height: auto;
 }
 
-body {
-    background: transparent !important;
+body,
+html.darkmode body {
+    background: var(--color_bc);
+    /*background: transparent !important;*/
 }
 
 
