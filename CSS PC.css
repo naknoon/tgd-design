@@ -80,7 +80,7 @@ input:focus {
 /* 배경 🟢⚪⚫ */
 html,
 html.darkmode {
-    background: linear-gradient(to top, #1C1E21, #1C1E21) #1C1E21;
+    background: /*linear-gradient(to top, #1C1E21, #1C1E21)*/ #1C1E21;
     height: auto;
 }
 
