@@ -62,6 +62,18 @@
 	white-space: nowrap;
 }
 
+#disBtnText::before {
+	content: '디스코드로 ';
+}
+
+@media (max-width: 1600px) {
+
+	#disBtnText:before {
+		content: '';
+	}
+
+}
+
 @media (max-width: 1400px) {
 	
 	#disBtnText {
