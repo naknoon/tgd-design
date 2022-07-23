@@ -229,36 +229,43 @@ footer:after {
 
 
 /* 카테고리 아이콘 */
+
+/* 피드 */
 #article-list .article-list-row .category[style="color:#000000"]:before,
 #article-info > h2 > span[style="color:#000000"]:before,
 #article-list-category > a:nth-child(2):after {
 	content: var(--cg_ico_2) !important;
 }
 
+/* CSS */
 #article-list .article-list-row .category[style="color:#212121"]:before,
 #article-info > h2 > span[style="color:#212121"]:before,
 #article-list-category > a:nth-child(3):after {
 	content: var(--cg_ico_3) !important;
 }
 
+/* 그래픽 */
 #article-list .article-list-row .category[style="color:#424242"]:before,
 #article-info > h2 > span[style="color:#424242"]:before,
 #article-list-category > a:nth-child(4):after {
 	content: var(--cg_ico_4) !important;
 }
 
+/* 자유 */
 #article-list .article-list-row .category[style="color:#616161"]:before,
 #article-info > h2 > span[style="color:#616161"]:before,
 #article-list-category > a:nth-child(5):after {
 	content: var(--cg_ico_5) !important;
 }
 
+/* 질문 */
 #article-list .article-list-row .category[style="color:#757575"]:before,
 #article-info > h2 > span[style="color:#757575"]:before,
 #article-list-category > a:nth-child(6):after {
 	content: var(--cg_ico_6) !important;
 }
 
+/* 저장소 */
 #article-list .article-list-row .category[style="color:#9e9e9e"]:before,
 #article-info > h2 > span[style="color:#9e9e9e"]:before,
 #article-list-category > a:nth-child(7):after {
@@ -323,4 +330,14 @@ html.darkmode #article-info > h2 > span[style="color:#757575"] {
 html.darkmode #article-list .article-list-row .category[style="color:#9E9E9E"],
 html.darkmode #article-info > h2 > span[style="color:#9E9E9E"] {
 	color: var(--cg_col_7) !important;
+}
+
+
+/* 테스트 */
+
+/* CIFT*/
+#article-list .article-list-row .category[style="color:#272727"]:before,
+#article-info > h2 > span[style="color:#272727"]:before,
+#article-list-category > a:nth-child(8):after {
+	content: '\f05a' !important;
 }
