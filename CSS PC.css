@@ -263,6 +263,11 @@ html.darkmode #article-info > h2 > span[style="color:#121212"] {
 	border-color: var(--CSS_Color) !important;
 }
 
+/* CFT 시리즈 */
+#article-list #article-list-category.can-float > a:nth-child(n+4):nth-child(-n+7) {
+	width: 80%;
+}
+
 /* CIFT */
 #article-list .article-list-row .category[style="color:#242424"]:before,
 #article-info > h2 > span[style="color:#242424"]:before,
