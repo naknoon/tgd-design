@@ -228,109 +228,116 @@ footer:after {
 }
 
 
-/* 카테고리 아이콘 */
+/* 카테고리 아이콘 + 다크 모드 */
+:root {
+	--Peed_Content: '\f143';
+	--CSS_Content: '\f1c9';
+	--Grap_Content: '\f1c5';
+	--Gen_Content: '\f15c';
+	--Quest_Content: '\f059';
+	--Cloud_Content: '\f0c2';
+	
+	--CIFT_Content: '';
+	--CSFT_Content: '';
+	--CXFT_Content: '';
+	--CTFT_Content: '';
+}
+
+:root.darkmode {
+	--Peed_Color: #FFF;
+	--CSS_Color: #FAFAFA;
+	--Grap_Color: #F5F5F5;
+	--Gen_Color: #EEEEEE;
+	--Quest_Color: #E0E0E0;
+	--Cloud_Color: #BDBDBD;
+	
+	--CIFT_Color: '';
+	--CSFT_Color: '';
+	--CXFT_Color: '';
+	--CTFT_Color: '';
+}
+
 
 /* 피드 */
 #article-list .article-list-row .category[style="color:#000000"]:before,
 #article-info > h2 > span[style="color:#000000"]:before,
-#article-list-category > a:nth-child(2):after {
-	content: var(--cg_ico_2) !important;
+#article-list-category > a:nth-child(2):after,
+html.darkmode #article-list #article-list-category > a:nth-child(2),
+html.darkmode #article-list .article-list-row .category[style="color:#000000"],
+html.darkmode #article-info > h2 > span[style="color:#000000"] {
+	content: var(--Peed_Content) !important;
+	color: var(--Peed_Color) !important;
+	border-color: var(--Peed_Color) !important;
 }
 
 /* CSS */
 #article-list .article-list-row .category[style="color:#212121"]:before,
 #article-info > h2 > span[style="color:#212121"]:before,
-#article-list-category > a:nth-child(3):after {
-	content: var(--cg_ico_3) !important;
+#article-list-category > a:nth-child(3):after,
+html.darkmode #article-list #article-list-category > a:nth-child(3),
+html.darkmode #article-list .article-list-row .category[style="color:#212121"],
+html.darkmode #article-info > h2 > span[style="color:#212121"] {
+	content: var(--CSS_Content) !important;
+	
+	color: var(--CSS_Color) !important;
+	border-color: var(--CSS_Color) !important;
 }
+
 
 /* 그래픽 */
 #article-list .article-list-row .category[style="color:#424242"]:before,
 #article-info > h2 > span[style="color:#424242"]:before,
-#article-list-category > a:nth-child(4):after {
-	content: var(--cg_ico_4) !important;
+#article-list-category > a:nth-child(4):after,
+html.darkmode #article-list #article-list-category > a:nth-child(4),
+html.darkmode #article-list .article-list-row .category[style="color:#424242"],
+html.darkmode #article-info > h2 > span[style="color:#424242"] {
+	content: var(--Grap_Content) !important;
+	
+	color: var(--Grap_Color) !important;
+	border-color: var(--Grap_Color) !important;
 }
 
 /* 자유 */
 #article-list .article-list-row .category[style="color:#616161"]:before,
 #article-info > h2 > span[style="color:#616161"]:before,
-#article-list-category > a:nth-child(5):after {
-	content: var(--cg_ico_5) !important;
+#article-list-category > a:nth-child(5):after,
+html.darkmode #article-list #article-list-category > a:nth-child(5),
+html.darkmode #article-list .article-list-row .category[style="color:#616161"],
+html.darkmode #article-info > h2 > span[style="color:#616161"] {
+	content: var(--Gen_Content) !important;
+	
+	color: var(--Gen_Color) !important;
+	border-color: var(--Gen_Color) !important;
 }
 
 /* 질문 */
 #article-list .article-list-row .category[style="color:#757575"]:before,
 #article-info > h2 > span[style="color:#757575"]:before,
-#article-list-category > a:nth-child(6):after {
-	content: var(--cg_ico_6) !important;
+#article-list-category > a:nth-child(6):after,
+html.darkmode #article-list #article-list-category > a:nth-child(6),
+html.darkmode #article-list .article-list-row .category[style="color:#757575"],
+html.darkmode #article-info > h2 > span[style="color:#757575"] {
+	content: var(--Quest_Content) !important;
+	
+	color: var(--Quest_Color) !important;
+	border-color: var(--Quest_Color) !important;
 }
 
 /* 저장소 */
 #article-list .article-list-row .category[style="color:#9e9e9e"]:before,
 #article-info > h2 > span[style="color:#9e9e9e"]:before,
-#article-list-category > a:nth-child(7):after {
-	content: var(--cg_ico_7) !important;
-}
-
-html.darkmode #article-list #article-list-category > a:nth-child(2) {
-	color: var(--cg_col_2) !important;
-	border-color: var(--cg_col_2) !important;
-}
-
-html.darkmode #article-list #article-list-category > a:nth-child(3) {
-	color: var(--cg_col_3) !important;
-	border-color: var(--cg_col_3) !important;
-}
-
-html.darkmode #article-list #article-list-category > a:nth-child(4) {
-	color: var(--cg_col_4) !important;
-	border-color: var(--cg_col_4) !important;
-}
-
-html.darkmode #article-list #article-list-category > a:nth-child(5) {
-	color: var(--cg_col_5) !important;
-	border-color: var(--cg_col_5) !important;
-}
-
-html.darkmode #article-list #article-list-category > a:nth-child(6) {
-	color: var(--cg_col_6) !important;
-	border-color: var(--cg_col_6) !important;
-}
-
-html.darkmode #article-list #article-list-category > a:nth-child(7) {
-	color: var(--cg_col_7) !important;
-	border-color: var(--cg_col_7) !important;
-}
-
-html.darkmode #article-list .article-list-row .category[style="color:#000000"],
-html.darkmode #article-info > h2 > span[style="color:#000000"] {
-	color: var(--cg_col_2) !important;
-}
-
-html.darkmode #article-list .article-list-row .category[style="color:#212121"],
-html.darkmode #article-info > h2 > span[style="color:#212121"] {
-	color: var(--cg_col_3) !important;
-}
-
-html.darkmode #article-list .article-list-row .category[style="color:#424242"],
-html.darkmode #article-info > h2 > span[style="color:#424242"] {
-	color: var(--cg_col_4) !important;
-}
-
-html.darkmode #article-list .article-list-row .category[style="color:#616161"],
-html.darkmode #article-info > h2 > span[style="color:#616161"] {
-	color: var(--cg_col_5) !important;
-}
-
-html.darkmode #article-list .article-list-row .category[style="color:#757575"],
-html.darkmode #article-info > h2 > span[style="color:#757575"] {
-	color: var(--cg_col_6) !important;
-}
-
+#article-list-category > a:nth-child(7):after,
+html.darkmode #article-list #article-list-category > a:nth-child(7),
 html.darkmode #article-list .article-list-row .category[style="color:#9E9E9E"],
 html.darkmode #article-info > h2 > span[style="color:#9E9E9E"] {
-	color: var(--cg_col_7) !important;
+	content: var(--Cloud_Content) !important;
+	
+	color: var(--Cloud_Color) !important;
+	border-color: var(--Cloud_Color) !important;
 }
+
+
+
 
 
 /* 테스트 */
