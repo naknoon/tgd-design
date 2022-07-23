@@ -222,21 +222,21 @@ footer:after {
 }
 
 :root.darkmode {
-	--Peed_Color: #FFFFFF; /* #000000 */
-	--CSS_Color: #E8E8E8; /* #191919 */
-		--CIFT_Color: #D1D1D1; /* #333333 */
-		--CSFT_Color: #BBBBBB; /* #4C4C4C */
-		--CXFT_Color: #A4A4A4; /* #666666 */
-		--CTFT_Color: #8E8E8E; /* #7F7F7F */
-	--Grap_Color: #777777; /* #999999 */
-	--Gen_Color: #606060; /* #B2B2B2 */
-	--Quest_Color: #4A4A4A; /* #CCCCCC */
-	--Cloud_Color: #333333; /* #E5E5E5 */
+	--Peed_Color: #ffffff; /* #000000 */
+	--CSS_Color: #eeeeee; /* #121212 */
+		--CIFT_Color: #dedede; /* #333333 */
+		--CSFT_Color: #cecece; /* #4C4C4C */
+		--CXFT_Color: #bebebe; /* #666666 */
+		--CTFT_Color: #aeaeae; /* #7F7F7F */
+	--Grap_Color: #9e9e9e; /* #6D6D6D */
+	--Gen_Color: #8e8e8e; /* #7f7f7f */
+	--Quest_Color: #7d7d7d; /* #919191 */
+	--Cloud_Color: #6d6d6d; /* #a3a3a3 */
 	
 
 }
 
-/* #000000 #191919 --#333333 #4C4C4C #666666 #7F7F7F --#999999 #B2B2B2 #CCCCCC #E5E5E5 */
+/* #000000 #121212 --#333333 #4C4C4C #666666 #7F7F7F --#6D6D6D #7f7f7f #919191 #a3a3a3 */
 
 /* 피드 */
 #article-list .article-list-row .category[style="color:#000000"]:before,
@@ -251,12 +251,12 @@ html.darkmode #article-info > h2 > span[style="color:#000000"] {
 }
 
 /* CSS */
-#article-list .article-list-row .category[style="color:#191919"]:before,
-#article-info > h2 > span[style="color:#191919"]:before,
+#article-list .article-list-row .category[style="color:#121212"]:before,
+#article-info > h2 > span[style="color:#121212"]:before,
 #article-list-category > a:nth-child(3):after,
 html.darkmode #article-list #article-list-category > a:nth-child(3),
-html.darkmode #article-list .article-list-row .category[style="color:#191919"],
-html.darkmode #article-info > h2 > span[style="color:#191919"] {
+html.darkmode #article-list .article-list-row .category[style="color:#121212"],
+html.darkmode #article-info > h2 > span[style="color:#121212"] {
 	content: var(--CSS_Content) !important;
 	
 	color: var(--CSS_Color) !important;
@@ -265,12 +265,12 @@ html.darkmode #article-info > h2 > span[style="color:#191919"] {
 
 
 /* 그래픽 */
-#article-list .article-list-row .category[style="color:#999999"]:before,
-#article-info > h2 > span[style="color:#999999"]:before,
+#article-list .article-list-row .category[style="color:#6d6d6d"]:before,
+#article-info > h2 > span[style="color:#6d6d6d"]:before,
 #article-list-category > a:nth-child(8):after,
 html.darkmode #article-list #article-list-category > a:nth-child(8),
-html.darkmode #article-list .article-list-row .category[style="color:#999999"],
-html.darkmode #article-info > h2 > span[style="color:#999999"] {
+html.darkmode #article-list .article-list-row .category[style="color:#6d6d6d"],
+html.darkmode #article-info > h2 > span[style="color:#6d6d6d"] {
 	content: var(--Grap_Content) !important;
 	
 	color: var(--Grap_Color) !important;
@@ -278,12 +278,12 @@ html.darkmode #article-info > h2 > span[style="color:#999999"] {
 }
 
 /* 자유 */
-#article-list .article-list-row .category[style="color:#b2b2b2"]:before,
-#article-info > h2 > span[style="color:#b2b2b2"]:before,
+#article-list .article-list-row .category[style="color:#7f7f7f"]:before,
+#article-info > h2 > span[style="color:#7f7f7f"]:before,
 #article-list-category > a:nth-child(9):after,
 html.darkmode #article-list #article-list-category > a:nth-child(9),
-html.darkmode #article-list .article-list-row .category[style="color:#B2B2B2"],
-html.darkmode #article-info > h2 > span[style="color:#B2B2B2"] {
+html.darkmode #article-list .article-list-row .category[style="color:#7f7f7f"],
+html.darkmode #article-info > h2 > span[style="color:#7f7f7f"] {
 	content: var(--Gen_Content) !important;
 	
 	color: var(--Gen_Color) !important;
@@ -291,12 +291,12 @@ html.darkmode #article-info > h2 > span[style="color:#B2B2B2"] {
 }
 
 /* 질문 */
-#article-list .article-list-row .category[style="color:#cccccc"]:before,
-#article-info > h2 > span[style="color:#cccccc"]:before,
+#article-list .article-list-row .category[style="color:#919191"]:before,
+#article-info > h2 > span[style="color:#919191"]:before,
 #article-list-category > a:nth-child(10):after,
 html.darkmode #article-list #article-list-category > a:nth-child(10),
-html.darkmode #article-list .article-list-row .category[style="color:#CCCCCC"],
-html.darkmode #article-info > h2 > span[style="color:#CCCCCC"] {
+html.darkmode #article-list .article-list-row .category[style="color:#919191"],
+html.darkmode #article-info > h2 > span[style="color:#919191"] {
 	content: var(--Quest_Content) !important;
 	
 	color: var(--Quest_Color) !important;
@@ -304,12 +304,12 @@ html.darkmode #article-info > h2 > span[style="color:#CCCCCC"] {
 }
 
 /* 저장소 */
-#article-list .article-list-row .category[style="color:#e5e5e5"]:before,
-#article-info > h2 > span[style="color:#e5e5e5"]:before,
+#article-list .article-list-row .category[style="color:#a3a3a3"]:before,
+#article-info > h2 > span[style="color:#a3a3a3"]:before,
 #article-list-category > a:nth-child(11):after,
 html.darkmode #article-list #article-list-category > a:nth-child(11),
-html.darkmode #article-list .article-list-row .category[style="color:#E5E5E5"],
-html.darkmode #article-info > h2 > span[style="color:#E5E5E5"] {
+html.darkmode #article-list .article-list-row .category[style="color:#a3a3a3"],
+html.darkmode #article-info > h2 > span[style="color:#a3a3a3"] {
 	content: var(--Cloud_Content) !important;
 	
 	color: var(--Cloud_Color) !important;
