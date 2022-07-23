@@ -164,27 +164,6 @@ footer:after {
 
 /* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
 
-/* 카테고리 아이콘 + 다크 모드 */
-:root {
-	--cg_col_2: #FFF;
-	--cg_ico_2: '\f143';
-
-	--cg_col_3: #FAFAFA;
-	--cg_ico_3: '\f1c9';
-
-	--cg_col_4: #F5F5F5;
-	--cg_ico_4: '\f1c5';
-
-	--cg_col_5: #EEEEEE;
-	--cg_ico_5: '\f15c';
-
-	--cg_col_6: #E0E0E0;
-	--cg_ico_6: '\f059';
-
-	--cg_col_7: #BDBDBD;
-	--cg_ico_7: '\f0c2';
-}
-
 /* 카테고리 버튼 아이콘 */
 #article-list #article-list-category.can-float > a:before,
 #article-list #article-list-category.can-float > a:after {
@@ -232,31 +211,32 @@ footer:after {
 :root {
 	--Peed_Content: '\f143';
 	--CSS_Content: '\f1c9';
+		--CIFT_Content: '\f05a';
+		--CSFT_Content: '\f14d';
+		--CXFT_Content: '\f0b2';
+		--CTFT_Content: '\f14e';
 	--Grap_Content: '\f1c5';
 	--Gen_Content: '\f15c';
 	--Quest_Content: '\f059';
 	--Cloud_Content: '\f0c2';
-	
-	--CIFT_Content: '';
-	--CSFT_Content: '';
-	--CXFT_Content: '';
-	--CTFT_Content: '';
 }
 
 :root.darkmode {
-	--Peed_Color: #FFF;
-	--CSS_Color: #FAFAFA;
-	--Grap_Color: #F5F5F5;
-	--Gen_Color: #EEEEEE;
-	--Quest_Color: #E0E0E0;
-	--Cloud_Color: #BDBDBD;
+	--Peed_Color: #FFFFFF; /* #000000 */
+	--CSS_Color: #E8E8E8; /* #191919 */
+		--CIFT_Color: #D1D1D1; /* #333333 */
+		--CSFT_Color: #BBBBBB; /* #4C4C4C */
+		--CXFT_Color: #A4A4A4; /* #666666 */
+		--CTFT_Color: #8E8E8E; /* #7F7F7F */
+	--Grap_Color: #777777; /* #999999 */
+	--Gen_Color: #606060; /* #B2B2B2 */
+	--Quest_Color: #4A4A4A; /* #CCCCCC */
+	--Cloud_Color: #333333; /* #E5E5E5 */
 	
-	--CIFT_Color: '';
-	--CSFT_Color: '';
-	--CXFT_Color: '';
-	--CTFT_Color: '';
+
 }
 
+/* #000000 #191919 --#333333 #4C4C4C #666666 #7F7F7F --#999999 #B2B2B2 #CCCCCC #E5E5E5 */
 
 /* 피드 */
 #article-list .article-list-row .category[style="color:#000000"]:before,
@@ -271,12 +251,12 @@ html.darkmode #article-info > h2 > span[style="color:#000000"] {
 }
 
 /* CSS */
-#article-list .article-list-row .category[style="color:#212121"]:before,
-#article-info > h2 > span[style="color:#212121"]:before,
+#article-list .article-list-row .category[style="color:#191919"]:before,
+#article-info > h2 > span[style="color:#191919"]:before,
 #article-list-category > a:nth-child(3):after,
 html.darkmode #article-list #article-list-category > a:nth-child(3),
-html.darkmode #article-list .article-list-row .category[style="color:#212121"],
-html.darkmode #article-info > h2 > span[style="color:#212121"] {
+html.darkmode #article-list .article-list-row .category[style="color:#191919"],
+html.darkmode #article-info > h2 > span[style="color:#191919"] {
 	content: var(--CSS_Content) !important;
 	
 	color: var(--CSS_Color) !important;
@@ -285,12 +265,12 @@ html.darkmode #article-info > h2 > span[style="color:#212121"] {
 
 
 /* 그래픽 */
-#article-list .article-list-row .category[style="color:#424242"]:before,
-#article-info > h2 > span[style="color:#424242"]:before,
-#article-list-category > a:nth-child(4):after,
-html.darkmode #article-list #article-list-category > a:nth-child(4),
-html.darkmode #article-list .article-list-row .category[style="color:#424242"],
-html.darkmode #article-info > h2 > span[style="color:#424242"] {
+#article-list .article-list-row .category[style="color:#999999"]:before,
+#article-info > h2 > span[style="color:#999999"]:before,
+#article-list-category > a:nth-child(8):after,
+html.darkmode #article-list #article-list-category > a:nth-child(8),
+html.darkmode #article-list .article-list-row .category[style="color:#999999"],
+html.darkmode #article-info > h2 > span[style="color:#999999"] {
 	content: var(--Grap_Content) !important;
 	
 	color: var(--Grap_Color) !important;
@@ -298,12 +278,12 @@ html.darkmode #article-info > h2 > span[style="color:#424242"] {
 }
 
 /* 자유 */
-#article-list .article-list-row .category[style="color:#616161"]:before,
-#article-info > h2 > span[style="color:#616161"]:before,
-#article-list-category > a:nth-child(5):after,
-html.darkmode #article-list #article-list-category > a:nth-child(5),
-html.darkmode #article-list .article-list-row .category[style="color:#616161"],
-html.darkmode #article-info > h2 > span[style="color:#616161"] {
+#article-list .article-list-row .category[style="color:#b2b2b2"]:before,
+#article-info > h2 > span[style="color:#b2b2b2"]:before,
+#article-list-category > a:nth-child(9):after,
+html.darkmode #article-list #article-list-category > a:nth-child(9),
+html.darkmode #article-list .article-list-row .category[style="color:#B2B2B2"],
+html.darkmode #article-info > h2 > span[style="color:#B2B2B2"] {
 	content: var(--Gen_Content) !important;
 	
 	color: var(--Gen_Color) !important;
@@ -311,12 +291,12 @@ html.darkmode #article-info > h2 > span[style="color:#616161"] {
 }
 
 /* 질문 */
-#article-list .article-list-row .category[style="color:#757575"]:before,
-#article-info > h2 > span[style="color:#757575"]:before,
-#article-list-category > a:nth-child(6):after,
-html.darkmode #article-list #article-list-category > a:nth-child(6),
-html.darkmode #article-list .article-list-row .category[style="color:#757575"],
-html.darkmode #article-info > h2 > span[style="color:#757575"] {
+#article-list .article-list-row .category[style="color:#cccccc"]:before,
+#article-info > h2 > span[style="color:#cccccc"]:before,
+#article-list-category > a:nth-child(10):after,
+html.darkmode #article-list #article-list-category > a:nth-child(10),
+html.darkmode #article-list .article-list-row .category[style="color:#CCCCCC"],
+html.darkmode #article-info > h2 > span[style="color:#CCCCCC"] {
 	content: var(--Quest_Content) !important;
 	
 	color: var(--Quest_Color) !important;
@@ -324,27 +304,14 @@ html.darkmode #article-info > h2 > span[style="color:#757575"] {
 }
 
 /* 저장소 */
-#article-list .article-list-row .category[style="color:#9e9e9e"]:before,
-#article-info > h2 > span[style="color:#9e9e9e"]:before,
-#article-list-category > a:nth-child(7):after,
-html.darkmode #article-list #article-list-category > a:nth-child(7),
-html.darkmode #article-list .article-list-row .category[style="color:#9E9E9E"],
-html.darkmode #article-info > h2 > span[style="color:#9E9E9E"] {
+#article-list .article-list-row .category[style="color:#e5e5e5"]:before,
+#article-info > h2 > span[style="color:#e5e5e5"]:before,
+#article-list-category > a:nth-child(11):after,
+html.darkmode #article-list #article-list-category > a:nth-child(11),
+html.darkmode #article-list .article-list-row .category[style="color:#E5E5E5"],
+html.darkmode #article-info > h2 > span[style="color:#E5E5E5"] {
 	content: var(--Cloud_Content) !important;
 	
 	color: var(--Cloud_Color) !important;
 	border-color: var(--Cloud_Color) !important;
-}
-
-
-
-
-
-/* 테스트 */
-
-/* CIFT*/
-#article-list .article-list-row .category[style="color:#272727"]:before,
-#article-info > h2 > span[style="color:#272727"]:before,
-#article-list-category > a:nth-child(8):after {
-	content: '\f05a' !important;
 }
