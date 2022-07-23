@@ -263,6 +263,58 @@ html.darkmode #article-info > h2 > span[style="color:#121212"] {
 	border-color: var(--CSS_Color) !important;
 }
 
+/* CIFT */
+#article-list .article-list-row .category[style="color:#242424"]:before,
+#article-info > h2 > span[style="color:#242424"]:before,
+#article-list-category > a:nth-child(4):after,
+html.darkmode #article-list #article-list-category > a:nth-child(4),
+html.darkmode #article-list .article-list-row .category[style="color:#242424"],
+html.darkmode #article-info > h2 > span[style="color:#242424"] {
+	content: var(--CIFT_Content) !important;
+	
+	color: var(--CIFT_Color) !important;
+	border-color: var(--CIFT_Color) !important;
+}
+
+/* CSFT */
+#article-list .article-list-row .category[style="color:#363636"]:before,
+#article-info > h2 > span[style="color:#363636"]:before,
+#article-list-category > a:nth-child(5):after,
+html.darkmode #article-list #article-list-category > a:nth-child(5),
+html.darkmode #article-list .article-list-row .category[style="color:#363636"],
+html.darkmode #article-info > h2 > span[style="color:#363636"] {
+	content: var(--CSFT_Content) !important;
+	
+	color: var(--CSFT_Color) !important;
+	border-color: var(--CSFT_Color) !important;
+}
+
+/* CXFT */
+#article-list .article-list-row .category[style="color:#484848"]:before,
+#article-info > h2 > span[style="color:#484848"]:before,
+#article-list-category > a:nth-child(6):after,
+html.darkmode #article-list #article-list-category > a:nth-child(6),
+html.darkmode #article-list .article-list-row .category[style="color:#484848"],
+html.darkmode #article-info > h2 > span[style="color:#484848"] {
+	content: var(--CXFT_Content) !important;
+	
+	color: var(--CXFT_Color) !important;
+	border-color: var(--CXFT_Color) !important;
+}
+
+/* CTFT */
+#article-list .article-list-row .category[style="color:#5b5b5b"]:before,
+#article-info > h2 > span[style="color:#5b5b5b"]:before,
+#article-list-category > a:nth-child(7):after,
+html.darkmode #article-list #article-list-category > a:nth-child(7),
+html.darkmode #article-list .article-list-row .category[style="color:#5b5b5b"],
+html.darkmode #article-info > h2 > span[style="color:#5b5b5b"] {
+	content: var(--CTFT_Content) !important;
+	
+	color: var(--CTFT_Color) !important;
+	border-color: var(--CTFT_Color) !important;
+}
+
 
 /* 그래픽 */
 #article-list .article-list-row .category[style="color:#6d6d6d"]:before,
