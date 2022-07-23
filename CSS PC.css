@@ -1027,7 +1027,7 @@ html.darkmode #article-list #article-list-category > a {
 
     #article-list #article-list-category.can-float > a,
     html.darkmode #article-list #article-list-category.can-float > a {
-        width: 80%;
+        width: 85%;
         padding: 10px;
         border: 0;
         border-radius: 0px;
