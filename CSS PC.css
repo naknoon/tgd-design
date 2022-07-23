@@ -7,21 +7,21 @@
     --url_pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png); /* 프로필바 배너 : 1 2 */
     --url_fulnoti: url(https://cdn.discordapp.com/attachments/901132816996249601/936675189096337499/darknoti.png); /* 풀사이즈형 공지 */
     --url_hgdlogo: url(https://cdn.discordapp.com/attachments/901132800793649233/936304999925964820/hgd_logo.png); /* 흔게더 로고 */
-}
+} /* bannerUrl pfBarUrl fulNotiUrl hgdLogoUrl */
 
 /* 둘러보기 */
 html {
-    --color_bc: #EAEFF7;
-    --color_fr: #FFFFFF;
+    --color_bc: #EAEFF7; /* bcColor */
+    --color_fr: #FFFFFF; /* frColor */
 
-    --color_noti: #D8DDE8; 
-    --color_hot: #E5E9F0; 
-    --color_hov: #F2F4F7; 
+    --color_noti: #D8DDE8; /* notiColor */
+    --color_hot: #E5E9F0;  /* hotColor*/
+    --color_hov: #F2F4F7;  /* hoverColor */
 
-    --color_sig: #455168; 
-    --color_pla: #7F8899; /* #949FB3 */
+    --color_sig: #455168; /* sigColor */
+    --color_pla: #7F8899; /* #949FB3 */ /* plaColor */
     
-	--color_lin: #337ab7;
+	--color_lin: #337ab7; /* linkColor */
 }
 
 html.darkmode {
@@ -39,14 +39,14 @@ html.darkmode {
 }
 
 :root {
-    --color_sigr: #684545; 
-    --color_sigy: #B59653;
-    --color_sigk: #1C1E21;
+    --color_sigr: #684545; /* sigRColor */
+    --color_sigy: #B59653; /* sigYColor */
+    --color_sigk: #1C1E21; /* sigKColor*/
 
-    --color_ntb: #E7524C;
-    --color_eda: #1e88e5;
+    --color_ntb: #E7524C; /* ntbColor */
+    --color_eda: #1e88e5; /* edaColor */
 
-    --profont: 'Pretendard Variable', 'Fontawesome';
+    --profont: 'Pretendard Variable', 'Fontawesome'; /* proFont */
 }
 
 
@@ -1014,10 +1014,10 @@ html.darkmode #article-list #article-list-category > a {
         border: 0;
         box-shadow: none;
 
-        transform: translateX(calc(877px - 15px)) rotate(0deg);
+        /* transform: translateX(calc(877px - 15px)) rotate(0deg); */
         /* 근사 : (Round 866.66px) - (article-list padding L) */
 
-        /* transform: translate(calc(1070px * 0.8333333333 - 15px - 15px)) rotate(0deg); */
+        transform: translate(calc(1070px * 0.8333333333 - 15px - 15px)) rotate(0deg);
         /* 수치 : (xs-10 = 1070px * 83.33...%) - (xs-10 Padding L) - (article-list padding L) */
 
         background: transparent !important;
