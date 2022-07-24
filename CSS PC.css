@@ -232,8 +232,6 @@ footer:after {
 	--Gen_Color: #8e8e8e; /* #7f7f7f */
 	--Quest_Color: #7d7d7d; /* #919191 */
 	--Cloud_Color: #6d6d6d; /* #a3a3a3 */
-	
-
 }
 
 /* #000000 #121212 --#333333 #4C4C4C #666666 #7F7F7F --#6D6D6D #7f7f7f #919191 #a3a3a3 */
@@ -282,7 +280,8 @@ html.darkmode #article-list #article-list-category > a:nth-child(n+4):nth-child(
 
 @media (min-width: 1400px) {
 
-	#article-list #article-list-category.can-float > a:nth-child(n+4):nth-child(-n+7) {
+	#article-list #article-list-category.can-float > a:nth-child(n+4):nth-child(-n+7),
+	html.darkmode #article-list #article-list-category.can-float > a:nth-child(n+4):nth-child(-n+7) {
 		box-shadow: none;
 		border-left: 4px solid var(--color_noti) !important;
 	}
@@ -297,7 +296,6 @@ html.darkmode #article-list #article-list-category > a:nth-child(n+4):nth-child(
 	}
 
 }
-
 
 /* CIFT */
 #article-list .article-list-row .category[style="color:#242424"]:before,
