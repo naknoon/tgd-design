@@ -952,7 +952,8 @@ html.darkmode #article-list > .article-list-row.hot {
 }
 
 #article-list #article-list-category > a.active,
-#article-list #article-list-category > a:hover {
+#article-list #article-list-category > a:hover,
+#article-list #article-list-category > a:focus {
     background: var(--color_sig) !important;
     color: #fff !important;
 
