@@ -269,8 +269,8 @@ html.darkmode #article-info > h2 > span[style="color:#121212"] {
 }
 
 /* CFT 시리즈 */
-#article-list #article-list-category.can-float > a:nth-child(3),
-html.darkmode #article-list #article-list-category.can-float > a:nth-child(3){
+#article-list #article-list-category > a:nth-child(3),
+html.darkmode #article-list #article-list-category > a:nth-child(3){
 	background: var(--color_noti);
 }
 
