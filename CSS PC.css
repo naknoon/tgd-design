@@ -3,7 +3,7 @@
 
 /* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
 
-/* 본문 줄 간격 조정 Beta */
+/* 본문 줄간격 조정 */
 p {
 	margin: 0 0 3px
 }
@@ -12,7 +12,8 @@ p:last-child {
 	margin: 0px;
 }
 
-/* 특수 글꼴 Beta */
+
+/* 특수 폰트 */
 p em,
 td em {
 	font-style: normal;
@@ -31,6 +32,7 @@ td em strong {
     font-weight: 600;
 }
 
+
 /* 폰트 */
 * {
     font-family: var(--profont), 'Noto Sans KR', sans-serif;
@@ -42,6 +44,7 @@ td em strong {
 :root {
     font-feature-settings: "calt", "salt", "ss01", "ss02", "ss03", "ss08";
 }
+
 
 /* 하이퍼링크 아이콘 */
 p a[href]:before {
@@ -124,20 +127,24 @@ img[title="Broadcaster"] {
 	filter: grayscale(1);
 }
 
+
 /* 배너 */
 body > header {
     background-color: #1E2433;
 }
+
 
 /* 로고 */
 header #header-bar > .row:before {
 	filter: brightness(100);
 }
 
+
 /* 흔게더 메인 페이지 버튼 */
 #board-info h1 > a:hover:after {
     content: ' 메인으로';
 }
+
 
 /* 접속자 수 사이드 문구 */
 #board-info #viewers-area #viewers:before {
@@ -163,6 +170,34 @@ footer:after {
 
 
 /* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
+
+/* 전역 설정 */
+:root {
+	--Peed_Content: '\f143';
+	--CSS_Content: '\f1c9';
+		--CIFT_Content: '\f05a';
+		--CSFT_Content: '\f14d';
+		--CXFT_Content: '\f0b2';
+		--CTFT_Content: '\f14e';
+	--Grap_Content: '\f1c5';
+	--Gen_Content: '\f15c';
+	--Quest_Content: '\f059';
+	--Cloud_Content: '\f0c2';
+}
+
+:root.darkmode {
+	--Peed_Color: #ffffff; /* #000000 */
+	--CSS_Color: #eeeeee; /* #121212 */
+		--CIFT_Color: #dedede; /* #333333 */
+		--CSFT_Color: #cecece; /* #4C4C4C */
+		--CXFT_Color: #bebebe; /* #666666 */
+		--CTFT_Color: #aeaeae; /* #7F7F7F */
+	--Grap_Color: #9e9e9e; /* #6D6D6D */
+	--Gen_Color: #8e8e8e; /* #7f7f7f */
+	--Quest_Color: #7d7d7d; /* #919191 */
+	--Cloud_Color: #6d6d6d; /* #a3a3a3 */
+}
+
 
 /* 카테고리 버튼 아이콘 */
 #article-list #article-list-category.can-float > a:before,
@@ -207,35 +242,6 @@ footer:after {
 }
 
 
-/* 카테고리 아이콘 + 다크 모드 */
-:root {
-	--Peed_Content: '\f143';
-	--CSS_Content: '\f1c9';
-		--CIFT_Content: '\f05a';
-		--CSFT_Content: '\f14d';
-		--CXFT_Content: '\f0b2';
-		--CTFT_Content: '\f14e';
-	--Grap_Content: '\f1c5';
-	--Gen_Content: '\f15c';
-	--Quest_Content: '\f059';
-	--Cloud_Content: '\f0c2';
-}
-
-:root.darkmode {
-	--Peed_Color: #ffffff; /* #000000 */
-	--CSS_Color: #eeeeee; /* #121212 */
-		--CIFT_Color: #dedede; /* #333333 */
-		--CSFT_Color: #cecece; /* #4C4C4C */
-		--CXFT_Color: #bebebe; /* #666666 */
-		--CTFT_Color: #aeaeae; /* #7F7F7F */
-	--Grap_Color: #9e9e9e; /* #6D6D6D */
-	--Gen_Color: #8e8e8e; /* #7f7f7f */
-	--Quest_Color: #7d7d7d; /* #919191 */
-	--Cloud_Color: #6d6d6d; /* #a3a3a3 */
-}
-
-/* #000000 #121212 --#333333 #4C4C4C #666666 #7F7F7F --#6D6D6D #7f7f7f #919191 #a3a3a3 */
-
 /* 피드 */
 #article-list .article-list-row .category[style="color:#000000"]:before,
 #article-info > h2 > span[style="color:#000000"]:before,
@@ -247,6 +253,7 @@ html.darkmode #article-info > h2 > span[style="color:#000000"] {
 	color: var(--Peed_Color) !important;
 	border-color: var(--Peed_Color) !important;
 }
+
 
 /* CSS */
 #article-list .article-list-row .category[style="color:#121212"]:before,
