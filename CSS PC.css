@@ -433,6 +433,6 @@ html.darkmode #article-info > h2 > span[style="color:#a3a3a3"] {
 }
 
 #article-list>.article-list-row>.item>.list-title>small.favo:after {
-    content: '가이드';
+    content: '가이드'; /* \f058 */
 }
 
