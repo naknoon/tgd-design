@@ -408,3 +408,31 @@ html.darkmode #article-info > h2 > span[style="color:#a3a3a3"] {
 	color: var(--Cloud_Color) !important;
 	border-color: var(--Cloud_Color) !important;
 }
+
+
+/* 추천 가이드 뱃지 */
+#article-list>.article-list-row>.item>.list-title>small.favo i:before {
+    display: none;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.favo {
+	top: 0;
+	border-radius: 5px;
+    padding: 0px 5px;
+
+    height: 18px;
+	line-height: 18px;
+    font-size: 12px;
+
+    background: var(--color_sig);
+	color: #fff;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.favo:before {
+    content: '추천 ';
+}
+
+#article-list>.article-list-row>.item>.list-title>small.favo:after {
+    content: '가이드';
+}
+
