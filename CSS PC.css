@@ -118,7 +118,7 @@ html.darkmode a:focus {
 
 
 /* 프로필바 배너 🟢⚪ */
-@keyframes Banner {
+@keyframes banner {
     from { background-position: center 0px; }
     to { background-position: center -200px; } /* -(이미지 총 길이) */ /* $1 */
 }
@@ -1620,7 +1620,7 @@ html.darkmode #article-reply-area #reply-best-area .reply>.reply-header>.reply-m
 	background-repeat: no-repeat;
 	background-color: var(--color_sig);
 
-	animation: Banner 2s steps(2) infinite; /* 이름 전환간격 전환개수 반복횟수 */ /* $2 */
+	animation: banner 2s steps(2) infinite; /* 이름 전환간격 전환개수 반복횟수 */ /* $2 */
 
     position: absolute;
     height: 100px !important;
