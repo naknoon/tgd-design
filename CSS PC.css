@@ -45,7 +45,7 @@ html.darkmode {
     --color_ntb: #E7524C; /* ntbColor */
     --color_eda: #1e88e5; /* edaColor */
 
-    --profont: 'Pretendard Variable', 'Fontawesome'; /* proFont */
+    --profont: 'Fontawesome', 'Pretendard Variable'; /* proFont */
 }
 
 
