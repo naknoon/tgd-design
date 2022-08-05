@@ -608,7 +608,7 @@ html.darkmode #main .menu-wrapper > .header {
 html.darkmode #main .menu-wrapper > a, 
 html.darkmode #main .menu-wrapper #fav-shortcut-area > a {
     background: transparent;
-	border-bottom: 1px solid var(--color_hot);
+	border-bottom: none;
 	padding: 0.35em 0.5em 0.35em 0.5em;
     letter-spacing: -0.04em;
 }
