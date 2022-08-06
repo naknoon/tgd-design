@@ -157,7 +157,6 @@
     height: 100px;
     
     text-align: center;
-    letter-spacing: -0.05em;
 
 	position: absolute;
 	left: 50%;
@@ -283,6 +282,7 @@
 /* 영역 제목 */
 #pf-link-header {
     font-size: 18px;
+	letter-spacing: -0.05em;
     font-weight: 900;
     
     grid-column: 5 / 7;
@@ -315,6 +315,8 @@
     text-decoration: none;display: flex;
     align-items: center;
     justify-content: center;
+
+	letter-spacing: -0.05em;
 }
 
 .btn-undertext {
