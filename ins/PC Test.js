@@ -27,7 +27,7 @@ setTimeout(() => {
     sel('header').before(ins('#topNoti'));
 
     //유용한 링크
-    sel('#content-area').prepend(ins('#usefulLink'))
+    sel('#content-area').prepend(ins('#pf-link'))
 
 
 
