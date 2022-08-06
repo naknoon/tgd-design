@@ -141,7 +141,8 @@
 
 /* 제목 */
 #pf-link-header {
-	background: gray;
+	background: var(--color_pla);
+	color: #fff;
 
     font-size: 17px;
 	letter-spacing: -0.05em;
@@ -185,15 +186,17 @@
 }
 
 
-/* 일반 버튼 */
+/* 버튼 */
 .pfbtn {
     background: var(--color_noti);
-    text-decoration: none !important;
+	color: var(--color_text);
+
+	letter-spacing: -0.05em;
+	text-decoration: none !important;
+
 	display: flex;
     align-items: center;
     justify-content: center;
-
-	letter-spacing: -0.05em;
 }
 
 .pfbtn:hover,
@@ -228,10 +231,6 @@
 	padding: 0 6px;
 	border-radius: 20px;
 }
-
-
-
-
 
 
 /* 중요 버튼 */
