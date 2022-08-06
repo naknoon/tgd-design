@@ -189,7 +189,7 @@
 /* 버튼 */
 .pfbtn {
     background: var(--color_noti);
-	color: var(--color_text);
+	color: var(--color_text) !important;
 
 	letter-spacing: -0.05em;
 	text-decoration: none !important;
