@@ -183,6 +183,19 @@
 	padding: 5px 0;
 }
 
+.pfbtn-cft {
+	grid-row: 1 / 3;
+
+	font-weight: 700;
+
+	background: var(--color_sigy) !important;
+}
+
+
+.pfbtn-undertext {
+    flex-direction: column;
+    gap: 2px;
+}
 
 /* 카테고리 - 빠른 CFT */
 #pflink-cft {
@@ -214,6 +227,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+	flex-direction: column;
 
 }
 
@@ -306,7 +320,7 @@
 
 
 .header-undertext {
-    font-size: 0.5em;
+    font-size: 0.7em;
     display: none;
 }
 
@@ -325,19 +339,7 @@
 }
 
 
-.pfbtn-cft {
-	grid-row: 1 / 3;
 
-	font-weight: 700;
-
-	background: var(--color_sigy) !important;
-}
-
-
-.pfbtn-undertext {
-    flex-direction: column;
-    gap: 2px;
-}
 
 
 #pf-link-important {
@@ -350,7 +352,18 @@
 }
 
 .frbtn-important {
-    background: var(--color_sigy);
+    background: var(--color_sigy);`
+}
+
+/* 아이콘 */
+#cft-faq::before {
+    content: '\f135';
+	font-size: 18px;
+}
+
+#cft-key::before {
+    content: '\f084';
+	font-size: 18px;
 }
 
 
