@@ -295,7 +295,7 @@
 
 /* 영역 제목 */
 #pf-link-header {
-    font-size: 18px;
+    font-size: 17px;
 	letter-spacing: -0.05em;
     font-weight: 900;
     
@@ -359,11 +359,13 @@
 #cft-faq::before {
     content: '\f135';
 	font-size: 18px;
+	line-height: 18px;
 }
 
 #cft-key::before {
     content: '\f084';
 	font-size: 18px;
+	line-height: 18px;
 }
 
 
