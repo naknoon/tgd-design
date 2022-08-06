@@ -247,7 +247,7 @@
 
 
 
-/* 일반 버튼 */
+
 .pfbtn {
     background: var(--color_noti);
     text-decoration: none !important;
@@ -258,22 +258,13 @@
 	letter-spacing: -0.05em;
 }
 
-.pfbtn:hover,
-.pfbtn:focus {
-	background: var(--color_hov);
-}
-
-
-
 .btn-undertext {
-    font-size: 11px;
+    font-size: 10px;
     margin: 0;
-
-	background: var(--color_pla);
-	color: #fff;
-
-	padding: 0 6px;
-	border-radius: 20px;
+    background: var(--color_pla);
+    color: #fff;
+    padding: 0px 6px;
+    border-radius: 20px;
 }
 
 
