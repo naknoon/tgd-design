@@ -230,19 +230,16 @@
 /* 영역 제목 */
 #pf-link-header {
     font-size: 17px;
-	letter-spacing: -0.05em;
-    font-weight: 900;
-    
+    letter-spacing: -0.05em;
+    font-weight: 800;
     grid-column: 5 / 7;
     grid-row: 1 / 2;
-    
-    background: gray;
-    
+    background: var(--color_sigk);
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
 
 
@@ -251,11 +248,11 @@
 .pfbtn {
     background: var(--color_noti);
     text-decoration: none !important;
-	display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-
-	letter-spacing: -0.05em;
+    letter-spacing: -0.05em;
+    color: var(--color_sig);
 }
 
 .btn-undertext {
@@ -281,7 +278,7 @@
 }
 
 .frbtn-important {
-    background: var(--color_sigy);
+    background: var(--color_noti);
 }
 
 /* 아이콘 */
