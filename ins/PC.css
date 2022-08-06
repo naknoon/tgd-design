@@ -317,3 +317,25 @@
     display: none;
     
 }
+
+
+.pfbtn-cft {
+	grid-row: 1 / 3;
+
+	font-weight: 700;
+
+	background: var(--color_sigy) !important;
+}
+
+#pf-link-important {
+    grid-column: 3 / 5;
+    
+    display: grid;
+    
+    grid-template-columns: 2.5fr 1fr;
+    gap: 5px;
+}
+
+.frbtn-important {
+    background: var(--color_sigy);
+}
