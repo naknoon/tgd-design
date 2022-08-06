@@ -254,7 +254,7 @@
 
 .frbtn-important {
     background: var(--color_pla);
-	color: #fff;
+	color: #fff !important;
 }
 
 
