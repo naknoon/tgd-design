@@ -305,7 +305,7 @@
 }
 
 .pfbtn {
-    background: #00ff00;
+    background: var(--color_noti);
     text-decoration: none;display: flex;
     align-items: center;
     justify-content: center;
