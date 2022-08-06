@@ -1,6 +1,6 @@
 /* 상단 공지바 */
 #topNoti {
-	display: none;
+	/* display: none; */
 	
     font-size: 18px;
     font-weight: 700;
@@ -159,6 +159,8 @@
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 100;
+
+	background: var(--color_sig);
 }
 
 
