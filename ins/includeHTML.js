@@ -27,13 +27,13 @@ window.addEventListener("load", function () {
                     //외부 : before[앞] after[뒤]
 
                     //디스코드 버튼
-                    sel("footer").after(ins("#disBtn"));
+                    sel("footer").after(ins("#discord-btn"));
 
                     //상단 공지바
-                    sel("header").before(ins("#topNoti"));
+                    sel("header").before(ins("#noti-top"));
 
                     //유용한 링크
-                    sel("#content-area").prepend(ins("#pf-link"));
+                    sel("#content-area").prepend(ins("#useful-link"));
 
                 }
             };
