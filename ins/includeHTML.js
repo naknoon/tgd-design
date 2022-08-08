@@ -23,6 +23,9 @@ window.addEventListener("load", function () {
                 if (this.readyState == 4 && this.status == 200) {
                     el.outerHTML = this.responseText;
 
+                    //내부 : prepend[앞] append[뒤]
+                    //외부 : before[앞] after[뒤]
+
                     //디스코드 버튼
                     sel("footer").after(ins("#disBtn"));
 
@@ -39,6 +42,3 @@ window.addEventListener("load", function () {
         }
     });
 });
-
-//내부 : prepend[앞] append[뒤]
-//외부 : before[앞] after[뒤]

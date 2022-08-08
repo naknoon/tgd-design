@@ -110,7 +110,7 @@
 /* 프레임 */
 #pf-link {
     width: calc(1070px - 180px * 2);
-    height: 100px;
+	height: 100px;
     
     text-align: center;
 
@@ -120,12 +120,8 @@
 	z-index: 100;
 
 	background: var(--color_sig);
-}
 
-
-/* 유용한 링크 */
-#pf-link-grid {
-    display: grid;
+	display: grid;
     
     grid-template-columns: repeat(6, 1fr); /* 가로 */
     grid-template-rows: 32px 16px 32px ; /* 세로 */
@@ -134,7 +130,6 @@
 
     align-items: stretch;
     
-    height: 100px;
 	padding: 5px 0;
 }
 
