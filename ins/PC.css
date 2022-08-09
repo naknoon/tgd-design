@@ -121,7 +121,7 @@
     width: calc(1070px - 180px * 2);
 	height: 100px;
 
-	background: var(--color_sig);
+	background: var(--color-sig);
 	padding: 5px 0;
 
 	position: absolute;
@@ -160,7 +160,7 @@
 
 /* 버튼 */
 .uflink-btn {
-    background: var(--color_noti);
+    background: var(--color-noti);
 	color: var(--color-text) !important;
 
 	letter-spacing: -0.05em;
@@ -177,7 +177,7 @@
 
 .uflink-btn:hover,
 .uflink-btn:focus {
-	background: var(--color_sig) !important;
+	background: var(--color-sig) !important;
 	border: 1px dashed #fff;
 	color: #fff !important;
 }
@@ -232,7 +232,7 @@
 	line-height: 11px;
 	font-weight: normal;
     
-	background: var(--color_pla);
+	background: var(--color-pla);
 	color: #fff;
 
 	margin: 0;
