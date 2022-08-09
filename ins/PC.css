@@ -186,6 +186,10 @@
 		justify-content: center;
 }
 
+html.darkmode .uflink-btn {
+	color: #fff;
+}
+
 .uflink-btn:hover,
 .uflink-btn:focus {
 	background: var(--color-sig) !important;
@@ -263,4 +267,11 @@
 
 .btn-important {
     background: var(--color-btn-important);
+}
+
+
+/* 버튼 - 다크 모드 특수 */
+html.darkmode .btn-cft,
+html.darkmode .btn-important {
+	color: #000;
 }
