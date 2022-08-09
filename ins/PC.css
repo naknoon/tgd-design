@@ -104,11 +104,15 @@
 /* 유용한 링크 :::::::::: :::::::::: :::::::::: */
 
 :root {
-	--color_text : #000; 
+	--color-text : #000;
+	--color-btn-cft: #B3AF88; /* 분할 보색 */
+	--color-btn-important: #ABADB3; /* 보색 */
 }
 
 :root.darkmode {
-	--color_text : #fff; 
+	--color-text : #fff;
+	--color-btn-cft: #CCC89B;
+	--color-btn-important: #C4C6CC;
 }
 
 
@@ -157,7 +161,7 @@
 /* 버튼 */
 .uflink-btn {
     background: var(--color_noti);
-	color: var(--color_text) !important;
+	color: var(--color-text) !important;
 
 	letter-spacing: -0.05em;
 	text-decoration: none !important;
@@ -181,7 +185,7 @@
 
 /* 버튼 - 빠른 CFT */
 .btn-cft {
-	background: var(--color_sigy) !important;
+	background: var(--color-btn-cft) !important;
 	color: #000;
 
 	font-weight: 700;
@@ -247,6 +251,5 @@
 }
 
 .btn-important {
-    background: var(--color_pla);
-	color: #fff !important;
+    background: var(--color-btn-important);
 }
