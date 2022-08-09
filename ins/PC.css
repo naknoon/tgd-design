@@ -172,7 +172,7 @@
 /* 버튼 */
 .uflink-btn {
     background: var(--color-noti);
-	color: var(--color-text) !important;
+	color: var(--color-text);
 
 	letter-spacing: -0.05em;
 	text-decoration: none !important;
@@ -200,7 +200,7 @@ html.darkmode .uflink-btn {
 
 /* 버튼 - 빠른 CFT */
 .btn-cft {
-	background: var(--color-btn-cft) !important;
+	background: var(--color-btn-cft);
 	color: #000;
 
 	font-weight: 700;
