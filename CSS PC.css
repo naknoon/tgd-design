@@ -2,48 +2,48 @@
 
 /* 빠른 수정 🟢⚪⚫ */
 :root {
-    --url_banner: url(https://cdn.discordapp.com/attachments/901132816996249601/936782818804129842/banner_basic.png); /* 배너 */
-    --url_pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png); /* 프로필바 배너 : 1 2 */
-    --url_fulnoti: url(https://cdn.discordapp.com/attachments/901132816996249601/936675189096337499/darknoti.png); /* 풀사이즈형 공지 */
-    --url_hgdlogo: url(https://cdn.discordapp.com/attachments/901132800793649233/936304999925964820/hgd_logo.png); /* 흔게더 로고 */
+    --url-banner: url(https://cdn.discordapp.com/attachments/901132816996249601/936782818804129842/banner_basic.png); /* 배너 */
+    --url-pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png); /* 프로필바 배너 : 1 2 */
+    --url-fulnoti: url(https://cdn.discordapp.com/attachments/901132816996249601/936675189096337499/darknoti.png); /* 풀사이즈형 공지 */
+    --url-hgdlogo: url(https://cdn.discordapp.com/attachments/901132800793649233/936304999925964820/hgd_logo.png); /* 흔게더 로고 */
 } /* bannerUrl pfBarUrl fulNotiUrl hgdLogoUrl */
 
 /* 둘러보기 */
 html {
-    --color_bc: #EAEFF7; /* bcColor */
-    --color_fr: #FFFFFF; /* frColor */
+    --color-bc: #EAEFF7; /* bcColor */
+    --color-fr: #FFFFFF; /* frColor */
 
-    --color_noti: #D8DDE8; /* notiColor */
-    --color_hot: #E5E9F0;  /* hotColor*/
-    --color_hov: #F2F4F7;  /* hoverColor */
+    --color-noti: #D8DDE8; /* notiColor */
+    --color-hot: #E5E9F0;  /* hotColor*/
+    --color-hov: #F2F4F7;  /* hoverColor */
 
-    --color_sig: #455168; /* sigColor */
-    --color_pla: #7F8899; /* #949FB3 */ /* plaColor */
+    --color-sig: #455168; /* sigColor */
+    --color-pla: #7F8899; /* #949FB3 */ /* plaColor */
     
-	--color_lin: #337ab7; /* linkColor */
+	--color-lin: #337ab7; /* linkColor */
 }
 
 html.darkmode {
-    --color_bc: #121212;
-    --color_fr: #1D1D1D;
+    --color-bc: #121212;
+    --color-fr: #1D1D1D;
 
-    --color_noti: #3A3A3A;
-    --color_hot: #313131;
-    --color_hov: #262626;
+    --color-noti: #3A3A3A;
+    --color-hot: #313131;
+    --color-hov: #262626;
     
-    --color_sig: #B59653;
-    --color_pla: #99917F; /* #B3A994 */ 
+    --color-sig: #B59653;
+    --color-pla: #99917F; /* #B3A994 */ 
 
-    --color_lin: #B88533;
+    --color-lin: #B88533;
 }
 
 :root {
-    --color_sigr: #684545; /* sigRColor */
-    --color_sigy: #B59653; /* sigYColor */
-    --color_sigk: #1C1E21; /* sigKColor*/
+    --color-sigr: #684545; /* sigRColor */
+    --color-sigy: #B59653; /* sigYColor */
+    --color-sigk: #1C1E21; /* sigKColor*/
 
-    --color_ntb: #E7524C; /* ntbColor */
-    --color_eda: #1e88e5; /* edaColor */
+    --color-ntb: #E7524C; /* ntbColor */
+    --color-eda: #1e88e5; /* edaColor */
 
     --profont: 'Fontawesome', 'Pretendard Variable'; /* proFont */
 }
@@ -85,7 +85,7 @@ html.darkmode {
 
 body,
 html.darkmode body {
-    background: var(--color_bc);
+    background: var(--color-bc);
     /*background: transparent !important;*/
 }
 
@@ -97,7 +97,7 @@ a:focus,
 html.darkmode a,
 html.darkmode a:hover,
 html.darkmode a:focus {
-    color: var(--color_sig);
+    color: var(--color-sig);
 }
 
 
@@ -161,7 +161,7 @@ html.darkmode body:before {
 	display: block;
 	height: 100vh;
 
-	background-image: var(--url_fulnoti);
+	background-image: var(--url-fulnoti);
 	background-position: center center;
 	background-repeat: no-repeat;
 }
@@ -196,8 +196,8 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
 /* 버튼 일괄 옵션 🟢⚪ */
 .btn {
     color: #fff !important;
-    background-color: var(--color_sig) !important;
-    border: 1px solid var(--color_sig) !important;
+    background-color: var(--color-sig) !important;
+    border: 1px solid var(--color-sig) !important;
     border-radius: 0px;
 
     /* Beta - flex로 구현 */
@@ -215,14 +215,14 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
 
 .btn:hover,
 .btn:focus {
-    color: var(--color_sig) !important;
-    background-color: var(--color_fr) !important;
+    color: var(--color-sig) !important;
+    background-color: var(--color-fr) !important;
 }
 
 
 /* 하이퍼링크 텍스트 색상 초기화 🟢⚪ */
 p a[href] {
-	color: var(--color_lin) !important;
+	color: var(--color-lin) !important;
 }
 
 
@@ -294,7 +294,7 @@ body > header:before {
     min-width: 1100px;
     height: 40px;
 
-    background-color: var(--color_sigk);
+    background-color: var(--color-sigk);
 }
 
 /* 로고 */
@@ -410,7 +410,7 @@ header #right-search-form > #right-search-input:focus {
 header #header-bar {
     margin: 0 auto;
     width: 100%;
-    background: var(--color_sig);
+    background: var(--color-sig);
     position: sticky;
     top: 0;
     z-index: 102;
@@ -425,7 +425,7 @@ header #header-bar > .row {
     margin: 0 auto;
     padding: 0;
 
-    background: var(--color_sig) !important;
+    background: var(--color-sig) !important;
     border: none !important;
 }
 
@@ -433,7 +433,7 @@ header #header-bar > .row {
 /* 로고 🟢⚪ */
 header #header-bar > .row:before {
     content: '';
-    background: var(--url_hgdlogo) no-repeat;
+    background: var(--url-hgdlogo) no-repeat;
     background-size: auto 30px;
     background-position: left center;
     width: 100%;
@@ -538,7 +538,7 @@ header #header-bar > .row:before {
     text-overflow: ellipsis;
 
     background: none !important;
-    color: var(--color_ntb);
+    color: var(--color-ntb);
 
     padding: 0 !important;
     margin-left: 5px;
@@ -551,7 +551,7 @@ header #header-bar > .row:before {
 
     font-size: 12px;
     font-family: 'fontawesome';
-    color: var(--color_ntb);
+    color: var(--color-ntb);
 
     position: relative;
     top: -1px;
@@ -564,7 +564,7 @@ header #header-bar > .row:before {
 
     font-size: 14px;
     font-family: 'fontawesome';
-    color: var(--color_ntb);
+    color: var(--color-ntb);
 
     height: 45px;
     line-height: 45px;
@@ -576,7 +576,7 @@ header #header-bar > .row:before {
 /* 배너 🟢⚪ */
 body > header {
     height: 290px;
-    background-image: var(--url_banner);
+    background-image: var(--url-banner);
     background-repeat: no-repeat;
     background-color: #0e1120;
     background-position: top center;
@@ -590,15 +590,15 @@ body > header {
 
 /* 공통 🟢⚪ */
 #main .menu-wrapper {
-	background: var(--color_fr) !important;
-    border: 1px solid var(--color_sig) !important;
+	background: var(--color-fr) !important;
+    border: 1px solid var(--color-sig) !important;
 }
 
 
 /* 메뉴 헤더 🟢⚪⚫ */
 #main .menu-wrapper > .header,
 html.darkmode #main .menu-wrapper > .header {
-	background: var(--color_sig);
+	background: var(--color-sig);
 }
 
 
@@ -617,14 +617,14 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area > a {
 /* 메뉴 버튼 접촉 🟢⚪⚫ */
 #main .menu-wrapper > a:hover,
 #main .menu-wrapper > a:focus {
-    background-color: var(--color_hov) !important;
+    background-color: var(--color-hov) !important;
 }
 
 
 /* 메뉴 버튼 분리선 🟢⚪⚫ */
 #main .menu-wrapper .spacer,
 html.darkmode #main .menu-wrapper .spacer {
-    background: var(--color_sig);
+    background: var(--color-sig);
     height: 1px;
 }
 
@@ -634,14 +634,14 @@ html.darkmode #main .menu-wrapper .spacer {
 #main .menu-wrapper #fav-shortcut-area > a > em,
 html.darkmode #main .menu-wrapper > a > em, 
 html.darkmode #main .menu-wrapper #fav-shortcut-area > a > em {
-    color: var(--color_sig);
+    color: var(--color-sig);
 }
 
 
 /* 고정 즐겨찾기 🟢⚪⚫ */
 #main .menu-wrapper #fav-shortcut-area > a,
 html.darkmode #main .menu-wrapper #fav-shortcut-area > a {
-    background: var(--color_pla);
+    background: var(--color-pla);
     color: #fff;
     border: 0;
 }
@@ -659,7 +659,7 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area > a {
 #main .menu-wrapper #fav-shortcut-area > a:focus,
 html.darkmode #main .menu-wrapper #fav-shortcut-area > a:hover,
 html.darkmode #main .menu-wrapper #fav-shortcut-area > a:focus {
-    background: var(--color_sig);
+    background: var(--color-sig);
 }
 
 
@@ -671,7 +671,7 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area > a:focus {
 #article-list > div:nth-child(3):not(#article-list>.article-list-row, #article-list-menu),
 html.darkmode #article-list > div:nth-child(3):not(#article-list>.article-list-row, #article-list-menu) {
     width: 844px;
-    background: var(--color_noti) !important;
+    background: var(--color-noti) !important;
     width: 100%;
 
     border: none;
@@ -679,18 +679,18 @@ html.darkmode #article-list > div:nth-child(3):not(#article-list>.article-list-r
 
 /* 상단 광고 - 내부 🟢⚪ */
 #main-content > div > div:nth-child(2):not(#article-list) {
-    background: var(--color_noti) !important;
+    background: var(--color-noti) !important;
     padding: 10px 8px !important;
 }
 
 #main-content > div > div:nth-child(2) > div:not(#article-list-category, .article-list-table-gallery, #article-list-menu) {
-    background: var(--color_noti) !important;
+    background: var(--color-noti) !important;
 }
 
 
 /* 측면 광고 🟢⚪⚫ */
 #main-menu div[align="center"][style="background:#fff;padding:10px 0;"] {
-	background: var(--color_noti) !important;
+	background: var(--color-noti) !important;
 }
 
 
@@ -716,7 +716,7 @@ html.darkmode #article-list > div:nth-child(3):not(#article-list>.article-list-r
 /* 메인 프레임 */
 #main-content > div.frame{
     border: none !important;
-    background: var(--color_fr) !important;
+    background: var(--color-fr) !important;
 }
 
 
@@ -725,7 +725,7 @@ html.darkmode #article-list > div:nth-child(3):not(#article-list>.article-list-r
 /* :::::::::: :::::::::: 게시글 목록 - 공통 :::::::::: :::::::::: */
 
 #article-list {
-    /* background: var(--color_fr); */
+    /* background: var(--color-fr); */
 
     margin: 0;
     padding: 15px;
@@ -740,7 +740,7 @@ html.darkmode #article-list > div:nth-child(3):not(#article-list>.article-list-r
 /* 추천 수 🟢⚪⚫ */
 #article-list > .article-list-row > .item > .list-header > span,
 html.darkmode #article-list > .article-list-row > .item > .list-header > span {
-    color: var(--color_sig);
+    color: var(--color-sig);
     background: transparent !important;
     font-size: 14px;
 }
@@ -754,7 +754,7 @@ html.darkmode #article-list > .article-list-row > .item > .list-header > span {
 /* 댓글 수 🟢⚪⚫ */
 #article-list > .article-list-row > .item > .list-title > small.comment-count,
 html.darkmode #article-list > .article-list-row > .item > .list-title > small.comment-count {
-    color: var(--color_sig);
+    color: var(--color-sig);
 }
 
 
@@ -772,7 +772,7 @@ html.darkmode #article-list > .article-list-row > .item > .list-title > small.co
 /* 작성자 닉네임 🟢⚪⚫ */
 #article-list > .article-list-row > .item > .list-title > .list-writer.logged > span,
 html.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer.logged > span  {
-    color: var(--color_sig);
+    color: var(--color-sig);
 }
 
 /* 글 목록 🟢⚪⚫ */
@@ -794,13 +794,13 @@ html.darkmode #article-list > .article-list-row {
 #article-list > .article-list-row > .item > .list-title > .list-writer,
 #article-list > .article-list-row > .item > .list-blocked, 
 #article-list > .article-list-row > .item > .list-time {
-    border-color: var(--color_hot) !important;
+    border-color: var(--color-hot) !important;
 }
 
 /* 선택된 게시글 🟢⚪⚫ */
 #article-list > .article-list-row.active,
 html.darkmode #article-list > .article-list-row.active {
-    background-color: var(--color_pla); /* hov - Complementary E */
+    background-color: var(--color-pla); /* hov - Complementary E */
 }
 
 
@@ -809,7 +809,7 @@ html.darkmode #article-list > .article-list-row.active {
 #article-list > .article-list-row:focus,
 html.darkmode #article-list > .article-list-row:hover,
 html.darkmode #article-list > .article-list-row:focus  {
-    background-color: var(--color_hov) !important;
+    background-color: var(--color-hov) !important;
     transition: 0.2s;
 }
 
@@ -828,7 +828,7 @@ html.darkmode #article-list > .article-list-row:focus  {
 #article-list > .article-list-row.notice > .item > .list-header > b:after {
     font-family: 'fontawesome';
     font-size: 14px;
-    color: var(--color_sig);
+    color: var(--color-sig);
     content: '\f08d'; /* 압정 */
 }
 
@@ -845,7 +845,7 @@ html.darkmode #article-list > .article-list-row:focus  {
 /* 공지글 디자인 */
 #article-list > .article-list-row.notice,
 html.darkmode #article-list > .article-list-row.notice {
-    background-color: var(--color_noti);
+    background-color: var(--color-noti);
 }
 
 #article-list > .article-list-row.notice > .item > .list-title > small.comment-count,
@@ -875,8 +875,8 @@ html.darkmode #article-list > .article-list-row.notice {
     font-size: 13px;
     line-height: 18px;
 
-    background: var(--color_sig);
-    border: 2px solid var(--color_sig);
+    background: var(--color-sig);
+    border: 2px solid var(--color-sig);
     color: #fff;
 
     padding: 0 4px;
@@ -901,8 +901,8 @@ html.darkmode #article-list > .article-list-row.notice {
     height: 19px;
     margin: 5px 0px;
 
-    background: var(--color_pla);
-    border: 1px solid var(--color_pla) !important;
+    background: var(--color-pla);
+    border: 1px solid var(--color-pla) !important;
     color: #fff;
 }
 
@@ -915,7 +915,7 @@ html.darkmode #article-list > .article-list-row.notice {
 /* 인기글 디자인 */
 #article-list > .article-list-row.hot,
 html.darkmode #article-list > .article-list-row.hot {
-    background-color: var(--color_hot);
+    background-color: var(--color-hot);
 }
 
 
@@ -931,8 +931,8 @@ html.darkmode #article-list > .article-list-row.hot {
     margin: 5px 5px 0 0;
     line-height: initial;
 
-    background: var(--color_hov);
-    color: var(--color_sig);
+    background: var(--color-hov);
+    color: var(--color-sig);
     border: 1px solid;
 }
 
@@ -954,7 +954,7 @@ html.darkmode #article-list > .article-list-row.hot {
 #article-list #article-list-category > a.active,
 #article-list #article-list-category > a:hover,
 #article-list #article-list-category > a:focus {
-    background: var(--color_sig) !important;
+    background: var(--color-sig) !important;
     color: #fff !important;
 
     transition: all .2s ease-in-out;
@@ -963,14 +963,14 @@ html.darkmode #article-list > .article-list-row.hot {
 #article-list #article-list-category,
 html.darkmode #article-list #article-list-category {
     border: 0;
-    background: var(--color_fr) !important;
-    border-bottom: 2px solid var(--color_sig);
+    background: var(--color-fr) !important;
+    border-bottom: 2px solid var(--color-sig);
     height: fit-content;
 }
 
 #article-list #article-list-category > a,
 html.darkmode #article-list #article-list-category > a {
-    background: var(--color_fr);
+    background: var(--color-fr);
     border: none !important;
 }
 
@@ -1038,7 +1038,7 @@ html.darkmode #article-list #article-list-category > a {
 
         transition: all .2s ease-in-out;
 
-        background: var(--color_fr);
+        background: var(--color-fr);
         border-right: 4px solid !important;
     }
 
@@ -1046,9 +1046,9 @@ html.darkmode #article-list #article-list-category > a {
     /* 홈 카테고리 */
     #article-list #article-list-category.can-float > a[id=board-home-link-btn],
     html.darkmode #article-list #article-list-category.can-float > a[id=board-home-link-btn] {
-        background: var(--color_sig) !important;
+        background: var(--color-sig) !important;
         color: #fff !important;
-        border-right: 4px solid var(--color_sig) !important;
+        border-right: 4px solid var(--color-sig) !important;
         width: 100%;
     }
 
@@ -1062,10 +1062,10 @@ html.darkmode #article-list #article-list-category > a {
     html.darkmode #article-list #article-list-category.can-float > a.active[id=board-home-link-btn],
     html.darkmode #article-list #article-list-category.can-float > a:hover,
     html.darkmode #article-list #article-list-category.can-float > a:focus {
-        background: var(--color_sig) !important;
+        background: var(--color-sig) !important;
         width: 100%;
         color: #fff !important;
-        border-right: 4px solid var(--color_sig) !important;
+        border-right: 4px solid var(--color-sig) !important;
     }
 }
 
@@ -1085,10 +1085,10 @@ html.darkmode #article-list #article-list-category > a {
 html.darkmode .pagination > li > a,
 html.darkmode .pagination > li > span {
     border: 0 !important;
-    border-top: 1px solid var(--color_sig) !important;
-    border-bottom: 1px solid var(--color_sig) !important;
+    border-top: 1px solid var(--color-sig) !important;
+    border-bottom: 1px solid var(--color-sig) !important;
 
-    background: var(--color_sig);
+    background: var(--color-sig);
     color: #fff;
 
     display: flex;
@@ -1110,7 +1110,7 @@ html.darkmode .pagination > li > span {
 .pagination > li > span:first-child,
 html.darkmode .pagination > li > a:first-child,
 html.darkmode .pagination > li > span:first-child {
-    border-left: 1px solid var(--color_sig) !important;
+    border-left: 1px solid var(--color-sig) !important;
     border-radius: 0;
 }
 
@@ -1118,7 +1118,7 @@ html.darkmode .pagination > li > span:first-child {
 .pagination > li > span:last-child,
 html.darkmode .pagination > li > a:last-child,
 html.darkmode .pagination > li > span:last-child {
-    border-right: 1px solid var(--color_sig) !important;
+    border-right: 1px solid var(--color-sig) !important;
     border-radius: 0;
 }
 
@@ -1132,8 +1132,8 @@ html.darkmode .pagination > li > a:hover,
 html.darkmode .pagination > li > a:focus,
 html.darkmode .pagination > li > span:hover,
 html.darkmode .pagination > li > span:focus {
-    color: var(--color_sig);
-    background: var(--color_fr);
+    color: var(--color-sig);
+    background: var(--color-fr);
 }
 
 
@@ -1150,8 +1150,8 @@ html.darkmode .pagination > .active > a:focus,
 html.darkmode .pagination > .active > span,
 html.darkmode .pagination > .active > span:hover,
 html.darkmode .pagination > .active > span:focus {
-    color: var(--color_sig);
-    background: var(--color_fr);
+    color: var(--color-sig);
+    background: var(--color-fr);
 }
 
 
@@ -1165,18 +1165,18 @@ html.darkmode .pagination > .active > span:focus {
 html.darkmode #article-list #boardSearchForm .form-control {
     height: 30px !important;
 
-    background: var(--color_fr) !important;
-    color: var(--color_sig);
+    background: var(--color-fr) !important;
+    color: var(--color-sig);
     box-shadow: none;
 
     border: none;
-    border-top: 1px solid var(--color_sig);
-    border-bottom: 1px solid var(--color_sig);
+    border-top: 1px solid var(--color-sig);
+    border-bottom: 1px solid var(--color-sig);
 }
 
 #article-list #boardSearchForm .form-control::placeholder,
 html.darkmode #article-list #boardSearchForm .form-control::placeholder {
-    color: var(--color_pla) !important;
+    color: var(--color-pla) !important;
 }
 
 #article-list #boardSearchForm .form-control:focus {
@@ -1276,7 +1276,7 @@ html.darkmode #article-content-wrapper #article-content {
     width: 35px;
     height: 35px;
 
-    border: 2px solid var(--color_sig);
+    border: 2px solid var(--color-sig);
     border-radius: 100px;
 
     top: 2em;
@@ -1290,7 +1290,7 @@ html.darkmode #article-content-wrapper > .header {
     margin: 0 2em 1em;
 
     border-top: 0 !important;
-    border-bottom: 2px solid var(--color_sig);
+    border-bottom: 2px solid var(--color-sig);
 
     background: transparent;
 
@@ -1308,7 +1308,7 @@ html.darkmode #article-content-wrapper > .header {
 	border-radius: 10px;
 	letter-spacing: -0.02em;
 	
-    background: var(--color_pla);
+    background: var(--color-pla);
 	color: #fff;
 }
 
@@ -1325,14 +1325,14 @@ html.darkmode #article-content-wrapper > .header {
 
 #article-content-wrapper {
     padding: 0;
-    /* background: var(--color_fr); */
+    /* background: var(--color-fr); */
     border: 0;
 }
 
 /* 글 라인 색상 🟢⚫ */
 html.darkmode #article-content p, 
 html.darkmode #article-content span {
-    background: var(--color_fr) !important;
+    background: var(--color-fr) !important;
 }
 
 /* :::::::::: :::::::::: 글 내부 - 추천 버튼 :::::::::: :::::::::: */
@@ -1384,7 +1384,7 @@ html.darkmode #article-content-wrapper > .vote-area {
 #article-content-wrapper > div.footer,
 html.darkmode #article-content-wrapper > div.footer {
     padding: 0.75em 1.5em;
-    background: var(--color_noti);
+    background: var(--color-noti);
     border: 0;
 }
 
@@ -1395,17 +1395,17 @@ html.darkmode #article-content-wrapper > div.footer {
     padding: .5em 0;
 
     border: 0;
-    background: var(--color_noti);
+    background: var(--color-noti);
 }
 
 #article-neighbor-list > div:hover,
 #article-neighbor-list > div:focus {
-    background: var(--color_hov);
+    background: var(--color-hov);
 }
 
 #article-neighbor-list > div > span.indicator,
 #article-neighbor-list > div > span.author {
-    color: var(--color_sig);
+    color: var(--color-sig);
 }
 
 #article-neighbor-list > div > span.indicator {
@@ -1426,7 +1426,7 @@ html.darkmode #article-content-wrapper > div.footer {
     margin-top: 2em;
     margin-bottom: 2em;
 
-	background: var(--color_fr);
+	background: var(--color-fr);
 }
 
 
@@ -1445,7 +1445,7 @@ html.darkmode #article-content-wrapper > div.footer {
 }
 
 #article-reply-area > .header h5 {
-    color: var(--color_sig) !important;
+    color: var(--color-sig) !important;
     display: flex;
     font-size: 0;
     gap: 1.5px;
@@ -1522,7 +1522,7 @@ html.darkmode #article-reply-area #reply-best-area .reply > .reply-header {
 /* 댓글 작성자 이미지 */
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer-image,
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer-image {
-    border: 2px solid var(--color_sig);
+    border: 2px solid var(--color-sig);
     width: 2.5em;
     height: 2.5em;
 
@@ -1551,7 +1551,7 @@ html.darkmode #article-reply-area #reply-best-area .reply > .reply-header {
     grid-row: 2 / 3;
     width: fit-content !important;
 
-	color: var(--color_sig) !important;
+	color: var(--color-sig) !important;
 }
 
 /* 댓글 작성자 뱃지 */
@@ -1577,8 +1577,8 @@ html.darkmode #article-reply-area #reply-best-area .reply > .reply-header {
 #article-reply-area #reply-real-area .reply > .reply-content,
 #article-reply-area #reply-best-area .reply > .reply-content {
     margin-left: 1.1em;
-    border-left: 2px solid var(--color_sig);
-    background: var(--color_hot);
+    border-left: 2px solid var(--color-sig);
+    background: var(--color-hot);
 }
 
 
@@ -1594,13 +1594,13 @@ html.darkmode #article-reply-area #reply-best-area .reply.active {
 #article-reply-area #reply-best-area .reply.active > .reply-content,
 html.darkmode #article-reply-area #reply-real-area .reply.active > .reply-content,
 html.darkmode #article-reply-area #reply-best-area .reply.active > .reply-content {
-    background: var(--color_pla); /* #eff1f5 - Split Complementary E */
+    background: var(--color-pla); /* #eff1f5 - Split Complementary E */
 }
 
 /* 댓글 기능 🟢⚫ */
 html.darkmode #article-reply-area #reply-real-area .reply>.reply-header>.reply-menu a, 
 html.darkmode #article-reply-area #reply-best-area .reply>.reply-header>.reply-menu a {
-	color: var(--color_sig);
+	color: var(--color-sig);
 }
 
 
@@ -1616,9 +1616,9 @@ html.darkmode #article-reply-area #reply-best-area .reply>.reply-header>.reply-m
     content: "";
     width: 100%;
 
-	background-image: var(--url_pfbar);
+	background-image: var(--url-pfbar);
 	background-repeat: no-repeat;
-	background-color: var(--color_sig);
+	background-color: var(--color-sig);
 
 	animation: banner 2s steps(2) infinite; /* 이름 전환간격 전환개수 반복횟수 */ /* $2 */
 
@@ -1663,7 +1663,7 @@ html.darkmode #board-info h1 {
     height: 100%;
     padding: 0;
 
-    background: var(--color_sig);
+    background: var(--color-sig);
     border: 0;
 
     display: flex;
@@ -1726,8 +1726,8 @@ html.darkmode #board-info h1 {
     font-weight: 600;
     letter-spacing: -0.02em;
 
-    background: var(--color_noti);
-    color: var(--color_sig);
+    background: var(--color-noti);
+    color: var(--color-sig);
     opacity: .9;
     border-radius: 10px;
 }
@@ -1763,7 +1763,7 @@ html.darkmode #board-info h1 {
     padding: 0 !important;
     margin: 0 !important;
 
-    background: var(--color_sig);
+    background: var(--color-sig);
 }
 
 
@@ -1806,25 +1806,25 @@ html.darkmode #board-info #board-info-bottom a {
 html.darkmode .fr-popup,
 html.darkmode .fr-toolbar.fr-top {
     border: 0 !important;
-    border-top: 4px solid var(--color_sig) !important;
+    border-top: 4px solid var(--color-sig) !important;
     border-radius: 0;
 
     padding-top: 2px;
 
     box-shadow: none;
-    background: var(--color_noti) !important;
+    background: var(--color-noti) !important;
 }
 
 
 /* 토글 버튼 - 비활성 🟢⚪⚫ */
 .fr-toolbar .fr-command.fr-btn, 
 .fr-popup .fr-command.fr-btn {
-	color: var(--color_sig);
+	color: var(--color-sig);
 }
 
 html.darkmode .fr-toolbar .fr-command.fr-btn, 
 html.darkmode .fr-popup .fr-command.fr-btn {
-	color: var(--color_sig);
+	color: var(--color-sig);
 }
 
 
@@ -1834,7 +1834,7 @@ html.darkmode .fr-popup .fr-command.fr-btn {
 .fr-desktop .fr-command.fr-btn-hover, 
 .fr-desktop .fr-command.fr-expanded {
 	background: transparent;
-	color: var(--color_eda);
+	color: var(--color-eda);
 }
 
 html.darkmode .fr-desktop .fr-command:hover, 
@@ -1842,7 +1842,7 @@ html.darkmode .fr-desktop .fr-command:focus,
 html.darkmode .fr-desktop .fr-command.fr-btn-hover, 
 html.darkmode .fr-desktop .fr-command.fr-expanded {
 	background: transparent;
-	color: var(--color_eda) !important ;
+	color: var(--color-eda) !important ;
 }
 
 
@@ -1858,7 +1858,7 @@ html.darkmode .fr-desktop .fr-command.fr-expanded {
 /* 드롭다운 버튼 - 비활성 🟢⚪ */
 .fr-toolbar .fr-command.fr-btn.fr-dropdown::after, 
 .fr-popup .fr-command.fr-btn.fr-dropdown::after {
-	border-top-color: var(--color_sig) !important;
+	border-top-color: var(--color-sig) !important;
 }
 
 
@@ -1867,28 +1867,28 @@ html.darkmode .fr-desktop .fr-command.fr-expanded {
 .fr-popup .fr-command.fr-btn.fr-dropdown:hover, 
 .fr-toolbar .fr-command.fr-btn.fr-dropdown:focus, 
 .fr-popup .fr-command.fr-btn.fr-dropdown:focus {
-	color: var(--color_eda) !important;
+	color: var(--color-eda) !important;
 }
 
 .fr-toolbar .fr-command.fr-btn.fr-dropdown:hover::after, 
 .fr-popup .fr-command.fr-btn.fr-dropdown:hover::after, 
 .fr-toolbar .fr-command.fr-btn.fr-dropdown:focus::after, 
 .fr-popup .fr-command.fr-btn.fr-dropdown:focus::after {
-	border-top-color: var(--color_eda) !important;
+	border-top-color: var(--color-eda) !important;
 }
 
 html.darkmode .fr-toolbar .fr-command.fr-btn.fr-dropdown:hover, 
 html.darkmode .fr-popup .fr-command.fr-btn.fr-dropdown:hover, 
 html.darkmode .fr-toolbar .fr-command.fr-btn.fr-dropdown:focus, 
 html.darkmode .fr-popup .fr-command.fr-btn.fr-dropdown:focus {
-	color: var(--color_eda) !important;
+	color: var(--color-eda) !important;
 }
 
 html.darkmode .fr-toolbar .fr-command.fr-btn.fr-dropdown:hover::after, 
 html.darkmode .fr-popup .fr-command.fr-btn.fr-dropdown:hover::after, 
 html.darkmode .fr-toolbar .fr-command.fr-btn.fr-dropdown:focus::after, 
 html.darkmode .fr-popup .fr-command.fr-btn.fr-dropdown:focus::after {
-	border-top-color: var(--color_eda) !important;
+	border-top-color: var(--color-eda) !important;
 }
 
 /* 드롭다운 버튼 - 접촉 (분리형) 🟢⚪⚫ */
@@ -1901,7 +1901,7 @@ html.darkmode .fr-popup .fr-command.fr-btn.fr-dropdown:focus::after {
 .fr-command.fr-btn.fr-options.fr-btn-hover::after,
 .fr-command.fr-btn.fr-options:hover::after,
 .fr-command.fr-btn.fr-options:focus::after {
-    border-top-color: var(--color_eda) !important;
+    border-top-color: var(--color-eda) !important;
 }
 
 html.darkmode .fr-command.fr-btn.fr-options.fr-btn-hover,
@@ -1913,14 +1913,14 @@ html.darkmode .fr-command.fr-btn.fr-options:focus {
 html.darkmode .fr-command.fr-btn.fr-options.fr-btn-hover::after,
 html.darkmode .fr-command.fr-btn.fr-options:hover::after,
 html.darkmode .fr-command.fr-btn.fr-options:focus::after {
-    border-top-color: var(--color_eda) !important;
+    border-top-color: var(--color-eda) !important;
 }
 
 
 /* 드롭다운 버튼 - 활성 🟢⚪⚫ */
 .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active, 
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active {
-	color: var(--color_eda);
+	color: var(--color-eda);
 	background: transparent;
 }
 
@@ -1928,17 +1928,17 @@ html.darkmode .fr-command.fr-btn.fr-options:focus::after {
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active::after, 
 .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active::after, 
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active::after {
-	border-top-color: var(--color_eda) !important;
+	border-top-color: var(--color-eda) !important;
 }
 
 .fr-toolbar .fr-command.fr-btn.fr-active, 
 .fr-popup .fr-command.fr-btn.fr-active {
-	color: var(--color_eda);
+	color: var(--color-eda);
 }
 
 html.darkmode .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active, 
 html.darkmode .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active {
-	color: var(--color_eda);
+	color: var(--color-eda);
 	background: transparent;
 }
 
@@ -1946,12 +1946,12 @@ html.darkmode .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active::after,
 html.darkmode .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active::after, 
 html.darkmode .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active::after, 
 html.darkmode .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active::after {
-	border-top-color: var(--color_eda) !important;
+	border-top-color: var(--color-eda) !important;
 }
 
 html.darkmode .fr-toolbar .fr-command.fr-btn.fr-active, 
 html.darkmode .fr-popup .fr-command.fr-btn.fr-active {
-	color: var(--color_eda);
+	color: var(--color-eda);
 }
 
 
@@ -1960,7 +1960,7 @@ html.darkmode .fr-popup .fr-command.fr-btn.fr-active {
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover, 
 .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus, 
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus {
-	color: var(--color_eda) !important;
+	color: var(--color-eda) !important;
 	background: transparent !important;
 }
 
@@ -1968,14 +1968,14 @@ html.darkmode .fr-popup .fr-command.fr-btn.fr-active {
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover::after, 
 .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus::after, 
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus::after {
-	border-top-color: var(--color_eda) !important;
+	border-top-color: var(--color-eda) !important;
 }
 
 
 /* 드롭다운 내부 - 활성 🟢⚪ */
 .fr-command.fr-btn+.fr-dropdown-menu .fr-dropdown-wrapper 
 .fr-dropdown-content ul.fr-dropdown-list li a.fr-active {
-	color: var(--color_eda);
+	color: var(--color-eda);
 	background: transparent;
 }
 
@@ -1983,7 +1983,7 @@ html.darkmode .fr-popup .fr-command.fr-btn.fr-active {
 /* 기능 구분 바 🟢⚪⚫ */
 .fr-separator,
 html.darkmode .fr-separator {
-    background: var(--color_sig);
+    background: var(--color-sig);
 }
 
 
@@ -1991,7 +1991,7 @@ html.darkmode .fr-separator {
 .fr-popup .fr-buttons,
 html.darkmode .fr-popup .fr-buttons {
     box-shadow: none;
-    border-bottom: 1px solid var(--color_sig)
+    border-bottom: 1px solid var(--color-sig)
 }
 
 
@@ -2000,22 +2000,22 @@ html.darkmode .fr-popup .fr-buttons {
 .fr-popup .fr-input-line textarea,
 html.darkmode .fr-popup .fr-input-line input[type=text],
 html.darkmode .fr-popup .fr-input-line textarea {
-    border-color: var(--color_sig);
+    border-color: var(--color-sig);
 }
 
 html.darkmode .fr-popup .fr-input-line input[type=text]:focus, 
 html.darkmode .fr-popup .fr-input-line textarea:focus {
-	border-color: var(--color_eda)
+	border-color: var(--color-eda)
 }
 
 .fr-popup .fr-input-line input[type=text]::placeholder,
 .fr-popup .fr-input-line textarea::placeholder {
-    color: var(--color_pla) !important;
+    color: var(--color-pla) !important;
 }
 
 .fr-popup .fr-action-buttons button.fr-command {
     background: transparent !important;
-    color: var(--color_sig);
+    color: var(--color-sig);
 }
 
 /* 입력창 활성화 라벨 🟢⚪⚫ */
@@ -2029,7 +2029,7 @@ html.darkmode .fr-popup .fr-input-line textarea + label {
 /* 입력창 활성화 라벨 포커스 🟢⚫ */
 html.darkmode .fr-popup .fr-input-line input.fr-not-empty:focus+label, 
 html.darkmode .fr-popup .fr-input-line textarea.fr-not-empty:focus+label {
-	color: var(--color_eda);
+	color: var(--color-eda);
 }
 
 /* 입력창 활성화 라벨 비포커스 🟢⚫ */
@@ -2042,7 +2042,7 @@ html.darkmode .fr-popup .fr-input-line textarea.fr-not-empty+label {
 /* 팝업창 화살표 🟢⚪⚫ */
 .fr-popup .fr-arrow,
 html.darkmode .fr-popup .fr-arrow {
-    border-bottom-color: var(--color_sig);
+    border-bottom-color: var(--color-sig);
 }
 
 
@@ -2055,11 +2055,11 @@ html.darkmode .fr-popup .fr-arrow {
 }
 
 .fr-popup .fr-emoticon:hover {
-	background: var(--color_pla);
+	background: var(--color-pla);
 }
 
 html.darkmode .fr-popup .fr-emoticon:hover {
-	background: var(--color_pla);
+	background: var(--color-pla);
 }
 
 
@@ -2069,22 +2069,22 @@ html.darkmode .fr-popup .fr-emoticon:hover {
 }
 
 html.darkmode .fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
-	color: var(--color_eda)
+	color: var(--color-eda)
 }
 
 .fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command {
-	color: var(--color_sig) !important;
+	color: var(--color-sig) !important;
 }
 
 .fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command:hover,
 .fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command:focus {
-	color: var(--color_eda) !important;
+	color: var(--color-eda) !important;
 }
 
 
 /* 표 삽입 GUI 테두리 🟢⚪ */
 .fr-popup .fr-table-size .fr-select-table-size > span > span {
-    border-color: var(--color_pla);
+    border-color: var(--color-pla);
 }
 
 /* 표 삽입 GUI 끝 열 여백 🟢⚪*/
@@ -2094,11 +2094,11 @@ html.darkmode .fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
 
 /* 이미지 삽입 GUI 🟢⚪ */
 .fr-popup .fr-image-upload-layer {
-	background: var(--color_hot)
+	background: var(--color-hot)
 }
 
 .fr-popup .fr-image-upload-layer:hover {
-	background: var(--color_hov)
+	background: var(--color-hov)
 }
 
 
@@ -2110,7 +2110,7 @@ html.darkmode .fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
 html.darkmode .fr-box.fr-basic.fr-top .fr-wrapper,
 html.darkmode #articleWriteForm div.fr-wrapper,
 html.darkmode .fr-box.fr-code-view textarea.fr-code {
-    box-shadow: inset 0 0 0 2px var(--color_noti);
+    box-shadow: inset 0 0 0 2px var(--color-noti);
     border-radius: 0;
 	border: 0;
 }
@@ -2140,7 +2140,7 @@ html.darkmode .fr-box.fr-code-view textarea.fr-code {
 
     height: 100%;
 
-    color: var(--color_sig);
+    color: var(--color-sig);
 }
 
 .frame > h3:nth-child(1):before,
@@ -2164,7 +2164,7 @@ html.darkmode .form-control:focus {
 }
 
 .form-control::placeholder {
-    color: var(--color_pla) !important;
+    color: var(--color-pla) !important;
 }
 
 
@@ -2183,12 +2183,12 @@ html.darkmode .form-control:focus {
 }
 
 #articleWriteForm select[name=category_id] {
-    background: var(--color_noti);
+    background: var(--color-noti);
     border: 0;
     font-weight: 600;
 
     appearance: none;
-    border-top: 2px solid var(--color_sig);
+    border-top: 2px solid var(--color-sig);
 }
 
 
@@ -2202,31 +2202,31 @@ html.darkmode .form-control:focus {
     border-radius: 0px;
     box-shadow: none;
 
-    background: var(--color_noti);
+    background: var(--color-noti);
     border: 0;
-    border-top: 2px solid var(--color_sig);
+    border-top: 2px solid var(--color-sig);
 }
 
 
 /* 글 작성 세부 설정 디자인 */
 #articleWriteForm div.mt-2 {
-    background: var(--color_noti);
+    background: var(--color-noti);
 }
 
 #articleWriteForm div.mt-2 > .opt:first-child {
     font-weight: 600;
     padding: 0 10px;
-    background: var(--color_sig);
+    background: var(--color-sig);
     color: #fff;
 }
 
 /* 디자인 예외 */
 #articleWriteForm div.row.mt-2 {
-    background: var(--color_fr);
+    background: var(--color-fr);
 }
 
 #articleWriteForm > div.mt-2.action--btn {
-    background: var(--color_fr);
+    background: var(--color-fr);
     margin-top: 1.5em;
 }
 
@@ -2240,14 +2240,14 @@ html.darkmode .form-control:focus {
     text-align: center;
     border: 0;
     border-radius: 0;
-    border: solid var(--color_sig);
+    border: solid var(--color-sig);
     border-width: 4px 0 1px 1px;
 }
 
 #title_color > span {
     border: 0;
     border-radius: 0;
-    border: 1px solid var(--color_sig);
+    border: 1px solid var(--color-sig);
     line-height: 16px;
     padding: 5px 6px;
 }
@@ -2261,13 +2261,13 @@ a.custom-badge-link {
 }
 
 a.custom-badge-link.active {
-    border-color: var(--color_sig);
-    background: var(--color_sig);
+    border-color: var(--color-sig);
+    background: var(--color-sig);
 }
 
 a.custom-badge-link:hover {
     background: transparent;
-    border: 2px solid var(--color_sig);
+    border: 2px solid var(--color-sig);
     transition: 0.4s;
 }
 
@@ -2282,8 +2282,8 @@ a.custom-badge-link:hover {
 #articleWriteForm > div.mt-2.action--btn > a {
     height: 34px;
 
-    background-color: var(--color_sigr) !important;
-    border-color: var(--color_sigr) !important;
+    background-color: var(--color-sigr) !important;
+    border-color: var(--color-sigr) !important;
 }
 
 #articleWriteForm > div.mt-2.action--btn > a:before {
@@ -2294,9 +2294,9 @@ a.custom-badge-link:hover {
 
 #articleWriteForm > div.mt-2.action--btn > a:hover,
 #articleWriteForm > div.mt-2.action--btn > a:focus {
-    background-color: var(--color_fr) !important;
-    border-color: var(--color_sigr) !important;
-    color: var(--color_sigr) !important;
+    background-color: var(--color-fr) !important;
+    border-color: var(--color-sigr) !important;
+    color: var(--color-sigr) !important;
 }
 
 
@@ -2309,7 +2309,7 @@ a.custom-badge-link:hover {
     justify-content: center;
     align-items: center;
 
-    background: var(--color_sig);
+    background: var(--color-sig);
     color: #fff;
 
     width: fit-content;
@@ -2353,7 +2353,7 @@ footer {
     margin-top: 4em;
     padding: 30px 0;
 
-    background: var(--color_sigk);
+    background: var(--color-sigk);
 }
 
 
@@ -2509,7 +2509,7 @@ footer .container:after {
 
     z-index: 5;
 
-    box-shadow: inset 25px 0px 0px 0px var(--color_sigy);
+    box-shadow: inset 25px 0px 0px 0px var(--color-sigy);
 
 }
 
