@@ -1688,7 +1688,6 @@ html.darkmode #board-info h1 {
 #board-info h1 > a:before {
     content: "\f015";
     font-family: "fontawesome";
-    font-weight: 800;
     font-size: 32px;
 }
 
