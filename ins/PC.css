@@ -18,6 +18,8 @@
 #noti-top::after {
 	content: '\f071';
 	font-size: 16px;
+	font-weight: normal;
+
 	padding: 2px;
 	
 	display: inline;
