@@ -805,7 +805,7 @@ html.darkmode #article-list > .article-list-row {
 /* 선택된 게시글 🟢⚪⚫ */
 #article-list > .article-list-row.active,
 html.darkmode #article-list > .article-list-row.active {
-    background-color: var(--color-pla); /* hov - Complementary E */
+    background-color: var(--color-hot);
 }
 
 
