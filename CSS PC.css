@@ -1,8 +1,3 @@
-/* Naknoon_TGD */
-/* Yeohun_TGD 기반 - 우선 순위 높음 */
-
-/* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
-
 /* 본문 줄간격 조정 */
 p {
 	margin: 0 0 3px
@@ -13,14 +8,19 @@ p:last-child {
 }
 
 
-/* 특수 폰트 */
-p em,
-td em {
-	font-style: normal;
-    font-weight: normal;
-    font-family: 'Noto Serif KR';
+/* 폰트 */
+* {
+    font-family: var(--profont), 'Noto Sans KR', sans-serif;
 }
 
+
+/* Pretendard OpenType */
+:root {
+    font-feature-settings: "calt", "salt", "ss01", "ss02", "ss03", "ss08";
+}
+
+
+/* 코드 하이라이터 */
 p strong em,
 p em strong,
 td strong em,
@@ -30,19 +30,6 @@ td em strong {
 
 	background: var(--color-hig);
     font-weight: 600;
-}
-
-
-/* 폰트 */
-* {
-    font-family: var(--profont), 'Noto Sans KR', sans-serif;
-}
-
-/* Pretendard - OpenType Beta */
-/* https://cactus.tistory.com/306 */
-/* https://helpx.adobe.com/kr/fonts/using/open-type-syntax.html */
-:root {
-    font-feature-settings: "calt", "salt", "ss01", "ss02", "ss03", "ss08";
 }
 
 
@@ -76,7 +63,7 @@ tr a[href]:before {
 
 /* :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: */
 
-/* 빠른 수정 */
+/* 전역 설정 */
 :root {
     --url-banner: url(https://cdn.discordapp.com/attachments/936953394415935568/992465070565113906/banner_basic_modified.png); /* 배너 */
     --url-pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png); /* 프로필바 배너 : 1 2 */
@@ -84,7 +71,6 @@ tr a[href]:before {
     --url-hgdlogo: url(https://cdn.discordapp.com/attachments/936953394415935568/983031726773239818/logo_line.svg); /* 흔게더 로고 */
 }
 
-/* 둘러보기 */
 html {
     --color-bc: #cbd1dc;
     --color-fr: #FFFFFF;
@@ -123,21 +109,44 @@ html.darkmode {
 }
 
 
-/* 뱃지 제거 */
+/* 글 목록 뱃지 제거 */
 .list-writer img {
 	display: none;
 }
 
 /* 스트리머 뱃지 커스텀 */
 img[title="Broadcaster"] {
-	content: url(https://cdn.discordapp.com/attachments/936953394415935568/943852567337783326/badge.png);
+	content: url(https://cdn.discordapp.com/attachments/936953394415935568/1006923454139863180/snow_badge.svg);
 	filter: grayscale(1);
 }
 
 
 /* 배너 */
+@keyframes gradient {
+	from { background-position: 0% 50%; }
+	to { background-position: 100% 50%; }
+}
+
 body > header {
-    background-color: #1E2433;
+	background-color: #1E2433;
+
+	background: linear-gradient(-45deg, #3f51b1, #5a55ae, #7b5fac, #8f6aae, #a86aa4, #cc6b8e, #f18271, #f3a469, #f7c978);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite alternate;
+}
+
+header::after {
+	content: '';
+
+	background: var(--url-hgdlogo) no-repeat;
+	background-size: auto 80px;
+	background-position: center center;
+
+	width: 100%;
+	height: calc(290px - 40px - 45px);
+	display: block;
+
+	filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 50%));
 }
 
 

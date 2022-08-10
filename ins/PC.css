@@ -218,12 +218,14 @@ html.darkmode .uflink-btn {
     content: '\f135';
 	font-size: 18px;
 	line-height: 18px;
+	font-weight: normal;
 }
 
 #cft-key::before {
     content: '\f084';
 	font-size: 18px;
 	line-height: 18px;
+	font-weight: normal;
 }
 
 
