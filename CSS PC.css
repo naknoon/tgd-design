@@ -2455,7 +2455,7 @@ footer .container:before {
     font-size: 20px;
     line-height: 20px;
     font-weight: 700;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.05em;
     white-space: pre;
 
     color: #fff;
@@ -2464,7 +2464,7 @@ footer .container:before {
 
 /* 라이트/다크 모드 전환 버튼 설명 🟢⚪ */
 footer .container:after {
-    content: '달 버튼을 클릭해 모드를 넘나들 수 있어요.';
+    content: '달 버튼을 클릭해 모드를 넘나들 수 있어요';
 
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -2473,7 +2473,7 @@ footer .container:after {
     justify-self: start;
 
     font-size: 12px;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.05em;
     white-space: pre;
 
     color: #b3b3b3;
