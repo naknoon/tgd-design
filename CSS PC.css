@@ -10,7 +10,7 @@ p:last-child {
 
 /* 폰트 */
 * {
-    font-family: var(--profont), 'Noto Sans KR', sans-serif;
+    font-family: var(--font-pro), sans-serif;
 }
 
 
