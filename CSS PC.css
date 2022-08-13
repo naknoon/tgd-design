@@ -6,21 +6,21 @@
     --url-pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png); /* 프로필바 배너 : 1 2 */
     --url-fulnoti: url(https://cdn.discordapp.com/attachments/901132816996249601/936675189096337499/darknoti.png); /* 풀사이즈형 공지 */
     --url-hgdlogo: url(https://cdn.discordapp.com/attachments/901132800793649233/936304999925964820/hgd_logo.png); /* 흔게더 로고 */
-} /* bannerUrl pfBarUrl fulNotiUrl hgdLogoUrl */
+}
 
 /* 둘러보기 */
 html {
-    --color-bc: #EAEFF7; /* bcColor */
-    --color-fr: #FFFFFF; /* frColor */
+    --color-bc: #EAEFF7;
+    --color-fr: #FFFFFF;
 
-    --color-noti: #D8DDE8; /* notiColor */
-    --color-hot: #E5E9F0;  /* hotColor*/
-    --color-hov: #F2F4F7;  /* hoverColor */
+    --color-noti: #D8DDE8;
+    --color-hot: #E5E9F0;
+    --color-hov: #F2F4F7;
 
-    --color-sig: #455168; /* sigColor */
-    --color-pla: #7F8899; /* #949FB3 */ /* plaColor */
+    --color-sig: #455168;
+    --color-pla: #7F8899;
     
-	--color-lin: #337ab7; /* linkColor */
+	--color-lin: #337ab7;
 }
 
 html.darkmode {
@@ -38,14 +38,14 @@ html.darkmode {
 }
 
 :root {
-    --color-sigr: #684545; /* sigRColor */
-    --color-sigy: #B59653; /* sigYColor */
-    --color-sigk: #1C1E21; /* sigKColor*/
+    --color-sigr: #684545;
+    --color-sigy: #B59653;
+    --color-sigk: #1C1E21;
 
-    --color-ntb: #E7524C; /* ntbColor */
-    --color-eda: #1e88e5; /* edaColor */
+    --color-ntb: #E7524C;
+    --color-eda: #1e88e5;
 
-    --profont: 'Fontawesome', 'Pretendard Variable'; /* proFont */
+    --font-pro: 'Fontawesome', 'Pretendard Variable';
 }
 
 
@@ -65,7 +65,7 @@ input:focus {
 
 /* 폰트 🟢⚪ */
 * {
-    font-family: 'Pretendard Variable', 'Noto Sans KR', sans-serif;
+    font-family: 'Pretendard Variable', sans-serif;
 }
 
 /* Pretendard - OpenType Beta */
