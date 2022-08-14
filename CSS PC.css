@@ -87,6 +87,8 @@ body,
 html.darkmode body {
     background: var(--color-bc);
     /*background: transparent !important;*/
+
+    min-width: fit-content;
 }
 
 
