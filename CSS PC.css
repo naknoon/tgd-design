@@ -38,7 +38,7 @@ body > header {
         url(https://cdn.discordapp.com/attachments/1014883472051027969/1015284430425829396/slice12x.png),
         url(https://cdn.discordapp.com/attachments/1014883472051027969/1015284430098665484/slice52x.png),
         url(https://cdn.discordapp.com/attachments/1014883472051027969/1015284430903976016/slice22x.png);
-    background-size: auto 120%, auto 110%, auto 130%, auto 120%, auto 110%, auto 130%;
+    background-size: auto 120%, auto 110%, auto 130%, auto 120%, auto 110%;
 }
 
 @keyframes cloud {
@@ -78,10 +78,10 @@ header::after {
 
 /* CSS 정보 */
 footer:before {
-    content: 'Custom CSS for Magic of Summertime';
+    content: 'Custom CSS for Magic of Summertime  ·  Designed by Naknoon';
 }
 
 /* CSS 제작 정보 */
 footer:after {
-    content: 'CSS Designed by Naknoon';
+    content: 'CSS Copyright 2022. Naknoon All Rights Reserved.';
 }
