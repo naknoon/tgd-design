@@ -1,0 +1,87 @@
+/* 전역 설정 */
+:root {
+    --url-banner: url(https://cdn.discordapp.com/attachments/936953394415935568/992465070565113906/banner_basic_modified.png);
+    --url-pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png);
+
+    --url-hgdlogo: url(https://cdn.discordapp.com/attachments/1014883472051027969/1015211666947973130/logo.png);
+    --url-hgdtypo: url(https://cdn.discordapp.com/attachments/1014883472051027969/1015290184289493032/typo.svg);
+}
+
+
+/* 폰트 */
+* {
+    font-family: var(--font-pro), sans-serif;
+}
+
+
+/* Pretendard OpenType */
+:root {
+    font-feature-settings: "calt", "salt", "ss01", "ss02", "ss03", "ss08";
+}
+
+
+/* 배너 */
+:root {
+    --color-sky: #00AECC;
+}
+
+:root.darkmode {
+    --color-sky: #242B4B;
+}
+
+body > header {
+    background: var(--color-sky);
+    animation: cloud 60s linear infinite alternate;
+    background-image:
+        url(https://cdn.discordapp.com/attachments/1014883472051027969/1015284431210172578/slice32x.png),
+        url(https://cdn.discordapp.com/attachments/1014883472051027969/1015267320127553616/slice22x.png),
+        url(https://cdn.discordapp.com/attachments/1014883472051027969/1015284430425829396/slice12x.png),
+        url(https://cdn.discordapp.com/attachments/1014883472051027969/1015284430098665484/slice52x.png),
+        url(https://cdn.discordapp.com/attachments/1014883472051027969/1015284430903976016/slice22x.png);
+    background-size: auto 120%, auto 110%, auto 130%, auto 120%, auto 110%, auto 130%;
+}
+
+@keyframes cloud {
+    0% {
+        background-position: bottom 350% left -50%, bottom 20% left -20%, bottom -50% left -10%, bottom 400% left -20%, bottom 100% left -50%;
+    }
+    
+    100% {
+        background-position: bottom 350% right -50%, bottom 20% right -100%, bottom -50% right -50%, bottom 400% right -100%, bottom 100% right -50%;
+    }
+}
+
+header::after {
+	content: '';
+
+	background: var(--url-hgdtypo) no-repeat;
+	background-size: auto 110px;
+	background-position: center center;
+
+	width: 100%;
+	height: calc(290px - 40px - 45px);
+	display: block;
+
+	filter: invert(1) drop-shadow(3px 3px 2px rgb(0 0 0 / 50%));
+}
+
+
+/* 접속자 수 사이드 문구 */
+#board-info #viewers-area #viewers:before {
+    content: '';
+}
+
+#board-info #viewers-area #viewers:after {
+    content: '명이 흔들흔들';
+}
+
+
+/* CSS 정보 */
+footer:before {
+    content: 'Custom CSS for Magic of Summertime';
+}
+
+/* CSS 제작 정보 */
+footer:after {
+    content: 'CSS Designed by Naknoon';
+}
