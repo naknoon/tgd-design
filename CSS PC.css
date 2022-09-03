@@ -31,7 +31,7 @@
 
 body > header {
     background: var(--color-sky);
-    animation: cloud 60s linear infinite alternate;
+    animation: cloud 120s linear infinite alternate;
     background-image:
         url(https://cdn.discordapp.com/attachments/1014883472051027969/1015284431210172578/slice32x.png),
         url(https://cdn.discordapp.com/attachments/1014883472051027969/1015267320127553616/slice22x.png),
