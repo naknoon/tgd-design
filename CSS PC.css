@@ -65,7 +65,7 @@ header::after {
 	height: calc(290px - 40px - 45px);
 	display: block;
 
-	filter: invert(1) drop-shadow(3px 3px 2px rgb(0 0 0 / 50%));
+	filter: invert(1) drop-shadow(3px 3px 2px rgb(0 0 0 / 75%));
 }
 
 
