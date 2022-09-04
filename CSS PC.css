@@ -104,8 +104,11 @@ html.darkmode a:focus {
 */
 
 /* 하이퍼링크 텍스트형 버튼 대체 Beta */
-#lastc {
-    color: var(--color-sig);
+#lastc,
+#board-home-link-btn,
+.reply > a
+ {
+    color: var(--color-sig) !important;
 }
 
 
