@@ -1,15 +1,17 @@
 /* 페이지 공사 중 */
 body::before {
-    content: 'sddsd';
-
-    background: #000;
-
+    content: ' COMING SOON! ';
+    font-family: var(--font-pro);
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    background: var(--color-bc);
     position: fixed;
     width: 100vw;
     height: 100vh;
-
-    z-index: 999;
-
+    z-index: 9999;
     top: 0;
     left: 0;
+    justify-content: center;
+    align-items: center;
 }
