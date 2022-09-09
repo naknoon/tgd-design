@@ -68,6 +68,15 @@ header::after {
 	filter: invert(1) drop-shadow(3px 3px 2px rgb(0 0 0 / 75%));
 }
 
+html.darkmode body > header {
+    background-image: url(https://cdn.discordapp.com/attachments/1014883472051027969/1017616155785039933/stars-2539245.jpg);
+    background-size: 110% !important;
+    background-blend-mode: screen;
+}
+
+html.darkmode header::after {
+    filter: invert(1) drop-shadow(3px 3px 2px rgb(255 255 255 / 25%));
+}
 
 /* 접속자 수 사이드 문구 */
 #board-info #viewers-area #viewers:before {
