@@ -1,0 +1,15 @@
+/* 페이지 공사 중 */
+body::before {
+    content: 'sddsd';
+
+    background: #000;
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 999;
+
+    top: 0;
+    left: 0;
+}
