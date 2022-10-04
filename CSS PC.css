@@ -13,8 +13,6 @@ p:last-child {
     font-family: var(--font-pro), sans-serif;
 }
 
-
-/* Pretendard OpenType */
 :root {
     font-feature-settings: "calt", "salt", "ss01", "ss02", "ss03", "ss08";
 }
@@ -67,7 +65,6 @@ tr a[href]:before {
 :root {
     --url-banner: url(https://cdn.discordapp.com/attachments/936953394415935568/992465070565113906/banner_basic_modified.png); /* 배너 */
     --url-pfbar: url(https://cdn.discordapp.com/attachments/901132816996249601/936308122518163526/pfbar_basic.png); /* 프로필바 배너 : 1 2 */
-    --url-fulnoti: url(https://cdn.discordapp.com/attachments/901132816996249601/936675189096337499/darknoti.png); /* 풀사이즈형 공지 */
     --url-hgdlogo: url(https://cdn.discordapp.com/attachments/936953394415935568/983031726773239818/logo_line.svg); /* 흔게더 로고 */
 }
 
@@ -179,7 +176,7 @@ footer:before {
 
 /* CSS 제작 정보 */
 footer:after {
-    content: 'CSS Copyright 2022. Naknoon All Rights Reserved.';
+    content: 'CSS Copyright 2022. Naknoon All Rights Reserved';
 }
 
 
