@@ -1211,11 +1211,9 @@ html.darkmode .input-group-btn i.fa-search {
     display: flex;
     flex-direction: column-reverse;
 
-    margin-top: 0.5em;
     padding: 2em 2em 0 2em;
 
-    border: 0;
-    border-bottom: 0;
+    border-top: 1px solid var(--color-sig);
 }
 
 #article-content-wrapper #article-content,
@@ -1395,7 +1393,8 @@ html.darkmode #article-content-wrapper > .vote-area {
 html.darkmode #article-content-wrapper > div.footer {
     padding: 0.75em 1.5em;
     background: var(--color-noti);
-    border: 0;
+    border: solid var(--color-sig);
+    border-width: 1px 0 1px 0;
 }
 
 
@@ -1404,8 +1403,9 @@ html.darkmode #article-content-wrapper > div.footer {
 #article-neighbor-list {
     padding: .5em 0;
 
-    border: 0;
     background: var(--color-noti);
+    border: solid var(--color-sig);
+    border-width: 1px 0 1px 0;
 }
 
 #article-neighbor-list > div:hover,
@@ -1539,7 +1539,7 @@ html.darkmode #article-reply-area #reply-best-area .reply > .reply-header {
     grid-row: 1 / 3;
 }
 
-/* 원 글쓴이 or 비로그인 코드 */
+/* 글쓴이 or 비로그인 및 익명 코드 */
 #article-reply-area #reply-real-area .reply > .reply-header > small.code,
 #article-reply-area #reply-best-area .reply > .reply-header > small.code {
     font-size: 10px;
@@ -1547,8 +1547,8 @@ html.darkmode #article-reply-area #reply-best-area .reply > .reply-header {
 }
 
 /* 댓글 작성자 */
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer {
     display: flex;
     flex-direction: row-reverse;
 
@@ -2334,11 +2334,7 @@ a.custom-badge-link:hover {
     line-height: 30px;
 }
 
-#comment-write-button-area > label:after {
-    content: "로";
-}
-
-#secret {
+#comment-write-button-area > label > input {
     margin: 0 0 0 4px;
     order: 1;
 }
