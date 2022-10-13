@@ -725,7 +725,8 @@ html.darkmode #article-list > div:nth-child(3):not(#article-list>.article-list-r
 
 /* 메인 프레임 */
 #main-content > div.frame{
-    border: 1px solid var(--color-sig) !important;
+    border: none !important;
+    /* border: 1px solid var(--color-sig) !important; */
     background: var(--color-fr) !important;
 }
 
@@ -1213,7 +1214,8 @@ html.darkmode .input-group-btn i.fa-search {
 
     padding: 2em 2em 0 2em;
 
-    border-top: 1px solid var(--color-sig);
+    border: 0;
+    /* border-top: 1px solid var(--color-sig); */
 }
 
 #article-content-wrapper #article-content,
@@ -1393,8 +1395,9 @@ html.darkmode #article-content-wrapper > .vote-area {
 html.darkmode #article-content-wrapper > div.footer {
     padding: 0.75em 1.5em;
     background: var(--color-noti);
-    border: solid var(--color-sig);
-    border-width: 1px 0 1px 0;
+    border: 0;
+    /* border: solid var(--color-sig); */
+    /* border-width: 1px 0 1px 0; */
 }
 
 
@@ -1404,8 +1407,9 @@ html.darkmode #article-content-wrapper > div.footer {
     padding: .5em 0;
 
     background: var(--color-noti);
-    border: solid var(--color-sig);
-    border-width: 1px 0 1px 0;
+    border: 0;
+    /* border: solid var(--color-sig); */
+    /* border-width: 1px 0 1px 0; */
 }
 
 #article-neighbor-list > div:hover,
