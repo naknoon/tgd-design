@@ -132,8 +132,8 @@
 #useful-link {
     width: 100%;
 	
-	background: var(--color-sigk);
-	padding: 10px;
+	background: var(--color-sig);
+	padding: 15px 15px 0;
 
 	display: grid;
     	grid-template-columns: repeat(1, 1fr); /* 가로 */
@@ -147,7 +147,7 @@
     display: grid;   
         grid-template-columns: repeat(16, 1fr);
         grid-auto-flow: column;
-		gap: 3px;
+		gap: 4px;
 }
 
 #category-design {
