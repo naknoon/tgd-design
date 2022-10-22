@@ -295,9 +295,12 @@ html.darkmode .btn-goto {
 
 
 /* 템플릿 버튼 비활성화 */
+#category-template {
+	cursor: not-allowed;
+}
+
 #category-template > a {
 	pointer-events: none;
-	cursor: not-allowed;
 	
 	text-decoration: line-through !important;
 	text-decoration-thickness: 2px !important;
