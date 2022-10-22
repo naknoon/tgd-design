@@ -292,3 +292,13 @@ html.darkmode .btn-cft,
 html.darkmode .btn-goto {
 	color: #000;
 }
+
+
+/* 템플릿 버튼 비활성화 */
+#category-template > a {
+	pointer-events: none;
+	cursor: not-allowed;
+	
+	text-decoration: line-through !important;
+	text-decoration-thickness: 2px !important;
+}
