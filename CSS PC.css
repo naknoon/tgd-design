@@ -64,7 +64,7 @@ input:focus {
 
 
 /* 폰트 🟢⚪ */
-* {
+body {
     font-family: 'Pretendard Variable', sans-serif;
 }
 
@@ -1342,7 +1342,7 @@ html.darkmode #article-content-wrapper > .header {
 /* 글 라인 색상 🟢⚫ */
 html.darkmode #article-content p, 
 html.darkmode #article-content span {
-    background: var(--color-fr) !important;
+    background: initial !important;
 }
 
 /* :::::::::: :::::::::: 글 내부 - 추천 버튼 :::::::::: :::::::::: */
