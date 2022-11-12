@@ -1,7 +1,8 @@
 /* 상단 공지바 :::::::::: :::::::::: :::::::::: */
 
 #noti-top{
-	
+	display: none;
+
     font-size: 18px;
     font-weight: 700;
     text-align: center;
