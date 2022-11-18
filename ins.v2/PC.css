@@ -129,12 +129,18 @@
 }
 
 
+/* 사전 설정 */
+#board-info {
+	margin-top: -15px
+}
+
+
 /* 전체 프레임 */
 #useful-link {
     width: 100%;
 	
 	background: var(--color-sig);
-	padding: 15px 15px 0;
+	padding: 15px;
 
 	display: grid;
     	grid-template-columns: repeat(1, 1fr); /* 가로 */
