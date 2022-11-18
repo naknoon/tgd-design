@@ -142,9 +142,8 @@
 	background: var(--color-sig);
 	padding: 15px;
 
-	display: grid;
-    	grid-template-columns: repeat(1, 1fr); /* 가로 */
-    	grid-template-rows: repeat(3, minmax(auto, auto)) ; /* 세로 */
+	display: flex;
+		flex-direction: column;
 		gap: 5px;
 }
 
@@ -301,7 +300,13 @@ html.darkmode .btn-goto {
 }
 
 
-/* 템플릿 버튼 비활성화 */
+/* 템플릿 카테고리 비활성화 */
+.uflink-divider,
+#category-template {
+	display: none;
+}
+
+/*
 #category-template {
 	cursor: not-allowed;
 }
@@ -312,3 +317,4 @@ html.darkmode .btn-goto {
 	text-decoration: line-through !important;
 	text-decoration-thickness: 2px !important;
 }
+*/
