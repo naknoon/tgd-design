@@ -130,7 +130,7 @@
 
 
 /* 사전 설정 */
-#board-info {
+#useful-link + .frame #board-info {
 	margin-top: -15px
 }
 
