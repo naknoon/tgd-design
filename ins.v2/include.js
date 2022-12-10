@@ -35,6 +35,17 @@ window.addEventListener("load", function () {
                     //유용한 링크
                     sel("#main-content").prepend(ins("#useful-link"));
 
+                    //본문 제목 효과
+                    $(document).ready( function() {
+                        $( '#article-content p:contains("#")' )
+                        .filter((_, a) => {
+                            return a.textContent.match(/#[0-9].*:/g);
+                        })
+                        .attr({
+                            class: "content-main-title",
+                        });;
+                    } );
+                    
                 }
             };
             xhttp.open("GET", includePath, true);
