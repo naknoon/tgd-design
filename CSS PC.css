@@ -1,3 +1,31 @@
+/* 전역 설정 */
+:root {
+    --url-logo: url(https://cdn.discordapp.com/attachments/936953394415935568/983031726773239818/logo_line.svg)
+}
+
+:root {
+    --color-bc: #cbd1dc;
+    --color-fr: #FFF;
+    --color-noti: #D8DDE8;
+    --color-hot: #E5E9F0;
+    --color-hov: #F2F4F7;
+    --color-sig: #585C66;
+    --color-pla: #7F8899;
+    --color-hig: #FFF6BA;
+}
+
+:root.darkmode {
+    --color-bc: #121212;
+    --color-fr: #1D1D1D;
+    --color-noti: #3A3A3A;
+    --color-hot: #313131;
+    --color-hov: #262626;
+    --color-sig: #6E7380;
+    --color-pla: #7F8899;
+    --color-hig: #5B5216;
+}
+
+
 /* 본문 줄간격 조정 */
 p {
 	margin: 0 0 3px
@@ -9,7 +37,7 @@ p:last-child {
 
 
 /* 폰트 */
-* {
+body {
     font-family: var(--font-pro), sans-serif;
 }
 
