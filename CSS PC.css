@@ -37,7 +37,7 @@ p:last-child {
 
 
 /* 폰트 */
-body {
+* {
     font-family: var(--font-pro), sans-serif;
 }
 
