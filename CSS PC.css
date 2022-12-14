@@ -42,7 +42,7 @@ p:last-child {
 }
 
 :root {
-    font-feature-settings: "calt", "salt", "ss01", "ss02", "ss03", "ss08";
+    font-feature-settings: "calt", "salt", "case", "ss01", "ss02", "ss03", "ss08";
 }
 
 

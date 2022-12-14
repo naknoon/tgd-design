@@ -113,6 +113,38 @@
 
 
 
+/* 문단 제목 하이라이터 :::::::::: :::::::::: :::::::::: */
+
+.par-title-main,
+.par-title-sub {
+	display: flex;
+	padding: 1px 0; 
+	margin: 0 0 8px;
+	font-weight: bold;
+}
+
+.par-title-main::after,
+.par-title-sub::after {
+	content: '\f2dc';
+	font-weight: normal;
+	margin-left: auto;
+	color: var(--color-sig);
+	opacity: .75;
+}
+
+#article-content p.par-title-main,
+html.darkmode #article-content p.par-title-main {
+	background: var(--color-noti) !important;
+    box-shadow: -6px 0px 0px 0px var(--color-noti), 6px 0px 0px 0px var(--color-noti);
+}
+
+#article-content p.par-title-sub,
+html.darkmode #article-content p.par-title-sub {
+	background: var(--color-hot) !important;
+    box-shadow: -6px 0px 0px 0px var(--color-hot), 6px 0px 0px 0px var(--color-hot); 
+}
+
+
 
 /* 유용한 링크 :::::::::: :::::::::: :::::::::: */
 
