@@ -65,9 +65,8 @@
 
 #discord-btn a:hover,
 #discord-btn a:focus {
-	/* background: #EB459E; */
+	background: #EB459E;
 	background: hsl(235deg 86% 80%);
-	cursor: not-allowed;
 }
 
 #disbtn-img {
