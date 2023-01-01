@@ -42,7 +42,7 @@ window.addEventListener("load", function () {
                             return a.textContent.match(/#[0-9].*:/g);
                         })
                         .attr({
-                            class: "par-title-main",
+                            class: "par-title-h1",
                         });;
                     } );
                     
@@ -52,7 +52,17 @@ window.addEventListener("load", function () {
                             return a.textContent.match(/#[0-9]-[A-Z0-9].*:/g);
                         })
                         .attr({
-                            class: "par-title-sub",
+                            class: "par-title-h2",
+                        });;
+                    } );
+
+                    $(document).ready( function() {
+                        $( '#article-content p:contains("#")' )
+                        .filter((_, a) => {
+                            return a.textContent.match(/#[0-9]-[A-Z0-9]-[A-Z0-9].*:/g);
+                        })
+                        .attr({
+                            class: "par-title-h3",
                         });;
                     } );
 

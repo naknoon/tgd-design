@@ -114,16 +114,18 @@
 
 /* 문단 제목 하이라이터 :::::::::: :::::::::: :::::::::: */
 
-.par-title-main,
-.par-title-sub {
+.par-title-h1,
+.par-title-h2,
+.par-title-h3 {
 	display: flex;
 	padding: 1px 0; 
 	margin: 0 0 8px;
 	font-weight: bold;
 }
 
-.par-title-main::after,
-.par-title-sub::after {
+.par-title-h1::after,
+.par-title-h2::after,
+.par-title-h3::after {
 	content: '\f2dc';
 	font-weight: normal;
 	margin-left: auto;
@@ -131,16 +133,22 @@
 	opacity: .75;
 }
 
-#article-content p.par-title-main,
-html.darkmode #article-content p.par-title-main {
+#article-content p.par-title-h1,
+html.darkmode #article-content p.par-title-h1 {
 	background: var(--color-noti) !important;
     box-shadow: -6px 0px 0px 0px var(--color-noti), 6px 0px 0px 0px var(--color-noti);
 }
 
-#article-content p.par-title-sub,
-html.darkmode #article-content p.par-title-sub {
+#article-content p.par-title-h2,
+html.darkmode #article-content p.par-title-h2 {
 	background: var(--color-hot) !important;
     box-shadow: -6px 0px 0px 0px var(--color-hot), 6px 0px 0px 0px var(--color-hot); 
+}
+
+#article-content p.par-title-h3,
+html.darkmode #article-content p.par-title-h3 {
+	background: var(--color-hov) !important;
+    box-shadow: -6px 0px 0px 0px var(--color-hov), 6px 0px 0px 0px var(--color-hov); 
 }
 
 
