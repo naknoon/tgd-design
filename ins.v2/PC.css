@@ -121,6 +121,7 @@
 	padding: 1px 0; 
 	margin: 0 0 8px;
 	font-weight: bold;
+	gap: calc(1em / 4) /* 공백 */
 }
 
 .par-title-h1::after,
