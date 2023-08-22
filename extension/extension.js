@@ -35,33 +35,18 @@ window.addEventListener("load", function () {
 
                     //본문 내 문단 하이라이터
                     $(document).ready(function () {
-                        $('#article-content p:contains("#")')
-                            .filter((_, a) => {
-                                return a.textContent.match(/#[0-9].*:/g);
-                            })
-                            .attr({
-                                class: "par-title-h1",
-                            });
-                    });
+                        $('#article-content p:contains("#")').each(function (_, i) {
+                            const text = a.textContent;
+                            const classToAdd = text.match(/#[0-9]-[A-Z0-9]-[A-Z0-9].*:/g)
+                                ? "par-title-h3"
+                                : text.match(/#[0-9]-[A-Z0-9].*:/g)
+                                ? "par-title-h2"
+                                : text.match(/#[0-9].*:/g)
+                                ? "par-title-h1"
+                                : "";
 
-                    $(document).ready(function () {
-                        $('#article-content p:contains("#")')
-                            .filter((_, a) => {
-                                return a.textContent.match(/#[0-9]-[A-Z0-9].*:/g);
-                            })
-                            .attr({
-                                class: "par-title-h2",
-                            });
-                    });
-
-                    $(document).ready(function () {
-                        $('#article-content p:contains("#")')
-                            .filter((_, a) => {
-                                return a.textContent.match(/#[0-9]-[A-Z0-9]-[A-Z0-9].*:/g);
-                            })
-                            .attr({
-                                class: "par-title-h3",
-                            });
+                            $(i).addClass(classToAdd);
+                        });
                     });
                 }
             };
