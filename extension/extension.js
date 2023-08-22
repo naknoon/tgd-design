@@ -2,13 +2,11 @@
 function ins(selector) {
     let template = document.querySelector(selector);
     let newContent = document.importNode(template, true);
-
     return newContent;
 }
 
 function sel(selector) {
     let target = document.querySelector(selector);
-
     return target;
 }
 
@@ -36,36 +34,35 @@ window.addEventListener("load", function () {
                     sel("#main-content").prepend(ins("#useful-link"));
 
                     //본문 내 문단 하이라이터
-                    $(document).ready( function() {
-                        $( '#article-content p:contains("#")' )
-                        .filter((_, a) => {
-                            return a.textContent.match(/#[0-9].*:/g);
-                        })
-                        .attr({
-                            class: "par-title-h1",
-                        });;
-                    } );
-                    
-                    $(document).ready( function() {
-                        $( '#article-content p:contains("#")' )
-                        .filter((_, a) => {
-                            return a.textContent.match(/#[0-9]-[A-Z0-9].*:/g);
-                        })
-                        .attr({
-                            class: "par-title-h2",
-                        });;
-                    } );
+                    $(document).ready(function () {
+                        $('#article-content p:contains("#")')
+                            .filter((_, a) => {
+                                return a.textContent.match(/#[0-9].*:/g);
+                            })
+                            .attr({
+                                class: "par-title-h1",
+                            });
+                    });
 
-                    $(document).ready( function() {
-                        $( '#article-content p:contains("#")' )
-                        .filter((_, a) => {
-                            return a.textContent.match(/#[0-9]-[A-Z0-9]-[A-Z0-9].*:/g);
-                        })
-                        .attr({
-                            class: "par-title-h3",
-                        });;
-                    } );
+                    $(document).ready(function () {
+                        $('#article-content p:contains("#")')
+                            .filter((_, a) => {
+                                return a.textContent.match(/#[0-9]-[A-Z0-9].*:/g);
+                            })
+                            .attr({
+                                class: "par-title-h2",
+                            });
+                    });
 
+                    $(document).ready(function () {
+                        $('#article-content p:contains("#")')
+                            .filter((_, a) => {
+                                return a.textContent.match(/#[0-9]-[A-Z0-9]-[A-Z0-9].*:/g);
+                            })
+                            .attr({
+                                class: "par-title-h3",
+                            });
+                    });
                 }
             };
             xhttp.open("GET", includePath, true);
