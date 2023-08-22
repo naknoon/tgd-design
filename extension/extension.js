@@ -36,7 +36,7 @@ window.addEventListener("load", function () {
                     //본문 내 문단 하이라이터
                     $(document).ready(function () {
                         $('#article-content p:contains("#")').each(function (_, i) {
-                            const text = a.textContent;
+                            const text = i.textContent;
                             const classToAdd = text.match(/#[0-9]-[A-Z0-9]-[A-Z0-9].*:/g)
                                 ? "par-title-h3"
                                 : text.match(/#[0-9]-[A-Z0-9].*:/g)
