@@ -1,0 +1,63 @@
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 크리스마스 이벤트용 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+:root {
+    /* 색상 */
+        --mainColor: #1B5D21;   /* 메인 */
+		--mainColor2: #f7f7f7;  /* 트게더 메뉴 · 일반글 hover */
+		--mainColor3: #badec0;  /* 공지 */
+		--mainColor4: #f0fff2; /* 인기글 */
+		--mainColor5: #abc4b0;  /* 고정글 hover */
+        --timecolor: #568f60;   /* 고정글 작성시각 */
+
+    /* URL */
+        --logoURL: url(https://cdn.discordapp.com/attachments/692773470441963540/791665641287057418/N_PC_.png); /* 로고 */
+		--Ebannerurl: url(https://cdn.discordapp.com/attachments/692773470441963540/791665671561412628/d0a40fd61f6503a8.png); /* 상단 배너 */
+
+        --Backgroundimg: url(https://cdn.discordapp.com/attachments/692773470441963540/791665700116758528/christmas-2994875.jpg);  /* 배경 이미지 */
+        --Particle: url(https://cdn.discordapp.com/attachments/692773470441963540/791665707930091570/Snow.png);  /* 파티클 이미지 */
+        
+        --CSSC: url(); /* CSS 카테고리 */
+        --CSSChover: url();  /* CSS 카테고리 호버 */
+
+        --TopButton: url();  /* 점프버튼 */
+}
+
+#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"] {
+    /*background: var(--CSSC) no-repeat !important;*/
+    filter: hue-rotate(250deg);
+}
+
+#article-list > #article-list-category > a[href="/y_yeohun?category=34280854"]:hover {
+    /*background: var(--CSSChover) no-repeat !important;*/
+    filter: hue-rotate(250deg);
+}
+
+#movetotop{
+    /*background: var(--TopButton);*/
+    filter: hue-rotate(250deg);
+}
+
+body {
+    background: transparent;
+    animation: snow 20s linear infinite;
+    background-image: var(--Particle);
+}
+
+header:before {
+    background: var(--Ebannerurl) no-repeat;
+}
+
+html {
+    background-image: var(--Backgroundimg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+
+#article-list>.article-list-row.notice>.item>.list-time {
+    background: var(--timecolor);
+    border: 1px solid var(--timecolor);
+}

@@ -1,0 +1,539 @@
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 주석 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* 업데이트 : 2020.03.21 완료 */
+/* 노트패드 : 없음 */
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 모바일 CSS 기본 설정 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+:root {
+    /* 색상 */
+	    --bgColor: #EAEFF7;     /* 배경 색 */
+	    --mainColor: #44577C;   /* 메인 컬러 */
+        --mainColor3: #D8DDE8;  /* 공지 컬러 (현재 인기글은 다른 색상으로 조정됨) */
+    
+    /* URL */
+        --logoURL: url(https://cdn.discordapp.com/attachments/610065145858621461/610066720887144458/N_.png); /* 로고 임포트 */
+    
+    /* 기타 설정 */
+	    --before: "늑대별 "; /* 접속자 수 앞 문구 */
+	    --after: "개";  /* 접속자 수 뒤 문구 */
+}
+
+/* focus 아웃라인 제거 */
+*:focus {
+    outline: none !important; 
+}
+
+/* 배경색 */
+body {
+    background: var(--bgColor);
+}
+
+footer {
+    background: var(--bgColor);
+}
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 폰트 Font font ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 부드러운 스크롤링 */
+html {
+	scroll-behavior: smooth;
+}
+
+/* 나눔바른고딕 */
+@font-face { 
+    font-family: 'NanumBarunGothic'; 
+    font-style: normal; 
+    font-weight: 300; 
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff');
+}
+
+@font-face { 
+    font-family: 'NanumBarunGothic'; 
+    font-style: normal; 
+    font-weight: 400; 
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff');
+} 
+
+@font-face { 
+    font-family: 'NanumBarunGothic'; 
+    font-style: normal; 
+    font-weight: 700; 
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff');
+} 
+
+/* 전체 폰트 적용 */
+* { font-family: 'NanumBarunGothic', sans-serif; }
+
+/* 본문 삽입 하이퍼링크 색상 초기화 */
+#article-content > p > a,
+.reply-content > p > a {
+    color: #337ab7 !important;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 애니메이션 Animation animation ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 스트리머 하트 펌핑 애니메이션 */
+small.favo i.fa.fa-heart {
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0% {transform: scale(1);}
+    30% {transform: scale(1.25);}
+    42% {transform: scale(0.9);}
+    60% {transform: scale(1.15);}
+    85% {transform: scale(0.95);}
+    100% {transform: scale(1);}
+}
+
+/* 인기글 별 스핀 애니메이션 */
+span.a-badge i.fa.fa-star { 
+	animation: binglebingle 3s infinite;
+}
+
+@keyframes binglebingle {
+	from { transform: rotate(0deg); } to { transform: rotate(360deg); }
+}
+
+
+@keyframes navscroll  {
+    0% {transform: translateX(-200px);}
+    100% {transform: translateX(0px);}
+}
+
+/* 트게더 메뉴 (햄버거 메뉴) 애니메이션 */
+nav#nav {
+	animation: navscroll 0.2s ease-out ;
+}
+
+#nav-overlay {
+    background: #00000029;
+    animation: navback 0.5s ease-out;
+}
+
+@keyframes navback  {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+/* 트게더 메뉴 (햄버거 메뉴) 아이콘 애니메이션 */
+#header-close-bar-link > i {
+	animation: rotate90 0.3s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.1s;
+}
+
+@keyframes rotate90 {
+	0% {transform: rotate(0deg); }
+	100% {transform: rotate(90deg); }
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 헤더 Header header ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 로고 */
+header>#header-area>a>h1 {
+    background: var(--logoURL) no-repeat;
+    background-size: auto 32px;
+    width: 128px;
+    background-position: center center;
+}
+
+/* 로고 영역 */
+header {
+    border-bottom: 4px solid var(--mainColor); /* 로고 배너 하단 구분선 색 */
+    background: var(--bgColor); /* 로고 배너 배경 색 */
+}
+
+/* 전광판 광고 텍스트 뱃지 */
+#header-top-notice strong.notice-badge {
+    background: var(--mainColor);
+}
+
+/* 검색 창 */
+header > #header-search-bar #header-search-input {
+    border: 2px solid var(--mainColor) /* 검색창 테두리 색 */
+}
+
+/* 검색창 되돌아가기 화살표 */
+.fa-arrow-left:before {
+    color: var(--mainColor);
+}
+
+/* 검색 버튼 */
+header>#header-area>#header-search-link {
+    color: var(--mainColor); /* 검색창 옆 돋보기 색 */
+}
+
+header > #header-search-bar #header-search-btn {
+    color: var(--mainColor); /* 검색창 옆 돋보기 색 */
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 메뉴 Menu menu ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 트게더 메뉴 (햄버거 메뉴) 버튼 색상 */
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    color: var(--mainColor);
+}
+
+/* 트게더 메뉴 (햄버거 메뉴) 색상 */
+nav#nav>.nav-header {
+    background: var(--mainColor);
+}
+
+/* 트게더 메뉴 (햄버거 메뉴) 배경색 */
+nav#nav {
+    background: var(--bgColor);
+}
+
+/* 트게더 메뉴 (햄버거 메뉴) 텍스트 배너 */
+nav#nav:after {
+    content: "새로운 흔게더를 경험해보세요!";
+	font-family: 'NanumBarunGothic' !important;
+	position: fixed;
+	width: 300px;
+	background: var(--mainColor);
+	color: #fff;
+	margin-top: 12px;
+    padding: 6px 12px;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 보드 Board board ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 배경 및 테두리 박스 설정 */
+#board-info {
+    background: var(--bgColor);
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
+}
+
+/* 접속자 수 색상 */
+#board-info #viewers-area {
+    color: rgba(68, 87, 124, 0.692); /* 접속자 수 글씨 색 */
+}
+
+/* 접속자 수 별 모양으로 변경 */
+.fa-user:before {
+    content: "\f005";
+}
+
+#board-info #viewers-area #viewers:before {
+    content: var(--before);
+    cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: var(--after);
+    cursor: text;
+}
+
+/* 랭킹 표시 삭제 */
+#board-info h1 #score-area {
+    display: none;
+}
+
+/* 프로필바 메뉴 버튼 */
+.fa-caret-down:before {
+    color: var(--mainColor);
+}
+
+/* 왼쪽 메뉴 구분선 삭제*/
+#board-info>a.board-right-menu {
+    border-left: none;
+    padding: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--mainColor)
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 아티클 Article article ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 카테고리 배경 색 */
+#article-list #article-list-category>a {
+    background: #ffffff;
+}
+
+#article-list #article-list-category {
+    background: #ffffff;
+}
+
+/* 공지 숨기기 버튼 */
+#article-list #article-option-area>#article-option-area-toggle-btn {
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    border-top: 2px solid transparent;
+    margin-top: 0px;
+    opacity: 1;
+}
+
+.fa-home:before {
+    color: var(--mainColor);
+}
+
+/* 공지글 댓글 수 · 작성자 · ⓘ 아이콘 삭제*/
+#article-list>.article-list-row.notice>.item>.list-title>small.comment-count,
+#article-list>.article-list-row.notice>.item>.list-title>.list-writer,
+#article-list>.article-list-row.notice>.item>.list-title>span.a-badge {
+    display: none;
+}
+
+/* 공지 텍스트 아이콘 대체 */
+#article-list>.article-list-row.notice>.item>.list-header>strong, 
+#article-list>.article-list-row.notice>.item>.list-header>b {
+	font-size: 0px;
+}
+
+#article-list>.article-list-row.notice>.item>.list-header>strong:after, 
+#article-list>.article-list-row.notice>.item>.list-header>b:after{
+	font-family: 'fontawesome';
+	font-size: 14px;
+	color: var(--mainColor);
+	content: '\f08d';
+}
+
+/* 공지 색상 */
+#article-list>.article-list-row.notice {
+    background-color: var(--mainColor3); /* 공지 배경 색 */
+}
+
+/* 인기글 색상 */
+#article-list>.article-list-row.hot {
+    background-color: #E7EBF1 !important;
+}
+
+#article-list>.article-list-row>.item>.list-header>strong, 
+#article-list>.article-list-row>.item>.list-header>b {
+    font-size: 0px;
+}
+
+#article-list>.article-list-row>.item>.list-header>strong:after, 
+#article-list>.article-list-row>.item>.list-header>b:after {
+    font-family: 'fontawesome';
+    font-size: 15px;
+    color: #efc839;
+    content: '\f005';
+}
+
+/* 글 추천 수 */
+#article-list>.article-list-row>.item>.list-header>span {
+    background-color: var(--mainColor); /* 글 추천 수 뱃지 배경 색 */
+}
+
+/* 댓글 수 */
+#article-list>.article-list-row>.item>a.list-title>small.comment-count {
+    color: var(--mainColor); /* 댓글 수 색 */
+}
+
+/* 작성시각 여백 조정 */
+#article-list>.article-list-row>.item>.list-time {
+    width: 50px;
+}
+
+/* 게시글 여백 조정 */
+#article-list>.article-list-row>.item>a.list-title {
+    padding: 6.5px 0;
+}
+
+/* 트게더 페이지 선택자 */
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>span,
+.pagination>.active>span:focus {
+	background-color: var(--mainColor);
+	border-color: var(--mainColor);
+	transition: 0.2s;
+}
+
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>li>a:hover,
+.pagination>li>span:hover {
+	background-color: white;
+	border-color: var(--mainColor);
+	color: var(--mainColor);
+	transition: 0.2s;
+}
+
+.pagination>li>a,
+.pagination>li>a:focus,
+.pagination>li>span
+.pagination>li>span:focus {
+	color: var(--mainColor);
+	background: transparent;
+	transition: 0.2s;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 버튼 및 드롭다운 Button&Dropdown button&dropdown ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 점프버튼 (위로가기/스크롤) */
+#movetotop img {
+	display:none
+}
+
+#movetotop {
+	display: inline-block;
+	opacity: 0.8;
+	background:url(https://cdn.discordapp.com/attachments/610065145858621461/610066918648578058/9fed5b52b8584c5e.png);
+	width: 80px;
+    height: 80px;
+    margin: 1em 1em -1.5em 1em;
+    background-size: contain;
+}
+
+/* 버튼 색상 수정 */
+.btn {
+	color: #fff !important;
+	background-color: var(--mainColor) !important;
+	border-color: var(--mainColor) !important;
+	border-radius: 0 !important;
+	transition: 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+	color: var(--mainColor) !important;
+	background-color: #fff !important;
+}
+
+/* 자동 조절 댓글 작성 버튼 */
+#comment-write-form #comment-write-button-area {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label.pull-left {
+    margin-bottom: 5px;
+}
+
+.pull-left {
+    margin-right: calc(100% - 100px);
+}
+
+#btnRereplyCancelBtn {
+    margin-right: 3px;
+}
+
+#writeCommentBtn {
+    flex: 1;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+	opacity: unset;
+	transform: unset;
+	border: 2px solid var(--mainColor);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.275);
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+	display: block !important;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: top;
+	transition: transform 0.4s cubic-bezier(0.18, 1.5, 0, 1);
+	padding: 8px 0 3px 0px;
+}
+
+.dropdown-menu>li>a {
+	transition: 0.1s;
+}
+
+.dropdown-menu>li>a:hover {
+	background: transparent;
+	transform: scaleX(1.04);
+	transition: 0.1s;
+}
+
+#latestDropdownMenu>li>a>span.delrow,
+#favoriteDropdownMenu>li>a>span.delrow {
+	color: var(--mainColor);
+}
+
+#latestDropdownMenu>li>a>span.delrow:hover,
+#favoriteDropdownMenu>li>a>span.delrow:hover {
+	background: transparent;
+}
+
+#favoriteDropdownMenu>li>a>span.label.label-default {
+	background-color: var(--mainColor);
+}
+
+.dropdown-menu .divider {
+	background-color: var(--mainColor);
+	height: 2px;
+    margin: 3px 0;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 아티클 본문 ArticleContent articlecontent ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 게시글 헤더 색상 변경 */
+#article-content-wrapper>.header {
+    background: #ffffff;
+    padding: 0.6em 0.8em;
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
+}
+
+/* 게시글 헤더 작성자 여백 변경 */
+#article-info>h2>#article-info-writer {
+    margin-top: 5px;
+}
+
+#article-info {
+    padding: 0.8em;
+}
+
+#article-content-wrapper>.footer {
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
+}
+
+/* 댓글 헤더 색상 변경 */
+#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply > .reply-header {
+    background: #fcfcfc;
+}
+
+/* 댓글 제목 (전체 댓글 제목) 색상 변경 */
+#article-reply-area > .header h5 {
+    color: var(--mainColor);
+}
+
+/* 댓글 에디터 색상 변경 */
+.fr-popup, .fr-toolbar.fr-top {
+    border-top: 3px solid var(--mainColor);
+}
+
+.fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn {
+    color: var(--mainColor);
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 뱃지 커스텀 Badge badge ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 관리자 뱃지 전환 */
+img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41db1d0/1"] {
+    content: url(https://cdn.discordapp.com/attachments/659060387718758401/666644717219348480/1.5.png);
+    width: 18px;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 테스트 영역 Test test ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 하단고정형 위로가기 버튼 테스트 */
+#movetotop {
+	display: inline-block;
+	background:#485679;
+	opacity: 1;
+	width: 100%;
+    height: 40px;
+    position: fixed; 
+    left: 50%;
+    bottom: 0;
+    margin: 0;
+    margin-left: -50%;
+    background: url(https://cdn.discordapp.com/attachments/659060358019022868/685158536816099358/Untitled.png);
+    background-position: center center;
+}
