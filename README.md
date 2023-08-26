@@ -1,1 +1,1 @@
-# tgd-theme
+# tgd-design
