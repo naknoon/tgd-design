@@ -1,0 +1,6 @@
+/*TEST*/
+
+body>header {
+    background: #000;
+    /* test */
+}
