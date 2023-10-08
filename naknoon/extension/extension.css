@@ -6,10 +6,8 @@
     font-weight: 700;
     text-align: center;
     letter-spacing: -0.05em;
-
     background: var(--color-ntb);
     color: #fff;
-
     padding: 5px 0;
 
     &::before,
@@ -17,9 +15,7 @@
         content: "\f071";
         font-size: 16px;
         font-weight: normal;
-
         padding: 2px;
-
         display: inline;
         vertical-align: middle;
     }
@@ -47,14 +43,11 @@
         display: flex;
         align-items: center;
         flex-direction: row;
-
         padding: 15px;
         border-radius: 50px 50px 0px 50px;
-
         background: #5865f2;
         color: #fff;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
         transition: 0.2s ease-in-out;
 
         @media (max-width: 1400px) {
@@ -83,7 +76,6 @@
             font-size: 17px;
             font-weight: 800;
             line-height: 20px;
-
             white-space: nowrap;
         }
     }
@@ -129,7 +121,6 @@
     width: 100%;
     background: var(--color-sig);
     padding: 15px;
-
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -144,22 +135,18 @@
         .ext-header {
             border: 1px solid #fff;
             color: #fff;
-
             font-size: 16px;
             letter-spacing: -0.025em;
             font-weight: 800;
-
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-
             grid-column: span 4;
         }
     }
 }
 
-/* 버튼 */
 #ext_uselink .ext-btn {
     background: var(--color-noti);
     color: var(--color-text);
@@ -173,7 +160,6 @@
     justify-content: center;
     grid-column: span 2;
 
-    /* 큰 버튼 */
     &.ext-large {
         flex-direction: column;
         gap: 4px;
