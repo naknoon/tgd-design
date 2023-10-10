@@ -11,7 +11,7 @@
     --color-hov: #f2f4f7;
     --color-sig: #323f5a;
     --color-pla: #5d75a6;
-    --color-hig: #fff6ba;
+    --color-code: brown;
 }
 
 :root.darkmode {
@@ -22,7 +22,7 @@
     --color-hov: #262626;
     --color-sig: #a69c4c;
     --color-pla: #8c8341;
-    --color-hig: #5b5216;
+    --color-code: sandybrown;
 }
 
 /* 본문 줄간격 조정 */
@@ -39,16 +39,23 @@ p:last-child {
     font-feature-settings: "calt", "salt", "case", "ss01", "ss02", "ss03", "ss08";
 }
 
-/* 코드 하이라이터 */
-p strong em,
-p em strong,
-td strong em,
-td em strong {
-    font-style: normal;
-    font-family: "D2Coding";
+/* 코드 블록 */
+p,
+td {
+    & strong em,
+    & em strong {
+        font-family: "D2Coding";
+        font-style: normal;
+        font-weight: 600;
+        color: var(--color-code);
+    }
 
-    background: var(--color-hig);
-    font-weight: 600;
+    > strong > em,
+    > em > strong {
+        background: rgb(150, 150, 150, 0.25);
+        padding: 0.1em 0.25em;
+        border-radius: 4px;
+    }
 }
 
 /* 하이퍼링크 아이콘 */
