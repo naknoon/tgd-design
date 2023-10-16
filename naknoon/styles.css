@@ -87,16 +87,16 @@ img[title="Broadcaster"] {
 }
 
 :root.darkmode {
-	--category-02: #fff;
-	--category-03: #eee;
-	--category-04: #dedede;
-	--category-05: #cecece;
-	--category-06: #bebebe;
-	--category-07: #aeaeae;
-	--category-08: #9e9e9e;
-	--category-09: #8e8e8e;
-	--category-10: #7d7d7d;
-	--category-11: #6d6d6d;
+	--category-02-color: #fff;
+	--category-03-color: #eee;
+	--category-04-color: #dedede;
+	--category-05-color: #cecece;
+	--category-06-color: #bebebe;
+	--category-07-color: #aeaeae;
+	--category-08-color: #9e9e9e;
+	--category-09-color: #8e8e8e;
+	--category-10-color: #7d7d7d;
+	--category-11-color: #6d6d6d;
 }
 
 html.darkmode {
@@ -104,43 +104,43 @@ html.darkmode {
 	#article-list #article-list-category > a.nav-link,
 	#article-info > h2 > span {
 		&[style="color:#000000"] {
-			color: var(--category-02) !important; /* 피드 */
+			color: var(--category-02-color) !important; /* 피드 */
 		}
 
 		&[style="color:#121212"] {
-			color: var(--category-03) !important; /* CSS */
+			color: var(--category-03-color) !important; /* CSS */
 		}
 
 		&[style="color:#242424"] {
-			color: var(--category-04) !important; /* 트:제로 */
+			color: var(--category-04-color) !important; /* 트:제로 */
 		}
 
 		&[style="color:#363636"] {
-			color: var(--category-05) !important; /* CIFT */
+			color: var(--category-05-color) !important; /* CIFT */
 		}
 
 		&[style="color:#484848"] {
-			color: var(--category-06) !important; /* CXFT */
+			color: var(--category-06-color) !important; /* CXFT */
 		}
 
 		&[style="color:#5b5b5b"] {
-			color: var(--category-07) !important; /* CTFT */
+			color: var(--category-07-color) !important; /* CTFT */
 		}
 
 		&[style="color:#6d6d6d"] {
-			color: var(--category-08) !important; /* 그래픽 */
+			color: var(--category-08-color) !important; /* 그래픽 */
 		}
 
 		&[style="color:#7f7f7f"] {
-			color: var(--category-09) !important; /* 자유 */
+			color: var(--category-09-color) !important; /* 자유 */
 		}
 
 		&[style="color:#919191"] {
-			color: var(--category-10) !important; /* 질문 */
+			color: var(--category-10-color) !important; /* 질문 */
 		}
 
 		&[style="color:#a3a3a3"] {
-			color: var(--category-11) !important; /* 저장소 */
+			color: var(--category-11-color) !important; /* 저장소 */
 		}
 	}
 }
@@ -148,7 +148,7 @@ html.darkmode {
 /* CSS 시리즈 */
 #article-list #article-list-category > a.nav-link {
 	&:nth-child(3) {
-		background: var(--color-noti);
+		background-color: var(--color-noti);
 	}
 
 	&:nth-child(n + 4):nth-child(-n + 7) {
@@ -163,16 +163,56 @@ html.darkmode {
 
 #article-category-left-list > a.shortcut-link {
 	&:nth-child(3) {
-		background: var(--color-noti) !important;
+		background-color: var(--color-noti) !important;
+		&:hover {
+			background-color: var(--color-hov) !important;
+		}
 	}
 
-	&:nth-child(n + 4):nth-child(-n + 7) {
-		border-left: 4px solid var(--color-noti) !important;
+	&:nth-child(n + 3):nth-child(-n + 7) {
+		box-shadow: inset 4px 0 0 0 var(--color-noti);
+	}
+}
 
-		&:hover,
-		&:active {
-			border-left: 4px solid var(--color-sig) !important;
-		}
+/* 카테고리 라벨 */
+#article-category-left-list > a.shortcut-link {
+	&::after {
+		margin-left: auto;
+		font-size: 11px;
+		line-height: 11px;
+		content: "";
+		white-space: pre;
+	}
+
+	&:nth-child(2)::after {
+		content: "소식";
+	}
+	&:nth-child(3)::after {
+		content: "트게더 CSS";
+	}
+	&:nth-child(4)::after {
+		content: "제로부터 시작하는";
+	}
+	&:nth-child(5)::after {
+		content: "정보";
+	}
+	&:nth-child(6)::after {
+		content: "확장";
+	}
+	&:nth-child(7)::after {
+		content: "팁";
+	}
+	&:nth-child(8)::after {
+		content: "Affinity";
+	}
+	&:nth-child(9)::after {
+		content: "누구든 아무거나";
+	}
+	&:nth-child(10)::after {
+		content: "문의는 여기로";
+	}
+	&:nth-child(11)::after {
+		content: "아카이브";
 	}
 }
 
