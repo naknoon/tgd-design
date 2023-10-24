@@ -179,14 +179,11 @@ html.darkmode {
 		white-space: pre;
 	}
 
-	&:nth-child(2)::after {
-		content: "소식";
-	}
 	&:nth-child(3)::after {
 		content: "트게더 CSS";
 	}
 	&:nth-child(4)::after {
-		content: "제로부터 시작하는";
+		content: "시작과 끝";
 	}
 	&:nth-child(5)::after {
 		content: "정보";
@@ -196,18 +193,6 @@ html.darkmode {
 	}
 	&:nth-child(7)::after {
 		content: "팁";
-	}
-	&:nth-child(8)::after {
-		content: "Affinity";
-	}
-	&:nth-child(9)::after {
-		content: "누구든 아무거나";
-	}
-	&:nth-child(10)::after {
-		content: "문의는 여기로";
-	}
-	&:nth-child(11)::after {
-		content: "아카이브";
 	}
 }
 
