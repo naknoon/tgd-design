@@ -1,6 +1,6 @@
 /* 전역 설정 */
 :root {
-	--url-logo: url(https://cdn.discordapp.com/attachments/936953394415935568/983031726773239818/logo_line.svg);
+	--url-logo: url(https://raw.githubusercontent.com/naknoon/tgd-design/main/naknoon/src/logo_line.svg);
 }
 
 :root {
@@ -82,7 +82,7 @@ tr a[href]:before {
 }
 
 img[title="Broadcaster"] {
-	content: url(https://cdn.discordapp.com/attachments/936953394415935568/1006923454139863180/snow_badge.svg);
+	content: url(https://raw.githubusercontent.com/naknoon/tgd-design/main/naknoon/src/snow_badge.svg);
 	filter: grayscale(1);
 }
 
